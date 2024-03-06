@@ -1,0 +1,70 @@
+@use "../abstract/" as *;
+
+$font-speedee-regular: "Speedee-Regular", "Arial", sans-serif;
+$font-speedee-bold: "Speedee-Bold", "Arial Black", sans-serif;
+
+@font-face {
+    font-family: "Speedee-Regular";
+    src: url(../../fonts/Speedee-Regular.woff) format("woff"),
+        url(../../fonts/Speedee-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Speedee-Bold";
+    src: url(../../fonts/Speedee-Bold.woff) format("woff"),
+        url(../../fonts/Speedee-Bold.ttf) format("truetype");
+}
+
+// @font-face {
+//     font-family: "Speedee-Light";
+//     src: url(../../fonts/Speedee-Light.woff) format("woff"),
+//         url(../../fonts/Speedee-Light.ttf) format("truetype");
+// }
+
+// @font-face {
+//     font-family: "Speedee-LightItalic";
+//     src: url(../../fonts/Speedee-LightItalic.woff) format("woff"),
+//         url(../../fonts/Speedee-LightItalic.ttf) format("truetype");
+// }
+
+// @font-face {
+//     font-family: "Speedee-Italic";
+//     src: url(../../fonts/Speedee-Italic.woff) format("woff"),
+//         url(../../fonts/Speedee-Italic.ttf) format("truetype");
+// }
+
+// @font-face {
+//     font-family: "Speedee-BoldItalic";
+//     src: url(../../fonts/Speedee-BoldItalic.woff) format("woff"),
+//         url(../../fonts/Speedee-BoldItalic.ttf) format("truetype");
+// }
+
+html{
+    font-size: 10px;
+}
+body{
+    font-family: $font-speedee-regular;
+    color: $clr-dark;
+    line-height: 1.6;
+    font-size: 1.6rem;
+}
+a{
+    text-decoration: none;
+    color: $clr-dark;
+}
+p{
+    margin-bottom: 1.3rem;
+    font-size: clamp(1.4rem, 6vw, 1.6rem);
+}
+h1{
+    margin-bottom: 2.5rem;
+    font-size: clamp(2rem, 6vw, 5rem);
+}
+.container{
+    max-width: 110rem;
+    padding: 0 1.6rem;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}

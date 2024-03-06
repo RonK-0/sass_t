@@ -1,0 +1,223 @@
+@font-face {
+  font-family: "Speedee-Regular";
+  src: url(../../fonts/Speedee-Regular.woff) format("woff"), url(../../fonts/Speedee-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Speedee-Bold";
+  src: url(../../fonts/Speedee-Bold.woff) format("woff"), url(../../fonts/Speedee-Bold.ttf) format("truetype");
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Speedee-Regular", "Arial", sans-serif;
+  color: #000;
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  margin-bottom: 1.3rem;
+  font-size: clamp(1.4rem, 6vw, 1.6rem);
+}
+
+h1 {
+  margin-bottom: 2.5rem;
+  font-size: clamp(2rem, 6vw, 5rem);
+}
+
+.container {
+  max-width: 110rem;
+  padding: 0 1.6rem;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img, video, picture, svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__wrapper .toggle_button span {
+  display: block;
+  background-color: #db0007;
+  content: " ";
+  width: 3rem;
+  height: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+.header .dropdown {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 9999;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header .dropdown button {
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+  color: #ffbc0d;
+  padding: 1rem;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  padding-right: 2.25rem;
+  padding-top: 1.75rem;
+}
+.header .dropdown .nav {
+  font-family: "Speedee-Regular", "Arial", sans-serif;
+}
+.header .dropdown .nav li a {
+  color: #db0007;
+}
+.header .dropdown .nav .nav__menu {
+  margin-left: 5rem;
+}
+.header .dropdown .nav .nav__menu li {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Speedee-Bold", "Arial Black", sans-serif;
+  margin-bottom: 0.6rem;
+}
+.header .dropdown .nav .nav__menu li .nav__submenu {
+  margin-left: 3rem;
+}
+.header .dropdown .nav .nav__menu li .nav__submenu li a {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: "Speedee-Regular", "Arial", sans-serif;
+}
+.header .dropdown__footer {
+  margin-top: 4rem;
+  text-align: center;
+}
+.header .dropdown__footer img {
+  margin: 0 auto 2rem;
+}
+.header .dropdown__footer li a {
+  font-size: 1.2rem;
+}
+
+.footer {
+  background-color: #ffbc0d;
+  padding: 5rem 0;
+}
+.footer__actions {
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  justify-self: center;
+}
+.footer__actions ul li {
+  font-size: 1.2rem;
+}
+.footer__actions ul li img {
+  width: 80%;
+  margin-bottom: 0.5rem;
+}
+.footer__connect ul {
+  display: flex;
+  gap: 3rem;
+}
+.footer__connect ul i {
+  font-size: 2.5rem;
+  color: #db0007;
+}
+
+.tns-outer {
+  position: relative;
+}
+.tns-outer .tns-nav {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.tns-outer .tns-nav button {
+  margin: 0 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  border: none;
+}
+.tns-outer .tns-nav-active {
+  background-color: #db0007;
+}
+
+.banner img {
+  width: 100%;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cards {
+  padding: 10rem 0;
+}
+.cards__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.cards .card {
+  border-radius: 3rem;
+  overflow: hidden;
+  position: relative;
+}
+.cards .card img {
+  width: 100%;
+  height: 162px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1/1;
+  transition: 0.6s ease-in-out;
+}
+.cards .card h4 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+}
+.cards .card:hover img {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 770px) {
+  .cards__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}/*# sourceMappingURL=main.min.css.map */

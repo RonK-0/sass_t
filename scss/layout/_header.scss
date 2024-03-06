@@ -1,0 +1,82 @@
+@use "../abstract/" as *;
+@use "../base" as *;
+
+.header{
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .toggle_button{
+            span{
+                display: block;
+                background-color: $clr-accent;
+                content: " ";
+                width: 3rem;
+                height: 0.4rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+    .dropdown{
+        position: fixed;
+        background-color: rgba($clr-neutral, 0.9);
+        z-index: 9999;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+
+        // display: flex;
+        // flex-direction: column;
+        width: 100%;
+        // justify-content: center;
+        // align-items: center;
+
+        button{
+            background-color: transparent;
+            border: none;
+            font-size: 3rem;
+            color: $clr-primary;
+            padding: 1rem;
+            display: flex;
+            justify-content: end;
+            width: 100%;
+            padding-right: 2.25rem;
+            padding-top: 1.75rem
+        }
+        .nav{
+            font-family: $font-speedee-regular;
+            li a{
+                color: $clr-accent;
+            }
+            .nav__menu{
+                margin-left: 5rem;
+                li{
+                    font-size: 2rem;
+                    font-weight: bold;
+                    font-family: $font-speedee-bold;
+                    margin-bottom: 0.6rem;
+                    .nav__submenu{
+                        margin-left: 3rem;
+                        li a{
+                            font-size: 1.8rem;
+                            font-weight: 400;
+
+                            font-family: $font-speedee-regular;
+                        }
+                    }
+                }
+            }
+        }
+        &__footer{
+            margin-top: 4rem;
+            img{
+                margin: 0 auto 2rem;
+            }
+            text-align: center;
+            li a{
+                font-size: 1.2rem
+            }
+        }
+    }
+}
