@@ -17,6 +17,10 @@
             }
         }
     }
+    .dropdown.show{
+        opacity: 1;
+        visibility: visible;
+    }
     .dropdown{
         position: fixed;
         background-color: rgba($clr-neutral, 0.9);
@@ -25,24 +29,26 @@
         width: 100%;
         top: 0;
         left: 0;
-
+        width: 100%;
         // display: flex;
         // flex-direction: column;
-        width: 100%;
         // justify-content: center;
         // align-items: center;
+        // 
+        opacity: 0;
+        visibility: hidden;
 
         button{
             background-color: transparent;
             border: none;
             font-size: 3rem;
             color: $clr-primary;
-            padding: 1rem;
+            // padding: 1rem;
             display: flex;
             justify-content: end;
             width: 100%;
             padding-right: 2.25rem;
-            padding-top: 1.75rem
+            padding-top: 1.9rem;
         }
         .nav{
             font-family: $font-speedee-regular;
