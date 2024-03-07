@@ -1,0 +1,19 @@
+@use "./colors" as *;
+
+@mixin imgCover ($ht: 10rem, $wd: 10rem){
+    height: $ht;
+    width: $wd;
+    object-fit: cover;
+}
+
+@mixin mediaQuery($width: $bp-md){
+    @media (min-width: $width){
+        @content;
+    }
+}
+
+@mixin grid($cols: 1, $gap: 1rem){
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    grid-gap: $gap;
+}

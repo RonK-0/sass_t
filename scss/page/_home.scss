@@ -5,23 +5,27 @@
 
 .banner{
     img{
-        width: 100%;
-        height: 20rem;
-        object-fit: cover;
+        // width: 100%;
+        // height: 20rem;
+        // object-fit: cover;
+        @include imgCover(60rem, 100%);
+        @include mediaQuery{ height: 40rem; }
     }
-    @media (max-width: $bp-s){
-        img{
-            height: 40rem;
-        }
-    }
+    
 }
 
 .cards{
     padding: 10rem 0;
     &__wrapper{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
         grid-row-gap: 1rem;
+        @include grid(2);
+        @include mediaQuery {
+            // grid-template-columns: 1fr 1fr 1fr;
+            @include grid(3);
+            grid-row-gap: 6rem;
+        }
     }
     a{
         justify-self: center;
@@ -32,10 +36,15 @@
         position: relative;
         width: 120px;
         height: 120px;
+        @include mediaQuery($bp-sm){
+            width: 262px;
+            height: 262px;
+        }
         img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            // width: 100%;
+            // height: 100%;
+            // object-fit: cover;
+            @include imgCover(100%, 100%);
             aspect-ratio: 1 / 1;
             transition: 0.6s ease-in-out;
         }
@@ -51,17 +60,10 @@
             transform: scale(1.1);
         }
     }
-    @media (min-width: $bp-m) {
-        &__wrapper{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-row-gap: 6rem;
-        }
-    }
-    @media (min-width: $bp-s) {
-        .card{
-            width: 262px;
-            height: 262px;
-        }
-    }
+    // @media (min-width: $bp-sm) {
+    //     .card{
+    //         width: 262px;
+    //         height: 262px;
+    //     }
+    // }
 }
