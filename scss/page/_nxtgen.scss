@@ -1,0 +1,149 @@
+@use "../base" as *;
+@use "../layout" as *;
+@use "../abstract" as *;
+@use "../vendor" as *;
+
+.category{ 
+    &__wrapper{
+        @include grid(2);
+        @include mediaQuery($bp-md){
+            @include grid(3);
+            grid-row-gap: 6rem;
+        }
+        a{
+            justify-self: center;
+        }
+    }
+    &__card{
+        border-radius: 3rem;
+        position: relative;
+        overflow: hidden;
+        width: 120px;
+        height: 120px;
+        @include mediaQuery($bp-sm){
+            width: 262px;
+            height: 262px;
+        }
+        &:hover img{
+            transform: scale(1.1);
+        }
+        img{
+            @include imgCover(100%, 100%);
+            transition: 0.6s ease;
+        }
+        h4{
+            // position: absolute;
+            // bottom: 0;
+            // left: 50%;
+            @include absolute(unset, unset, 0, 50%);
+            transform: translateX(-50%);
+            text-wrap: nowrap;
+            // font-size: 2rem;
+            font-family: $font-speedee-bold;
+            font-size: clamp(1.2rem, 2vw, 2rem);
+        }
+    }
+
+    // &__wrapper::after{ 
+    //     display: flex; 
+    //     justify-content: flex-end; 
+    //     align-items: flex-end; 
+    //     background-image: url(../../images/food/cheese_drip.png); 
+    //     background-position: right bottom; 
+    //     background-size: contain; 
+    //     height: 4rem; 
+    //     width: 100%;
+    //     z-index: 9999;
+    //     position: relative;
+    // } 
+}
+
+.banner{
+    min-height: 40rem;
+
+    // display: grid;
+    // place-content: center;
+    
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flex(center, center);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    h1{
+        font-size: clamp(3rem, 10vw, 5rem);
+        // font-weight: bold;
+        font-family: $font-speedee-bold;
+    }
+
+}
+.banner--food{
+    background-image: url(../../images/food/food-banner-sm.jpg);
+    @include mediaQuery{
+        background-image: url(../../images/food/food-banner.jpg);
+    }
+}
+
+.quality{
+    padding: 5rem 0;
+    &__header{
+        text-align: center;
+        h3{
+            font-size: clamp(2.5rem, 10vw, 3rem);
+            font-family: $font-speedee-bold;
+        }
+        h5{
+            font-size: clamp(1.5rem, 10vw, 2rem);
+            font-family: $font-speedee-bold;
+        }
+        p{
+            font-size: 2rem;
+        }
+    }
+    &__wrapper{
+        background-image: url(../../images/food/pattern.svg);
+        background-size: 150px;
+    }
+
+    &__cards{
+        @include mediaQuery(){
+            gap: 2rem;
+        }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__card{
+        max-width: 45rem;
+        position: relative;
+        border-radius: 3rem;
+        overflow: hidden;
+        margin-bottom: 3rem;
+        // margin-bottom: 6.5rem;
+        @include mediaQuery{
+            flex-basis: 45%;
+        }
+        h4{
+            // position: absolute;
+            // top: 5rem;
+            // // right: 5rem;
+            // right: 3rem;
+            @include absolute (5rem, 5rem, unset, unset);
+            font-size: 2.6rem;
+            font-family: $font-speedee-bold;
+        }
+        p{
+            margin-bottom: 0;
+            
+            text-align: justify;
+            @include mediaQuery(){
+                font-size: 1.4rem;
+                min-height: 22rem;
+            }
+        }
+    }
+}
