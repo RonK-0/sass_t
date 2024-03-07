@@ -42,4 +42,7 @@ $displays: (flex, grid, block, inline);
     .pt-#{$i}{
         padding-top: #{$i}rem;
     }
+    .pb-#{$i}{
+        padding-bottom: #{$i}rem;
+    }
 }
