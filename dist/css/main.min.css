@@ -692,6 +692,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+.locations__wrapper .locations__region p {
+  font-family: "Speedee-Bold", "Arial Black", sans-serif;
+  text-decoration: underline;
+}
+.locations__wrapper .locations__region ul li:first-child {
+  font-family: "Speedee-Bold", "Arial Black", sans-serif;
+}
+
 .category__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

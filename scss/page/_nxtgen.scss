@@ -36,10 +36,11 @@
     &__wrapper{
         .locations__region{
             p{
-
+                font-family: $font-speedee-bold;
+                text-decoration: underline;
             }
-            ul li{
-                
+            ul li:first-child{
+                font-family: $font-speedee-bold;
             }
         }
     }
