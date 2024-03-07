@@ -684,6 +684,14 @@ body {
   aspect-ratio: 16/9;
 }
 
+.locations h2, .locations p {
+  text-wrap: wrap;
+}
+.locations h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .category__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

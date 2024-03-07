@@ -25,3 +25,22 @@
         }
     }
 }
+
+.locations{
+    h2,p{
+        text-wrap: wrap;
+    }
+    h2{
+        @include flex(center, center);
+    }
+    &__wrapper{
+        .locations__region{
+            p{
+
+            }
+            ul li{
+                
+            }
+        }
+    }
+}
