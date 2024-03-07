@@ -15,3 +15,33 @@ $colors: (
         color: #{$val};
     }
 }
+$displays: (flex, grid, block, inline);
+
+@each $display in $displays{
+    .#{$display}{
+        display: #{$display};
+    }
+}
+
+@for $i from 1 through 10{
+    .mb-#{$i}{
+        margin-bottom: #{$i}rem;
+    }
+    .mx-#{$i}{
+        margin: 0 #{$i}rem;
+    }
+    .p-#{$i}{
+        padding: #{$i}rem;
+    }
+    .px-#{$i}{
+        padding: 0 #{$i}rem;
+    }
+    .py-#{$i}{
+        padding: #{$i}rem 0;
+    }
+}
+// @for $i from 1 through 10{
+//     .fs-#{$i}{
+//         font-size: #{$i}rem;
+//     }
+// }

@@ -18,8 +18,8 @@
         // display: grid;
         // grid-template-columns: 1fr 1fr;
         // gap: 2rem;
-        @include grid(2, 2rem);
-        @include mediaQuery($bp-sm){
+            @include grid(2, 2rem);
+            @include mediaQuery($bp-sm){
             @include grid(4);
         }
         ul{
@@ -45,7 +45,7 @@
     // }
     &__connect{
         ul{
-            display: flex;
+            // display: flex;
             gap: 3rem;
             i{
                 font-size: 2.5rem;

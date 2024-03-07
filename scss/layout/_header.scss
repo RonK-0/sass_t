@@ -90,6 +90,10 @@
                     }
                 }
             }
+            // 
+            a.active{
+                color: $clr-dark;
+            }
         }
         &__footer{
             margin-top: 4rem;
