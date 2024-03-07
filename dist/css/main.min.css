@@ -659,141 +659,29 @@ body {
   }
 }
 
-.category__wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-}
-@media (min-width: 92rem) {
-  .category__wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    grid-row-gap: 6rem;
-  }
-}
-.category__wrapper a {
-  justify-self: center;
-}
-.category__card {
-  border-radius: 3rem;
-  position: relative;
-  overflow: hidden;
-  width: 120px;
-  height: 120px;
-}
-@media (min-width: 42rem) {
-  .category__card {
-    width: 262px;
-    height: 262px;
-  }
-}
-.category__card:hover img {
-  transform: scale(1.1);
-}
-.category__card img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: 0.6s ease;
-}
-.category__card h4 {
-  position: absolute;
-  top: unset;
-  right: unset;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  text-wrap: nowrap;
-  font-family: "Speedee-Bold", "Arial Black", sans-serif;
-  font-size: clamp(1.2rem, 2vw, 2rem);
-}
-
-.banner {
-  min-height: 40rem;
+.video {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  flex-direction: column;
+  margin: 0 auto;
 }
-.banner h1 {
-  font-size: clamp(3rem, 10vw, 5rem);
+.video__title h2 {
+  font-size: 3rem;
   font-family: "Speedee-Bold", "Arial Black", sans-serif;
 }
-
-.banner--food {
-  background-image: url(../../images/food/food-banner-sm.jpg);
-}
-@media (min-width: 42rem) {
-  .banner--food {
-    background-image: url(../../images/food/food-banner.jpg);
-  }
-}
-
-.quality {
-  padding: 5rem 0;
-}
-.quality__header {
-  text-align: center;
-}
-.quality__header h3 {
-  font-size: clamp(2.5rem, 10vw, 3rem);
-  font-family: "Speedee-Bold", "Arial Black", sans-serif;
-}
-.quality__header h5 {
-  font-size: clamp(1.5rem, 10vw, 2rem);
-  font-family: "Speedee-Bold", "Arial Black", sans-serif;
-}
-.quality__header p {
-  font-size: 2rem;
-}
-.quality__wrapper {
-  background-image: url(../../images/food/pattern.svg);
-  background-size: 150px;
-}
-.quality__cards {
+.video__wrapper {
+  width: 100%;
+  max-height: 530px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
-@media (min-width: 42rem) {
-  .quality__cards {
-    gap: 2rem;
-  }
-}
-.quality__card {
-  max-width: 45rem;
-  position: relative;
-  border-radius: 3rem;
-  overflow: hidden;
-  margin-bottom: 3rem;
-}
-@media (min-width: 42rem) {
-  .quality__card {
-    flex-basis: 45%;
-  }
-}
-.quality__card h4 {
-  position: absolute;
-  top: 5rem;
-  right: 5rem;
-  bottom: unset;
-  left: unset;
-  font-size: 2.6rem;
-  font-family: "Speedee-Bold", "Arial Black", sans-serif;
-}
-.quality__card p {
-  margin-bottom: 0;
-  text-align: justify;
-}
-@media (min-width: 42rem) {
-  .quality__card p {
-    font-size: 1.4rem;
-    min-height: 22rem;
-  }
+.video__wrapper iframe {
+  height: 56.25%;
+  max-width: 940px;
+  max-height: 530px;
+  aspect-ratio: 16/9;
 }
 
 .category__wrapper {
