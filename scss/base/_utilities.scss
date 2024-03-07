@@ -39,9 +39,7 @@ $displays: (flex, grid, block, inline);
     .py-#{$i}{
         padding: #{$i}rem 0;
     }
+    .pt-#{$i}{
+        padding-top: #{$i}rem;
+    }
 }
-// @for $i from 1 through 10{
-//     .fs-#{$i}{
-//         font-size: #{$i}rem;
-//     }
-// }

@@ -125,6 +125,10 @@ body {
   padding: 1rem 0;
 }
 
+.pt-1 {
+  padding-top: 1rem;
+}
+
 .mb-2 {
   margin-bottom: 2rem;
 }
@@ -143,6 +147,10 @@ body {
 
 .py-2 {
   padding: 2rem 0;
+}
+
+.pt-2 {
+  padding-top: 2rem;
 }
 
 .mb-3 {
@@ -165,6 +173,10 @@ body {
   padding: 3rem 0;
 }
 
+.pt-3 {
+  padding-top: 3rem;
+}
+
 .mb-4 {
   margin-bottom: 4rem;
 }
@@ -183,6 +195,10 @@ body {
 
 .py-4 {
   padding: 4rem 0;
+}
+
+.pt-4 {
+  padding-top: 4rem;
 }
 
 .mb-5 {
@@ -205,6 +221,10 @@ body {
   padding: 5rem 0;
 }
 
+.pt-5 {
+  padding-top: 5rem;
+}
+
 .mb-6 {
   margin-bottom: 6rem;
 }
@@ -223,6 +243,10 @@ body {
 
 .py-6 {
   padding: 6rem 0;
+}
+
+.pt-6 {
+  padding-top: 6rem;
 }
 
 .mb-7 {
@@ -245,6 +269,10 @@ body {
   padding: 7rem 0;
 }
 
+.pt-7 {
+  padding-top: 7rem;
+}
+
 .mb-8 {
   margin-bottom: 8rem;
 }
@@ -263,6 +291,10 @@ body {
 
 .py-8 {
   padding: 8rem 0;
+}
+
+.pt-8 {
+  padding-top: 8rem;
 }
 
 .mb-9 {
@@ -285,6 +317,10 @@ body {
   padding: 9rem 0;
 }
 
+.pt-9 {
+  padding-top: 9rem;
+}
+
 .mb-10 {
   margin-bottom: 10rem;
 }
@@ -303,6 +339,10 @@ body {
 
 .py-10 {
   padding: 10rem 0;
+}
+
+.pt-10 {
+  padding-top: 10rem;
 }
 
 .header__wrapper {
@@ -684,20 +724,46 @@ body {
   aspect-ratio: 16/9;
 }
 
+.locations {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+}
 .locations h2, .locations p {
   text-wrap: wrap;
 }
 .locations h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: "Speedee-Bold", "Arial Black", sans-serif;
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+}
+.locations p {
+  font-size: 1.3rem;
+}
+@media (min-width: 92rem) {
+  .locations p {
+    padding: 0rem;
+  }
+}
+.locations__wrapper {
+  padding: 0 1rem;
 }
 .locations__wrapper .locations__region p {
   font-family: "Speedee-Bold", "Arial Black", sans-serif;
   text-decoration: underline;
+  font-size: 1.8rem;
 }
 .locations__wrapper .locations__region ul li:first-child {
   font-family: "Speedee-Bold", "Arial Black", sans-serif;
+}
+.locations__wrapper .locations__region ul li {
+  font-size: 1.8rem;
+}
+@media (min-width: 92rem) {
+  .locations__wrapper {
+    padding: 0rem;
+  }
 }
 
 .category__wrapper {

@@ -27,21 +27,33 @@
 }
 
 .locations{
-    h2,p{
-        text-wrap: wrap;
-    }
+    @include grid(1);
+    h2,p{ text-wrap: wrap; }
     h2{
-        @include flex(center, center);
+        font-family: $font-speedee-bold;
+        // max-width: clamp(65rem, 18vw, 70rem);
+        text-align: center;
+        font-size: 2.6rem;
+        margin-bottom: 2rem;
+    }
+    p{
+        font-size: 1.3rem;
+        @include mediaQuery($bp-md){ padding: 0rem;}
     }
     &__wrapper{
+        padding: 0 1rem;
         .locations__region{
             p{
                 font-family: $font-speedee-bold;
                 text-decoration: underline;
+                font-size: 1.8rem;
             }
-            ul li:first-child{
-                font-family: $font-speedee-bold;
+            ul{
+                li:first-child{ font-family: $font-speedee-bold; }
+                li{ font-size: 1.8rem; }
+                // padding: 1rem 0;
             }
         }
+        @include mediaQuery($bp-md){ padding: 0rem;}
     }
 }
