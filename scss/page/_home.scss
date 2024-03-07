@@ -9,7 +9,7 @@
         height: 20rem;
         object-fit: cover;
     }
-    @media screen and (max-width: $bp-s){
+    @media (max-width: $bp-s){
         img{
             height: 40rem;
         }
@@ -22,13 +22,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 1rem;
-    }
-    @media (min-width: $bp-m) {
-        &__wrapper{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-row-gap: 6rem;
-        }
     }
     a{
         justify-self: center;
@@ -57,9 +50,15 @@
         &:hover img{
             transform: scale(1.1);
         }
-        
     }
     @media (min-width: $bp-m) {
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-row-gap: 6rem;
+        }
+    }
+    @media (min-width: $bp-s) {
         .card{
             width: 262px;
             height: 262px;

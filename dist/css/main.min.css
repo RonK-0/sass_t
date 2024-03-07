@@ -164,6 +164,16 @@ body {
   width: 80%;
   margin-bottom: 0.5rem;
 }
+@media (min-width: 144rem) {
+  .footer__actions {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 92rem) {
+  .footer__actions {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .footer__connect ul {
   display: flex;
   gap: 3rem;
@@ -171,6 +181,12 @@ body {
 .footer__connect ul i {
   font-size: 2.5rem;
   color: #db0007;
+}
+@media (min-width: 92rem) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .tns-outer {
@@ -200,7 +216,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media screen and (max-width: 42rem) {
+@media (max-width: 42rem) {
   .banner img {
     height: 40rem;
   }
@@ -213,13 +229,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 1rem;
-}
-@media (min-width: 92rem) {
-  .cards__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 6rem;
-  }
 }
 .cards a {
   justify-self: center;
@@ -251,6 +260,13 @@ body {
   transform: scale(1.1);
 }
 @media (min-width: 92rem) {
+  .cards__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 6rem;
+  }
+}
+@media (min-width: 42rem) {
   .cards .card {
     width: 262px;
     height: 262px;

@@ -23,6 +23,16 @@
         }
         justify-self: center;
     }
+    @media (min-width: $bp-lg) {
+        &__actions{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+    @media (min-width: $bp-m) {
+        &__actions{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
     &__connect{
         ul{
             display: flex;
@@ -33,4 +43,11 @@
             }
         }
     }
+    @media (min-width: $bp-m) {
+        &__wrapper{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
 }
