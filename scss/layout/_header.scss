@@ -14,12 +14,28 @@
                 width: 3rem;
                 height: 0.4rem;
                 margin-bottom: 0.5rem;
+                transition: 0.5s ease;
+            }
+        }
+        .toggle_button.hidden span{
+            opacity: 0;
+        }
+        .toggle_button.cross{
+            span:nth-child(1){
+                transform: translate(5px, 10px) rotate(45deg);
+            }
+            span:nth-child(2){
+                opacity: 0;
+            }
+            span:nth-child(3){
+                transform: translate(5px, -10px) rotate(-45deg);
             }
         }
     }
     .dropdown.show{
         opacity: 1;
         visibility: visible;
+        transition-delay: 0.25s;
     }
     .dropdown{
         position: fixed;
@@ -37,6 +53,7 @@
         // 
         opacity: 0;
         visibility: hidden;
+        transition: 0.25s ease-in-out;
 
         button{
             background-color: transparent;
