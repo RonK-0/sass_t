@@ -46,3 +46,16 @@ $displays: (flex, grid, block, inline);
         padding-bottom: #{$i}rem;
     }
 }
+
+$width: (
+    "full" : 100%,
+    "1-2" : 50%,
+    "1-4" : 25%,
+    "1-3" : 33.33%,
+);
+
+@each $key, $val in $width{
+    .w-#{$key}{
+        width: #{$val};
+    }
+}

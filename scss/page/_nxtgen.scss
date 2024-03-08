@@ -1,7 +1,7 @@
 @use "../base" as *;
-@use "../layout" as *;
+// @use "../layout" as *;
 @use "../abstract" as *;
-@use "../vendor" as *;
+// @use "../vendor" as *;
 
 .video{
     @include flex(center, center);
@@ -50,8 +50,12 @@
             }
             ul{
                 li:first-child{ font-family: $font-speedee-bold; }
-                li{ font-size: 1.8rem; }
-                // padding: 1rem 0;
+                li{ 
+                    font-size: 1.8rem;
+                    i{
+                        font-size: 1.2rem;
+                    }
+                }
             }
         }
         @include mediaQuery($bp-md){ padding: 0rem;}

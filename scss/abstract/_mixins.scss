@@ -18,6 +18,12 @@
     grid-gap: $gap;
 }
 
+@mixin unevenGrid($val, $gap: 1rem){
+    display: grid;
+    grid-template-columns: $val;
+    grid-gap: $gap;
+}
+
 @mixin absolute ($top:0, $right:0, $bottom:0, $left:0, ){
     position: absolute;
     top: $top;
