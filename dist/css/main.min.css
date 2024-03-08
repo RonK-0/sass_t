@@ -42,6 +42,10 @@ ul {
   list-style: none;
 }
 
+button {
+  border: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -804,5 +808,84 @@ body {
 @media (min-width: 92rem) {
   .locations__wrapper {
     padding: 0rem;
+  }
+}
+
+.familyActivities__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.familyActivities__entry {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+@media (min-width: 60rem) {
+  .familyActivities__entry {
+    flex-direction: row;
+    height: clamp(25rem, 100vh, 50rem);
+    gap: 5rem;
+    flex-wrap: nowrap;
+  }
+}
+.familyActivities__entry_img {
+  height: clamp(5rem, 65vw, 55rem);
+  width: clamp(10rem, 65vw, 55rem);
+  aspect-ratio: 1/1;
+  border-radius: 1.1rem;
+  overflow: hidden;
+  background-color: #000;
+}
+.familyActivities__entry_img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 60rem) {
+  .familyActivities__entry_img {
+    height: clamp(10rem, 65vw, 37rem);
+    min-width: 37rem;
+  }
+}
+.familyActivities__entry_details {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 105%;
+  flex-direction: column;
+}
+.familyActivities__entry_details h4 {
+  font-size: clamp(3rem, 6vw, 4.8rem);
+  font-family: "Speedee-Bold", "Arial Black", sans-serif;
+  padding-bottom: 0.5rem;
+}
+.familyActivities__entry_details p {
+  text-align: justify;
+}
+@media (min-width: 60rem) {
+  .familyActivities__entry_details {
+    width: 100%;
+  }
+}
+.familyActivities__entry-button {
+  background-color: #ffbc0d;
+  font-family: "Speedee-Bold", "Arial Black", sans-serif;
+  font-size: 2.5rem;
+  border-radius: 1.1rem;
+  overflow: hidden;
+  padding: 0.25rem 0;
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 60rem) {
+  .familyActivities__entry-button {
+    padding: 0.25rem 8.5rem;
+    width: auto;
   }
 }/*# sourceMappingURL=main.min.css.map */
