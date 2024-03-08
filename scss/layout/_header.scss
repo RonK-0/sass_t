@@ -6,6 +6,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 1.5rem 0;  //added to match height of original header
         .toggle_button{
             span{
                 display: block;
