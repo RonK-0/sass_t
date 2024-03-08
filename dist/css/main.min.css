@@ -411,6 +411,22 @@ body {
   width: 33.33%;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
 .btn {
   padding: 1.5rem 2.5rem;
   margin: 2rem 0;
@@ -656,9 +672,7 @@ body {
   align-items: center;
 }
 .video__wrapper iframe {
-  height: 56.25%;
   max-width: 940px;
-  max-height: 530px;
   aspect-ratio: 16/9;
 }
 
@@ -698,7 +712,7 @@ body {
 .locations__wrapper .locations__region ul li {
   font-size: 1.8rem;
 }
-.locations__wrapper .locations__region ul li i {
+.locations__wrapper .locations__region ul li span {
   font-size: 1.2rem;
 }
 @media (min-width: 92rem) {

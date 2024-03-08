@@ -69,7 +69,7 @@
             padding-top: 1.9rem;
         }
         .nav{
-            font-family: $font-speedee-regular;
+            font-family: $ft-speedee-regular;
             li a{
                 color: $clr-accent;
             }
@@ -78,7 +78,7 @@
                 li{
                     font-size: 2rem;
                     font-weight: bold;
-                    font-family: $font-speedee-bold;
+                    font-family: $ft-speedee-bold;
                     margin-bottom: 0.6rem;
                     .nav__submenu{
                         margin-left: 3rem;
@@ -86,7 +86,7 @@
                             font-size: 1.8rem;
                             font-weight: 400;
 
-                            font-family: $font-speedee-regular;
+                            font-family: $ft-speedee-regular;
                         }
                     }
                 }

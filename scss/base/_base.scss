@@ -1,7 +1,7 @@
 @use "../abstract/" as *;
 
-$font-speedee-regular: "Speedee-Regular", "Arial", sans-serif;
-$font-speedee-bold: "Speedee-Bold", "Arial Black", sans-serif;
+$ft-speedee-regular: "Speedee-Regular", "Arial", sans-serif;
+$ft-speedee-bold: "Speedee-Bold", "Arial Black", sans-serif;
 
 @font-face {
     font-family: "Speedee-Regular";
@@ -43,7 +43,7 @@ html{
     font-size: 10px;
 }
 body{
-    font-family: $font-speedee-regular;
+    font-family: $ft-speedee-regular;
     color: $clr-dark;
     line-height: 1.6;
     font-size: 1.6rem;
