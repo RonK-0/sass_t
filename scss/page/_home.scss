@@ -1,0 +1,203 @@
+@use "../abstract" as *;
+@use "../base" as *;
+@use "../component" as *;
+// @use "../layout" as *;
+// @use "../vendor" as *;
+
+.banner{
+    height: 100vh;
+    &__wrapper{
+        min-height: 80rem;
+        @include flex(flex-start, center);
+    }
+    small{
+        font-size: clamp(4rem, 6vw, 10rem);
+        opacity: 0.5;
+        font-weight: bold;
+    }
+    h1{
+        font-size: clamp(4rem, 6vw, 15rem);
+        line-height: 1;
+        text-transform: uppercase;
+        @include flex(flex-start, flex-end);
+    }
+    span{
+        width: 1.8rem;
+        height: 1.8rem;
+        background-color: $clr-accent;
+        display: block;
+        transform: translate(2rem, -2rem);
+    }
+    @include mediaQuery($sm){
+        span{
+            display: none;
+        }
+    }
+}
+
+.about{
+    &__wrapper{
+        // @include unevenGrid(0.5fr 1fr, 7rem);
+        @include unevenGrid(0.5fr 1fr, 10rem);
+        @include mediaQuery($sm){
+            @include grid(1);
+            justify-content: center;
+        }
+    }
+    &__contact{
+        @include grid(2);
+        @include mediaQuery($sm){
+            @include grid(1);
+            justify-content: center;
+        }
+    }
+    &__image{
+        position: relative;
+        isolation: isolate;
+        &::after{
+            content: " ";
+            position: absolute;
+            top: 3rem;
+            left: 3rem;
+            border: 0.4rem solid $clr-accent;
+            // border: 0.7rem solid $clr-accent;
+            background-color: transparent;
+            width: 100%;
+            // height: 82%;
+            height: 100%;
+            z-index: -1;
+        }
+        @include mediaQuery($md){
+            &::after{
+                display: none;
+            }
+        }
+    }
+    @include mediaQuery($sm){
+        &__image{
+            justify-self: center
+        }
+        &__wrapper{
+            margin: 0 2rem;
+        }
+    }
+}
+.skills{
+    &__wrapper{
+        @include grid(2);
+        grid-column-gap: 10rem;
+        @include mediaQuery($sm){
+            @include grid(1);
+        }
+    }
+    .skillbar{
+        width: 100%;
+        height: 1.5rem;
+        background-color: #363636;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10%;
+            height: 100%;
+            background-color: $clr-accent;
+        }
+    }
+    .skillbar.w-50::before{
+        width: 80%;
+    }
+    .skillbar.w-85::before{
+        width: 85%;
+    }
+    .skillbar.w-90::before{
+        width: 90%;
+    }
+    .skillbar.w-95::before{
+        width: 95%;
+    }
+}
+
+.portfolio{
+    background-color: #202020;
+    ul{
+        flex-wrap: wrap;
+    }
+    &__img{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5rem;
+        img{
+            @include imgCover(200px, 200px);
+            // 
+            box-shadow: 0px 0px 5px 15px rgba(38,38,38,0.95);
+            -webkit-box-shadow: 0px 0px 5px 15px rgba(38,38,38,0.95);
+            -moz-box-shadow: 0px 0px 5px 15px rgba(38,38,38,0.95);
+        }
+    }
+}
+
+.services{
+    &__wrapper{
+        @include grid(3);
+        grid-gap: 4rem;
+        @include mediaQuery($md){
+            @include grid(2);
+        }
+        @include mediaQuery($sm){
+            @include grid(1);
+        }
+    }
+    &__card{
+        border: 0.25rem solid #212121;
+        width: 100%;
+        min-width: 40rem;
+        i{
+            font-size: clamp(2.5rem, 6vw, 5rem);
+        }
+        h5{
+            font-weight: bold;
+            font-size: 2rem;
+        }
+    }
+    @include mediaQuery($md){
+        &__card{
+            min-width: 0;
+        }
+    }
+    
+}
+
+.footer{
+    a{
+        margin: 0 auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1.25rem;
+    }
+    &__wrapper{
+        flex-direction: column;
+        h2{
+            font-size: clamp(3rem, 6vw, 8rem);
+        }
+    }
+    &__contacts{
+        .footer__contact{
+            i{
+                font-size: 2rem;
+                color: $clr-white;
+            }
+            h5{
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    @include mediaQuery($sm){
+        &__contacts{
+            flex-direction: column;
+        }
+    }
+}
