@@ -590,6 +590,9 @@ body {
   text-transform: uppercase;
   font-weight: 600;
 }
+.footer__box {
+  text-align: center;
+}
 .footer__bottom {
   text-align: center;
   font-size: 1.2rem;
