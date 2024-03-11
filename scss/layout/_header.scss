@@ -11,15 +11,9 @@
             background: transparent;
         }
     }
-    i:first-of-type{
-        padding-right: 2rem;
-    }
-    li a{
-        padding-bottom: 0.5rem;
-    }
-    .active{
-        border-bottom: 2px solid $clr-dark;
-    }
+    i:first-of-type{ padding-right: 2rem; }
+    li a{ padding-bottom: 0.5rem; }
+    .active{ border-bottom: 2px solid $clr-dark; }
     #toggleMenu{ display: none; }
     @include mediaQueryMxW($sm){
         #toggleMenu{ display: block; }
