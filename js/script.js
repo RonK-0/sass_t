@@ -21,5 +21,11 @@ var slider = tns({
     controlsText: [
         '<i class="fas fa-arrow-left-long"></i>',
         '<i class="fas fa-arrow-right-long"></i>'
-    ]
+    ],
+    responsive: {
+        420: {
+          items: 3,
+          gutter: 20,
+        },
+      },
 });

@@ -11,6 +11,39 @@
     p{
         display: none;
     }
+    @include mediaQuery{
+        &__wrapper{
+            @include unevenGrid(2fr 1fr, 2rem);
+        }
+        &__main{
+            border-right: 1px solid $clr-dark;
+            padding-right: 2rem;
+            img{
+                height: 50rem;
+            }
+        }
+        p{
+            display: block;
+        }
+        &__side{
+            img{
+                height: 20rem;
+            }
+            p{
+                display: none;
+            }
+        }
+    }
+}
+
+.article{
+    @include mediaQuery{
+        &__card{
+            @include flex;
+            gap: 4rem;
+            margin-bottom: 1rem;
+        }
+    }
 }
 
 .cta{
@@ -20,9 +53,16 @@
     ul{
         @include flex(center, center);
         flex-direction: column;
+        @include mediaQuery{
+            flex-direction: row;
+            gap: 3rem;
+        }
     }
     li{
         width: 100%;
+        @include mediaQuery{
+            width: auto;
+        }
     }
     a{
         min-width: 120px;
@@ -32,5 +72,8 @@
         font-size: 1.2rem;
         display: block;
         margin-bottom: 1rem;
+        @include mediaQuery{
+            display: inline-block;
+        }
     }
 }

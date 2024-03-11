@@ -571,6 +571,13 @@ body {
   background: transparent;
 }
 
+@media (min-width: 42rem) {
+  .footer__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+  }
+}
 .footer__form {
   margin-bottom: 2rem;
 }
@@ -590,8 +597,27 @@ body {
   text-transform: uppercase;
   font-weight: 600;
 }
+@media (min-width: 42rem) {
+  .footer__links {
+    display: flex;
+    gap: 5rem;
+    justify-self: flex-end;
+  }
+  .footer__links li, .footer__links h4 {
+    text-align: right;
+  }
+  .footer__links li {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+  }
+}
 .footer__box {
   text-align: center;
+}
+@media (min-width: 42rem) {
+  .footer__box {
+    text-align: right;
+  }
 }
 .footer__bottom {
   text-align: center;
@@ -601,6 +627,24 @@ body {
 }
 .footer__bottom ul li:nth-last-child(-n+2) {
   display: none;
+}
+@media (min-width: 42rem) {
+  .footer__bottom ul li:nth-last-child(-n+2) {
+    display: block;
+  }
+}
+@media (min-width: 42rem) {
+  .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__bottom ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
 }
 
 .tns-controls {
@@ -624,6 +668,39 @@ body {
 .banner p {
   display: none;
 }
+@media (min-width: 42rem) {
+  .banner__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+  }
+  .banner__main {
+    border-right: 1px solid var(--dark);
+    padding-right: 2rem;
+  }
+  .banner__main img {
+    height: 50rem;
+  }
+  .banner p {
+    display: block;
+  }
+  .banner__side img {
+    height: 20rem;
+  }
+  .banner__side p {
+    display: none;
+  }
+}
+
+@media (min-width: 42rem) {
+  .article__card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+    margin-bottom: 1rem;
+  }
+}
 
 .cta {
   border-top: 1px solid var(--dark);
@@ -636,8 +713,19 @@ body {
   align-items: center;
   flex-direction: column;
 }
+@media (min-width: 42rem) {
+  .cta ul {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
 .cta li {
   width: 100%;
+}
+@media (min-width: 42rem) {
+  .cta li {
+    width: auto;
+  }
 }
 .cta a {
   min-width: 120px;
@@ -647,4 +735,9 @@ body {
   font-size: 1.2rem;
   display: block;
   margin-bottom: 1rem;
+}
+@media (min-width: 42rem) {
+  .cta a {
+    display: inline-block;
+  }
 }/*# sourceMappingURL=main.min.css.map */
