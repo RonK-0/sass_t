@@ -24,6 +24,10 @@ body {
   line-height: 1.6;
   font-size: 1.6rem;
 }
+body.open {
+  overflow: hidden;
+  height: 100vh;
+}
 
 a {
   text-decoration: none;
@@ -570,6 +574,55 @@ body {
   border: none;
   background: transparent;
 }
+.header i:first-of-type {
+  padding-right: 2rem;
+}
+.header li a {
+  padding-bottom: 0.5rem;
+}
+.header .active {
+  border-bottom: 2px solid var(--dark);
+}
+.header #toggleMenu {
+  display: none;
+}
+@media (max-width: 42rem) {
+  .header #toggleMenu {
+    display: block;
+  }
+  .header i {
+    display: none;
+  }
+  .header ul {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.98);
+    top: 5rem;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+  }
+  .header ul a {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 42rem) and (max-width: 25rem) {
+  .header ul a {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 42rem) {
+  .header ul.open {
+    visibility: visible;
+    opacity: 1;
+  }
+}
 
 @media (min-width: 42rem) {
   .footer__wrapper {
@@ -744,4 +797,57 @@ body {
   .cta a {
     display: inline-block;
   }
+}
+
+.single__banner img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 42rem) {
+  .single__banner img {
+    height: 600px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (min-width: 42rem) {
+  .single__banner__wrapper {
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+  }
+}
+@media (min-width: 42rem) {
+  .single__banner__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .single__banner__article p {
+    margin-bottom: 0;
+  }
+}
+
+article {
+  margin-bottom: 5rem;
+}
+article figure {
+  margin-bottom: 5rem;
+}
+article figure img {
+  height: 500px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+article figcaption {
+  font-size: 1.2rem;
+  text-wrap: balance;
+}
+article p {
+  text-align: justify;
 }/*# sourceMappingURL=main.min.css.map */
