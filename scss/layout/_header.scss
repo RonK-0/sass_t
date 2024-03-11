@@ -13,7 +13,7 @@
     }
     i:first-of-type{ padding-right: 2rem; }
     li a{ padding-bottom: 0.5rem; }
-    .active{ border-bottom: 2px solid $clr-dark; }
+    .active{ border-bottom: 2px solid $clr-dark; font-weight: bold; }
     #toggleMenu{ display: none; }
     @include mediaQueryMxW($sm){
         #toggleMenu{ display: block; }

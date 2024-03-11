@@ -582,6 +582,7 @@ body {
 }
 .header .active {
   border-bottom: 2px solid var(--dark);
+  font-weight: bold;
 }
 .header #toggleMenu {
   display: none;
