@@ -60,6 +60,7 @@
             }
         }
         @include mediaQuery{
+            margin-top: 5rem;
             @include flex(space-between, center);
             ul{
                 @include flex(space-between, center);

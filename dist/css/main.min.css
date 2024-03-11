@@ -635,6 +635,7 @@ body {
 }
 @media (min-width: 42rem) {
   .footer__bottom {
+    margin-top: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -700,6 +701,9 @@ body {
     gap: 4rem;
     margin-bottom: 1rem;
   }
+}
+.article__card img {
+  justify-self: center;
 }
 
 .cta {
