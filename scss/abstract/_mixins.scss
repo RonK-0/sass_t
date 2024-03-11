@@ -6,8 +6,14 @@
     object-fit: cover;
 }
 
-@mixin mediaQuery($width: $bp-sm){
+@mixin mediaQuery($width: $sm){
     @media (max-width: $width){
+        @content;
+    }
+}
+
+@mixin mediaQueryMnW($width: $sm){
+    @media (min-width: $width){
         @content;
     }
 }

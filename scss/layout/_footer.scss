@@ -1,0 +1,27 @@
+@use "../abstract" as *;
+
+.footer{
+    &__wrapper{
+        flex-direction: column;
+        h2{
+            font-size: clamp(3rem, 6vw, 8rem);
+        }
+    }
+    &__contacts{
+        .footer__contact{
+            i{
+                font-size: 2rem;
+                color: $clr-white;
+            }
+            h5{
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    @include mediaQuery($sm){
+        &__contacts{
+            flex-direction: column;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-// const toggleBtn = document.querySelector(".toggle_button");
+// const toggleBtn = document.querySelector(".fas .fa-bars");
 // const dropdown = document.querySelector(".dropdown");
 // const closeBtn = document.querySelector(".close");
 

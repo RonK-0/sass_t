@@ -1,0 +1,60 @@
+@use "../abstract" as *;
+
+.header{
+    
+    ul{
+        @include mediaQueryMnW{
+            position: static;
+            background-color: unset;
+            padding: unset;
+            width: auto;
+            height: unset;
+            flex-direction: row;
+            li{
+                a{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        position: fixed;
+        background: #000;
+        top: 5rem;
+        left: 0;
+        height: 100%;
+        width: 100%;       
+        z-index: 9999;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30%;
+        a{
+            font-size: 3rem;
+            // 
+            @include mediaQuery(25rem){
+                font-size: 2rem;
+            }
+        }
+    }
+    // @include mediaQuery(40rem){
+    //     ul{
+    //         position: fixed;
+    //         background: #000;
+    //         top: 5rem;
+    //         left: 0;
+    //         height: 100%;
+    //         width: 100%;       
+    //         z-index: 9999;
+    //         flex-direction: column;
+    //         align-items: center;
+    //         justify-content: center;
+    //         padding-top: 30%;
+    //         a{
+    //             font-size: 3rem;
+    //             @include mediaQuery(25rem){
+    //                 font-size: 2rem;
+    //             }
+    //         }
+    //     }
+    // }
+    
+}

@@ -1,8 +1,14 @@
 @use "../abstract" as *;
 @use "../base" as *;
 @use "../component" as *;
-// @use "../layout" as *;
+@use "../layout" as *;
 // @use "../vendor" as *;
+
+@include mediaQuery($sm){
+    .over{
+        overflow: hidden;
+    }
+}
 
 .banner{
     height: 100vh;
@@ -170,37 +176,7 @@
     
 }
 
-.footer{
-    a{
-        margin: 0 auto;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        font-size: 1.25rem;
-    }
-    &__wrapper{
-        flex-direction: column;
-        h2{
-            font-size: clamp(3rem, 6vw, 8rem);
-        }
-    }
-    &__contacts{
-        .footer__contact{
-            i{
-                font-size: 2rem;
-                color: $clr-white;
-            }
-            h5{
-                font-weight: bold;
-                font-size: 1.5rem;
-            }
-        }
-    }
-    @include mediaQuery($sm){
-        &__contacts{
-            flex-direction: column;
-        }
-    }
-}
+// 
 .about2{
     &__wrapper{
         // @include unevenGrid(0.5fr 1fr, 7rem);
