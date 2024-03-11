@@ -597,4 +597,28 @@ body {
 }
 .banner p {
   display: none;
+}
+
+.cta {
+  border-top: 1px solid var(--dark);
+  border-bottom: 1px solid var(--dark);
+  padding: 4rem 0;
+}
+.cta ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cta li {
+  width: 100%;
+}
+.cta a {
+  min-width: 120px;
+  padding: 1.5rem;
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=main.min.css.map */

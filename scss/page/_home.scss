@@ -12,3 +12,25 @@
         display: none;
     }
 }
+
+.cta{
+    border-top: 1px solid $clr-dark;
+    border-bottom: 1px solid $clr-dark;
+    padding: 4rem 0;
+    ul{
+        @include flex(center, center);
+        flex-direction: column;
+    }
+    li{
+        width: 100%;
+    }
+    a{
+        min-width: 120px;
+        padding: 1.5rem;
+        background-color: $clr-dark;
+        color: $clr-light;
+        font-size: 1.2rem;
+        display: block;
+        margin-bottom: 1rem;
+    }
+}
