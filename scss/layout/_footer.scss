@@ -1,2 +1,43 @@
 @use "../abstract" as *;
 
+.footer{
+    &__wrapper{
+        
+    }
+    &__form{
+        margin-bottom: 2rem;
+        // border: none;
+        // border-bottom: 1px solid $clr-dark;
+        form{
+            position: relative;
+            input{
+                width: 100%;
+                padding: 1rem;
+                border: none;
+                border-bottom: 1px solid $clr-dark;
+            }
+            button{
+                position: absolute;
+                right: 0;
+                top: 1rem;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+    }
+    &_links{
+
+    }
+    &__box{
+
+    }
+    &__bottom{
+        text-align: center;
+        font-size: 1.2rem;
+        opacity: 0.4;
+        padding: 0.5rem 0;
+        ul li:nth-last-child(-n+2){
+            display: none;
+        }
+    }
+}

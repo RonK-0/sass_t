@@ -1,13 +1,6 @@
 @use "../abstract" as *;
 @use "../base" as *;
 
-.send-btn{
-    margin: 0 auto;
-    padding: 1rem 2rem 1rem 2rem;
-    font-size: 1.25rem;
-    color: $clr-light;
-}
-
 .btn{
     padding: 1.5rem 2.5rem;
     margin: 2rem 0;

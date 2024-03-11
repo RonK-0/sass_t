@@ -73,6 +73,7 @@ p {
 
 button {
   border: none;
+  background: transparent;
 }
 
 * {
@@ -498,13 +499,6 @@ body {
   align-items: flex-end;
 }
 
-.send-btn {
-  margin: 0 auto;
-  padding: 1rem 2rem 1rem 2rem;
-  font-size: 1.25rem;
-  color: var(--light);
-}
-
 .btn {
   padding: 1.5rem 2.5rem;
   margin: 2rem 0;
@@ -575,6 +569,35 @@ body {
   font-size: 3rem;
   border: none;
   background: transparent;
+}
+
+.footer__form {
+  margin-bottom: 2rem;
+}
+.footer__form form {
+  position: relative;
+}
+.footer__form form input {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-bottom: 1px solid var(--dark);
+}
+.footer__form form button {
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.footer__bottom {
+  text-align: center;
+  font-size: 1.2rem;
+  opacity: 0.4;
+  padding: 0.5rem 0;
+}
+.footer__bottom ul li:nth-last-child(-n+2) {
+  display: none;
 }
 
 .tns-controls {
