@@ -1,16 +1,12 @@
-// const toggleBtn = document.querySelector(".fas .fa-bars");
-// const dropdown = document.querySelector(".dropdown");
-// const closeBtn = document.querySelector(".close");
+const toggleMenu = document.querySelector("#toggleMenu");
+const dropdown = document.querySelector("#menu");
+const body = document.querySelector("body");
 
-// //console.log(toggleBtn);
-
-// toggleBtn.addEventListener("click", () => {
-//     dropdown.classList.toggle("show");
-//     toggleBtn.classList.toggle("cross");
-//     toggleBtn.classList.toggle("hidden");
-// });
-// closeBtn.addEventListener("click", () => {
-//     dropdown.classList.remove("show");
-//     toggleBtn.classList.remove("cross");
-//     toggleBtn.classList.remove("hidden");
+toggleMenu.addEventListener("click", () => {
+    dropdown.classList.toggle("open");
+    body.classList.toggle("open");
+});
+// toggleMenu.addEventListener("click", (e) => {
+//     dropdown.classList.toggle("open");
+//     body.classList.toggle("open");
 // });

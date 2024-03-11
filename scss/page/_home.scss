@@ -4,12 +4,6 @@
 @use "../layout" as *;
 // @use "../vendor" as *;
 
-@include mediaQuery($sm){
-    .over{
-        overflow: hidden;
-    }
-}
-
 .banner{
     height: 100vh;
     &__wrapper{

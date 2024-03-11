@@ -1,60 +1,74 @@
 @use "../abstract" as *;
 
 .header{
-    
-    ul{
-        @include mediaQueryMnW{
-            position: static;
-            background-color: unset;
-            padding: unset;
-            width: auto;
-            height: unset;
-            flex-direction: row;
-            li{
-                a{
-                    font-size: 1.6rem;
-                }
-            }
-        }
-        position: fixed;
-        background: #000;
-        top: 5rem;
-        left: 0;
-        height: 100%;
-        width: 100%;       
-        z-index: 9999;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 30%;
-        a{
-            font-size: 3rem;
-            // 
-            @include mediaQuery(25rem){
-                font-size: 2rem;
-            }
-        }
-    }
-    // @include mediaQuery(40rem){
-    //     ul{
-    //         position: fixed;
-    //         background: #000;
-    //         top: 5rem;
-    //         left: 0;
-    //         height: 100%;
-    //         width: 100%;       
-    //         z-index: 9999;
-    //         flex-direction: column;
-    //         align-items: center;
-    //         justify-content: center;
-    //         padding-top: 30%;
-    //         a{
-    //             font-size: 3rem;
-    //             @include mediaQuery(25rem){
-    //                 font-size: 2rem;
-    //             }
-    //         }
+    // @include mediaQueryMnW{ #toggleMenu{ display: none; } }
+    // ul.open{
+    //     visibility: visible;
+    //     opacity: 1;
+    // }
+    // ul{
+    //     @include mediaQueryMnW{
+    //         position: static;
+    //         background-color: unset;
+    //         padding: unset;
+    //         width: auto;
+    //         height: unset;
+    //         flex-direction: row;
+    //         opacity: 1;
+    //         visibility: visible;
+    //         li{ a{ font-size: 1.6rem; } }
+    //     }
+    //     position: fixed;
+    //     background: #000;
+    //     top: 5rem;
+    //     left: 0;
+    //     height: 100%;
+    //     width: 100%;       
+    //     z-index: 9999;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     justify-content: center;
+    //     padding-top: 30%;
+    //     visibility: hidden;
+    //     opacity: 0;
+    //     transition: 0.5s ease;
+    //     li{
+    //         text-align: center;
+    //         a{ font-size: 3rem; }
     //     }
     // }
-    
+
+
+    #toggleMenu{ display: none; }
+    @include mediaQuery($sm){
+        #toggleMenu{
+            display: block;
+        }
+        i:first-of-type{
+            display: none;
+        }
+        ul{
+            visibility: hidden;
+            opacity: 0;            
+            position: fixed;
+            background: rgba(35, 35, 35, 0.98);
+            top: 5rem;
+            left: 0;
+            height: 100%;
+            width: 100%;       
+            z-index: 9999;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            a{
+                font-size: 3rem;
+                @include mediaQuery(25rem){ font-size: 2rem; }
+            }
+            transition: 0.35s ease;
+        }
+        ul.open{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
 }
