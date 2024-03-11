@@ -1,1 +1,14 @@
 @use "../abstract" as *;
+
+.header{
+    &__wrapper{
+        padding: 1rem 0;
+        @include flex(space-between, center);
+        margin-bottom: 1rem;
+        button{
+            font-size: 3rem;
+            border: none;
+            background: transparent;
+        }
+    }
+}

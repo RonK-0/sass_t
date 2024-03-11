@@ -3,3 +3,12 @@
 @use "../component" as *;
 @use "../layout" as *;
 @use "../vendor" as *;
+
+.banner{
+    img{
+        @include imgCover(300px, 100%);
+    }
+    p{
+        display: none;
+    }
+}

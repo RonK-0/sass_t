@@ -10,6 +10,9 @@
 
     <!-- FONT AWESOME ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- TINY SLIDER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
 </head>
 
 <body>
@@ -23,7 +26,7 @@
         </div>
     </header>
 
-    <!-- section.banner>.container>.banner__wrapper>(.banner__main>img[src="https://via.placeholder.com/400x200"]+(.card__info>ul>li{Feb 2}+li{<i class="fas fa-circle"></i>}+li{5mins}^span{By: Ellen Josh}^a>h2{lorem10}^p{lorem20}))+(.banner__side>.banner__side__card*2>img[src="https://via.placeholder.com/400x200"]+(.card__info>ul>li{Feb 2}+li{<i class="fas fa-circle"></i>}+li{5mins}^span{By: Ellen Josh}^a>h3{lorem10}^p{lorem20})) -->
+    <!-- section.banner>.container>.banner__wrapper>(.banner__main>img[src="https://via.placeholder.com/400x200"]+(.card__info>ul>li{Feb 2}+li{<i class="fas fa-circle"></i>}+li{5mins}^small{By: Ellen Josh}^a>h2{lorem10}^p{lorem20}))+(.banner__side>.banner__side__card*2>img[src="https://via.placeholder.com/400x200"]+(.card__info>ul>li{Feb 2}+li{<i class="fas fa-circle"></i>}+li{5mins}^small{By: Ellen Josh}^a>h3{lorem10}^p{lorem20})) -->
     <section class="banner">
         <div class="container">
             <div class="banner__wrapper">
@@ -35,7 +38,7 @@
                             <li><i class="fas fa-circle"></i></li>
                             <li>5mins</li>
                         </ul>
-                        <span>By: Ellen Josh</span>
+                        <small>By: Ellen Josh</small>
                     </div>
                     <a href="">
                         <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, dolore?</h2>
@@ -51,7 +54,7 @@
                                 <li><i class="fas fa-circle"></i></li>
                                 <li>5mins</li>
                             </ul>
-                            <span>By: Ellen Josh</span>
+                            <small>By: Ellen Josh</small>
                         </div>
                         <a href="">
                             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ab?</h3>
@@ -66,7 +69,7 @@
                                 <li><i class="fas fa-circle"></i></li>
                                 <li>5mins</li>
                             </ul>
-                            <span>By: Ellen Josh</span>
+                            <small>By: Ellen Josh</small>
                         </div>
                         <a href="">
                             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quis.</h3>
@@ -77,10 +80,16 @@
             </div>
         </div>
     </section>
-    <!-- <section class="banner">
+
+    <!-- section.trending>.container>.block__header>h2{Trending Today}+a{View All}^.trending__slider>.trending__card*4>img[src="https://via.placeholder.com/400x200"]+(.card__info>ul>li{Feb 2}+li{<i class="fas fa-circle"></i>}+li{5mins}^small{By: Ellen Josh}^a>h3{lorem10}) -->
+    <section class="trending">
         <div class="container">
-            <div class="banner__wrapper">
-                <div class="banner__main">
+            <div class="block__header">
+                <h2>Trending Today</h2>
+                <a href="">View All</a>
+            </div>
+            <div class="trending__slider">
+                <div class="trending__card">
                     <img src="https://via.placeholder.com/400x200" alt="">
                     <div class="card__info">
                         <ul>
@@ -88,49 +97,117 @@
                             <li><i class="fas fa-circle"></i></li>
                             <li>5mins</li>
                         </ul>
-                        <span>By: Ellen Josh</span>
+                        <small>By: Ellen Josh</small>
                     </div>
                     <a href="">
-                        <h2>lorem10</h2>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, culpa.</h3>
                     </a>
-                    <p>lorem20</p>
                 </div>
-                <div class="banner__side">
-                    <div class="banner__side__card">
-                        <img src="https://via.placeholder.com/400x200" alt="">
-                        <div class="card__info">
-                            <ul>
-                                <li>Feb 2</li>
-                                <li><i class="fas fa-circle"></i></li>
-                                <li>5mins</li>
-                            </ul>
-                            <span>By: Ellen Josh</span>
-                        </div>
-                        <a href="">
-                            <h3>lorem10</h3>
-                        </a>
-                        <p>lorem20</p>
+                <div class="trending__card">
+                    <img src="https://via.placeholder.com/400x200" alt="">
+                    <div class="card__info">
+                        <ul>
+                            <li>Feb 2</li>
+                            <li><i class="fas fa-circle"></i></li>
+                            <li>5mins</li>
+                        </ul>
+                        <small>By: Ellen Josh</small>
                     </div>
-                    <div class="banner__side__card">
-                        <img src="https://via.placeholder.com/400x200" alt="">
-                        <div class="card__info">
-                            <ul>
-                                <li>Feb 2</li>
-                                <li><i class="fas fa-circle"></i></li>
-                                <li>5mins</li>
-                            </ul>
-                            <span>By: Ellen Josh</span>
-                        </div>
-                        <a href="">
-                            <h3>lorem10</h3>
-                        </a>
-                        <p>lorem20</p>
+                    <a href="">
+                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, cupiditate.</h3>
+                    </a>
+                </div>
+                <div class="trending__card">
+                    <img src="https://via.placeholder.com/400x200" alt="">
+                    <div class="card__info">
+                        <ul>
+                            <li>Feb 2</li>
+                            <li><i class="fas fa-circle"></i></li>
+                            <li>5mins</li>
+                        </ul>
+                        <small>By: Ellen Josh</small>
                     </div>
+                    <a href="">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, tempora?</h3>
+                    </a>
+                </div>
+                <div class="trending__card">
+                    <img src="https://via.placeholder.com/400x200" alt="">
+                    <div class="card__info">
+                        <ul>
+                            <li>Feb 2</li>
+                            <li><i class="fas fa-circle"></i></li>
+                            <li>5mins</li>
+                        </ul>
+                        <small>By: Ellen Josh</small>
+                    </div>
+                    <a href="">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, itaque!</h3>
+                    </a>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
+    <!-- section.articles>.container>(.block__header>h2{Latest Articles}+a{View All})+(.articles__wrapper>.article__card*4>img[src="https://via.placeholder.com/400x200"]+(.card__info>ul>li{Feb 2}+li{<i class="fas fa-circle"></i>}+li{5mins}^small{By: Ellen Josh}^a>h3{lorem10})) -->
+    <section class="articles">
+        <div class="container">
+            <div class="block__header">
+                <h2>Latest Articles</h2>
+                <a href="">View All</a>
+            </div>
+            <div class="articles__wrapper">
+                <div class="article__card">
+                    <img src="https://via.placeholder.com/400x200" alt="">
+                    <div class="card__info">
+                        <ul>
+                            <li>Feb 2</li>
+                            <li><i class="fas fa-circle"></i></li>
+                            <li>5mins</li>
+                        </ul>
+                        <small>By: Ellen Josh</small>
+                    </div>
+                    <a href="">
+                        <h3>lorem10</h3>
+                    </a>
+                </div>
+                <div class="article__card">
+                    <img src="https://via.placeholder.com/400x200" alt="">
+                    <div class="card__info">
+                        <ul>
+                            <li>Feb 2</li>
+                            <li><i class="fas fa-circle"></i></li>
+                            <li>5mins</li>
+                        </ul>
+                        <small>By: Ellen Josh</small>
+                    </div>
+                    <a href="">
+                        <h3>lorem10</h3>
+                    </a>
+                </div>
+                <div class="article__card">
+                    <img src="https://via.placeholder.com/400x200" alt="">
+                    <div class="card__info">
+                        <ul>
+                            <li>Feb 2</li>
+                            <li><i class="fas fa-circle"></i></li>
+                            <li>5mins</li>
+                        </ul>
+                        <small>By: Ellen Josh</small>
+                    </div>
+                    <a href="">
+                        <h3>lorem10</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    section.subscription
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

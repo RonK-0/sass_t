@@ -10,3 +10,16 @@
 // //     dropdown.classList.toggle("open");
 // //     body.classList.toggle("open");
 // // });
+
+var slider = tns({
+    container: '.trending__slider',
+    items: 1,
+    slideBy: 'page',
+    autoplay: false,
+    autoplayButtonOutput: false,
+    nav: false,
+    controlsText: [
+        '<i class="fas fa-arrow-left-long"></i>',
+        '<i class="fas fa-arrow-right-long"></i>'
+    ]
+});
