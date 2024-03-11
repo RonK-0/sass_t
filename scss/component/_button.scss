@@ -1,8 +1,31 @@
 @use "../abstract" as *;
+@use "../base" as *;
 
 .send-btn{
     margin: 0 auto;
     padding: 1rem 2rem 1rem 2rem;
     font-size: 1.25rem;
-    color: $clr-accent;
+    color: $clr-light;
+}
+
+.btn{
+    padding: 1.5rem 2.5rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    font-family: $ft-roboto-regular;
+    @include flex(center, center);
+    line-height: 1;
+    transition: 0.5s ease;
+    text-transform: uppercase;
+
+    $colors: (
+        "light" : $clr-light,
+        "dark" : $clr-dark,
+    );
+
+    @each $key, $val in $colors{
+        &-#{$key}{
+            background: #{$val};
+        }
+    }
 }

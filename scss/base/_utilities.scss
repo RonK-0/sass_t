@@ -1,10 +1,8 @@
 @use "../abstract" as *;
 
 $colors: (
-    "accent" : $clr-accent,    
-    "primary" : $clr-primary,
-    "secondary" : $clr-secondary,
-    "white" : $clr-white,
+    "light" : $clr-light,    
+    "dark" : $clr-dark,
 );
 
 @each $key, $val in $colors{

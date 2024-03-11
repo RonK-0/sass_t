@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <!-- CSS -->
@@ -13,239 +13,123 @@
 </head>
 
 <body>
-    <!-- header.header>.conainer>.header__wrapper>a+(ul>li*6>a) -->
-    <header class="header py-2">
-        <div class="container">
-            <div class="header__wrapper flex justify-between item-center">
-                <a href="#">A</a>
-                <ul class="flex gap-2" id="menu">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#" class="text-accent">ABOUT ME</a></li>
-                    <li><a href="#">SKILLS</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-                <i class="fas fa-bars-staggered text-white bg-accent p-1"></i>
-                <i class="fas fa-bars" id="toggleMenu"></i>
-                
+    <!-- header.header>.contaienr>.header__wrapper>(a{Studio})+(button>i.fas.fa-bars) -->
+    <header class="header">
+        <div class="contaienr">
+            <div class="header__wrapper">
+                <a href="#">Studio</a>
+                <button><i class="fas fa-bars"></i></button>
             </div>
         </div>
     </header>
 
-    <!-- section.banner>.container>.banner__wrapper>h1{<span>I'm a</span>GRAPHICS DESIGNER<span class="fa-solid fa-square"></span>}+a{CONTACT ME} -->
+    <!-- section.banner>.container>.banner__wrapper>(.banner__main>img[src="https://via.placeholder.com/400x200"]+(.card__info>ul>li{Feb 2}+li{<i class="fas fa-circle"></i>}+li{5mins}^span{By: Ellen Josh}^a>h2{lorem10}^p{lorem20}))+(.banner__side>.banner__side__card*2>img[src="https://via.placeholder.com/400x200"]+(.card__info>ul>li{Feb 2}+li{<i class="fas fa-circle"></i>}+li{5mins}^span{By: Ellen Josh}^a>h3{lorem10}^p{lorem20})) -->
     <section class="banner">
         <div class="container">
             <div class="banner__wrapper">
-                <div>
-                    <small>I'm a </small>
-                    <h1>GRAPHIC<br> DESIGNER<span></span></h1>
-                    <!-- <span class="fa-solid fa-square"></span> -->
-                    <a href="" class="p-1 bg-accent text-white">CONTACT ME</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- section.about>.container>.block-header+.about__wrapper -->
-    <section class="about bg-secondary py-8">
-        <div class="container">
-            <div class="block-header text-center  mb-8">
-                <h2 class="text-accent" data-text="About">About Me</h2>
-            </div>
-            <div class="about__wrapper">
-                <div class="about__image">
-                    <img src="https://via.placeholder.com/350x500" alt="">
-                </div>
-                <div class="about__content">
-                    <h3>My name is <span class="text-accent">Coco Martin</span></h3>
-                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint illo quasi facilis itaque maiores quaerat, voluptas perspiciatis nemo ipsa nam expedita corrupti dicta dolor quam, totam cum modi dolorem eligendi doloremque incidunt aut! Sit, dolor saepe tempora nulla ex est facere repudiandae maiores ut obcaecati unde quo officiis voluptatibus nemo neque ratione pariatur minus incidunt quibusdam adipisci in vel debitis?</p>
-                    
-                    <!-- .about__contact>ul*4>(li.text-accent{Name}+li{Coco Martin}) -->
-                    <div class="about__contact mb-3">
-                        <ul class="text-center">
-                            <li class="text-accent">Name</li>
-                            <li>Coco Martin</li>
+                <div class="banner__main">
+                    <img src="https://via.placeholder.com/400x200" alt="">
+                    <div class="card__info">
+                        <ul>
+                            <li>Feb 2</li>
+                            <li><i class="fas fa-circle"></i></li>
+                            <li>5mins</li>
                         </ul>
-                        <ul class="text-center">
-                            <li class="text-accent">Phone</li>
-                            <li>0168921070</li>
+                        <span>By: Ellen Josh</span>
+                    </div>
+                    <a href="">
+                        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, dolore?</h2>
+                    </a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, accusamus amet. Architecto nostrum porro eos sed quo earum assumenda est.</p>
+                </div>
+                <div class="banner__side">
+                    <div class="banner__side__card">
+                        <img src="https://via.placeholder.com/400x200" alt="">
+                        <div class="card__info">
+                            <ul>
+                                <li>Feb 2</li>
+                                <li><i class="fas fa-circle"></i></li>
+                                <li>5mins</li>
+                            </ul>
+                            <span>By: Ellen Josh</span>
+                        </div>
+                        <a href="">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ab?</h3>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis esse dolore, nulla excepturi maxime modi similique provident. Sapiente, quasi magnam.</p>
+                    </div>
+                    <div class="banner__side__card">
+                        <img src="https://via.placeholder.com/400x200" alt="">
+                        <div class="card__info">
+                            <ul>
+                                <li>Feb 2</li>
+                                <li><i class="fas fa-circle"></i></li>
+                                <li>5mins</li>
+                            </ul>
+                            <span>By: Ellen Josh</span>
+                        </div>
+                        <a href="">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quis.</h3>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur est inventore deleniti repellendus optio modi accusamus magni iusto adipisci fuga!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="banner">
+        <div class="container">
+            <div class="banner__wrapper">
+                <div class="banner__main">
+                    <img src="https://via.placeholder.com/400x200" alt="">
+                    <div class="card__info">
+                        <ul>
+                            <li>Feb 2</li>
+                            <li><i class="fas fa-circle"></i></li>
+                            <li>5mins</li>
                         </ul>
-                        <ul class="text-center">
-                            <li class="text-accent">Country</li>
-                            <li>Bangladesh</li>
-                        </ul>
-                        <ul class="text-center">
-                            <li class="text-accent">Email</li>
-                            <li>coco.martin@gmail.com</li>
-                        </ul>
+                        <span>By: Ellen Josh</span>
                     </div>
-                    <div class="text-center">
-                        <h4 class="mb-3 text-accent">Education</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, deleniti?</p>
+                    <a href="">
+                        <h2>lorem10</h2>
+                    </a>
+                    <p>lorem20</p>
+                </div>
+                <div class="banner__side">
+                    <div class="banner__side__card">
+                        <img src="https://via.placeholder.com/400x200" alt="">
+                        <div class="card__info">
+                            <ul>
+                                <li>Feb 2</li>
+                                <li><i class="fas fa-circle"></i></li>
+                                <li>5mins</li>
+                            </ul>
+                            <span>By: Ellen Josh</span>
+                        </div>
+                        <a href="">
+                            <h3>lorem10</h3>
+                        </a>
+                        <p>lorem20</p>
+                    </div>
+                    <div class="banner__side__card">
+                        <img src="https://via.placeholder.com/400x200" alt="">
+                        <div class="card__info">
+                            <ul>
+                                <li>Feb 2</li>
+                                <li><i class="fas fa-circle"></i></li>
+                                <li>5mins</li>
+                            </ul>
+                            <span>By: Ellen Josh</span>
+                        </div>
+                        <a href="">
+                            <h3>lorem10</h3>
+                        </a>
+                        <p>lorem20</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- section.skills.py-8>.container>.block-header.text-center>h2.text-accent{Skills} -->
-    <section class="skills py-8">
-        <div class="container">
-            <div class="block-header text-center mb-8">
-                <h2 class="text-accent" data-text="Skills">Skills</h2>
-            </div>
-            <div class="skills__wrapper">
-                <div class="bar mb-5">
-                    <ul class="flex justify-between">
-                        <li>Adobe Photoshop</li>
-                        <li>90%</li>
-                    </ul>
-                    <div class="skillbar w-90"></div>
-                </div>
-                <div class="bar mb-5">
-                    <ul class="flex justify-between">
-                        <li>Photography</li>
-                        <li>90%</li>
-                    </ul>
-                    <div class="skillbar w-90"></div>
-                </div>
-                <div class="bar mb-5">
-                    <ul class="flex justify-between">
-                        <li>Adobe Illustrator</li>
-                        <li>95%</li>
-                    </ul>
-                    <div class="skillbar w-95"></div>
-                </div>
-                <div class="bar mb-5">
-                    <ul class="flex justify-between">
-                        <li>Adobe Premiere Pro</li>
-                        <li>95%</li>
-                    </ul>
-                    <div class="skillbar w-95"></div>
-                </div>
-                <div class="bar mb-5">
-                    <ul class="flex justify-between">
-                        <li>Adobe After Effects</li>
-                        <li>90%</li>
-                    </ul>
-                    <div class="skillbar w-90"></div>
-                </div>
-                <div class="bar mb-5">
-                    <ul class="flex justify-between">
-                        <li>Adobe XD</li>
-                        <li>95%</li>
-                    </ul>
-                    <div class="skillbar w-95"></div>
-                </div>
-                <div class="bar mb-5">
-                    <ul class="flex justify-between">
-                        <li>Adobe Photoshop</li>
-                        <li>90%</li>
-                    </ul>
-                    <div class="skillbar w-90"></div>
-                </div>
-                <div class="bar mb-5">
-                    <ul class="flex justify-between">
-                        <li>Adobe Photoshop</li>
-                        <li>90%</li>
-                    </ul>
-                    <div class="skillbar w-90"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="portfolio py-8">
-        <div class="container">
-            <div class="block-header text-center">
-                <h2 class="text-accent" data-text="Portfolio">Portfolio</h2>
-            </div>
-            <!-- ul>li*5>a -->
-            <ul class="flex justify-center gap-6 mb-8">
-                <li><a href="" class="text-accent">Logo</a></li>
-                <li><a href="">Branding</a></li>
-                <li><a href="">3d Modeling</a></li>
-                <li><a href="">Motion</a></li>
-                <li><a href="">Video Editing</a></li>
-            </ul>
-            <div class="portfolio__img">
-                <img src="https://via.placeholder.com/170x170" alt="">
-                <img src="https://via.placeholder.com/170x170" alt="">
-                <img src="https://via.placeholder.com/170x170" alt="">
-                <img src="https://via.placeholder.com/170x170" alt="">
-                <img src="https://via.placeholder.com/170x170" alt="">
-            </div>
-        </div>
-    </section>
-
-    <section class="services py-8 bg-primary">
-        <div class="container">
-            <div class="block-header text-center mb-8">
-                <h2 class="text-accent" data-text="Services">Services</h2>
-            </div>
-            <div class="services__wrapper justify-center">
-                <div class="services__card text-center p-3">
-                    <i class="fa fa-paintbrush text-accent mb-5"></i>
-                    <h5>Graphics Design</h5>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, recusandae.</p>
-                </div>
-                <div class="services__card text-center p-3">
-                    <i class="fa fa-clapperboard text-accent mb-5"></i>
-                    <h5>Video Editing</h5>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, recusandae.</p>
-                </div>
-                <div class="services__card text-center p-3">
-                    <i class="fa fa-bullhorn text-accent mb-5"></i>
-                    <h5>Branding</h5>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, recusandae.</p>
-                </div>
-                <div class="services__card text-center p-3">
-                    <i class="fa fa-desktop text-accent mb-5"></i>
-                    <h5>Web Design</h5>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, recusandae.</p>
-                </div>
-                <div class="services__card text-center p-3">
-                    <i class="fa fa-film text-accent mb-5"></i>
-                    <h5>Motion Graphics</h5>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, recusandae.</p>
-                </div>
-                <div class="services__card text-center p-3">
-                    <i class="fa fa-mobile-screen-button text-accent mb-5"></i>
-                    <h5>3d Modeling</h5>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, recusandae.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- section.footer.py-2>.container>.footer__wrapper>h2{Contact me}+(.footer__contacts>.footer__contact*3>i+h5+small)+a.p-2.bg-white.text-accent{SEND MESSAGE} -->
-    <section class="footer py-5 bg-accent">
-        <div class="container">
-            <div class="footer__wrapper text-white text-center flex justify-center">
-                <h2 class="mb-5">Contact me</h2>
-                <div class="footer__contacts flex justify-between items-center gap-3 mb-3">
-                    <div class="footer__contact ">
-                        <i class="fa fa-mobile-screen-button text-accent mb-1"></i>
-                        <h5>Call Us</h5>
-                        <small>0168921070</small>
-                    </div>
-                    <div class="footer__contact">
-                        <i class="fa-regular fa-envelope"></i>
-                        <h5>Email</h5>
-                        <small>akshayroy42044@gmail.com</small>
-                    </div>
-                    <div class="footer__contact">
-                        <i class="fa-regular fa-map mb-1"></i>
-                        <h5>Visit Office</h5>
-                        <small>Uttara, Dhaka<br>Bangladesh</small>
-                    </div>
-                </div>
-                <a href="" class="send-btn bg-white">SEND MESSAGE</a>
-            </div>
-            
-        </div>
-    </section>
+    </section> -->
 
     <script src="./js/script.js"></script>
 </body>

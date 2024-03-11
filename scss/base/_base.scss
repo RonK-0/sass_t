@@ -1,99 +1,28 @@
 @use "../abstract/" as *;
 
-// $ft-speedee-regular: "Speedee-Regular", "Arial", sans-serif;
-// $ft-speedee-bold: "Speedee-Bold", "Arial Black", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-// @font-face {
-//     font-family: "Speedee-Regular";
-//     src: url(../../fonts/Speedee-Regular.woff) format("woff"),
-//         url(../../fonts/Speedee-Regular.ttf) format("truetype");
-// }
-
-// @font-face {
-//     font-family: "Speedee-Bold";
-//     src: url(../../fonts/Speedee-Bold.woff) format("woff"),
-//         url(../../fonts/Speedee-Bold.ttf) format("truetype");
-// }
-
-// @font-face {
-//     font-family: "Speedee-Light";
-//     src: url(../../fonts/Speedee-Light.woff) format("woff"),
-//         url(../../fonts/Speedee-Light.ttf) format("truetype");
-// }
-
-// @font-face {
-//     font-family: "Speedee-LightItalic";
-//     src: url(../../fonts/Speedee-LightItalic.woff) format("woff"),
-//         url(../../fonts/Speedee-LightItalic.ttf) format("truetype");
-// }
-
-// @font-face {
-//     font-family: "Speedee-Italic";
-//     src: url(../../fonts/Speedee-Italic.woff) format("woff"),
-//         url(../../fonts/Speedee-Italic.ttf) format("truetype");
-// }
-
-// @font-face {
-//     font-family: "Speedee-BoldItalic";
-//     src: url(../../fonts/Speedee-BoldItalic.woff) format("woff"),
-//         url(../../fonts/Speedee-BoldItalic.ttf) format("truetype");
-// }
-
-// html{
-//     font-size: 10px;
-// }
-// body{
-//     font-family: "Arial", "Helvetica", sans-serif;
-//     color: $clr-primary;
-//     line-height: 1.6;
-//     font-size: 1.6rem;
-// }
-// a{
-//     text-decoration: none;
-//     color: $clr-primary;
-// }
-// p{
-//     margin-bottom: 1.3rem;
-//     font-size: clamp(1.4rem, 6vw, 1.6rem);
-// }
-// h1{
-//     margin-bottom: 2.5rem;
-//     font-size: clamp(2rem, 6vw, 5rem);
-// }
-// .container{
-//     max-width: 110rem;
-//     padding: 0 1.6rem;
-//     margin: 0 auto;
-// }
-// .container2{
-//     max-width: 98rem;
-//     padding: 0 1.6rem;
-//     margin: 0 auto;
-// }
-
-button{
-    border: none;
+@font-face {
+    font-family: "Sprat Condensed";
+    src: url('../../fonts/Sprat-CondesedRegular.otf');
+}
+@font-face {
+    font-family: "Sprat Condensed Bold";
+    src: url('../../fonts/Sprat-CondensedBold.otf');
 }
 
-// 
-// @font-face {
-//     font-family: "Speedee-regular";
-//     src: url('../../fonts/Speedee-Regular.woff');
-// }
-
-// @font-face {
-//     font-family: "Speedee-Bold";
-//     src: url('../../fonts/Speedee-Bold.woff');
-// }
+$ft-roboto-regular: "Roboto", "Arial", sans-serif;
+$ft-sprat: "Sprat Condensed", "Times New Roman", serif;
+$ft-sprat-bold: "Sprat Condensed Bold", "Times New Roman Bold", serif;
 
 html {
     font-size: 10px;
 }
 
 body {
-    font-family: "Speedee-regular", arial, sans-serif;
-    color: $clr-white;
-    background-color: $clr-primary;
+    font-family: $ft-roboto-regular;
+    color: $clr-dark;
+    background-color: $clr-light;
     line-height: 1.6;
     font-size: 1.6rem;
     &.open{
@@ -104,7 +33,7 @@ body {
 
 a {
     text-decoration: none;
-    color: $clr-white;
+    color: $clr-dark;
 }
 
 h1 {
@@ -122,12 +51,22 @@ p {
     padding: 0 1.6rem;
     margin: 0 auto;
 }
+
 ul{
     list-style: none;
 }
 
-::-webkit-scrollbar {
-    // width: 0;  /* Remove scrollbar space */
-    // background: transparent;  /* Optional: just make scrollbar invisible */
-    display: none;
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+    font-family: $ft-sprat;
+}
+
+h1{ font-size:clamp(2.5rem, 6vw, 4rem); margin-bottom: 2rem; }
+h2{ font-size:clamp(2.2rem, 6vw, 3rem); margin-bottom: 2rem; }
+h3{ font-size:clamp(2rem, 6vw, 2.5rem); margin-bottom: 1.6rem; }
+h4{ font-size:clamp(1.4rem, 6vw, 1.6rem); margin-bottom: 1.6rem; }
+p{ font-size:clamp(1.4rem, 6vw, 1.6rem); margin-bottom: 1.6rem; }
+
+button{
+    border: none;
 }

@@ -1,10 +1,12 @@
-$clr-accent: #f16b4e;
-$clr-primary: #232323;
-$clr-secondary:#1f1f1f;
+:root{
+    --light: #fff;
+    --dark: #000;
+    --accent: #202221;
+}
 
-$clr-gray:#494949;
-
-$clr-white: #fff;
+$clr-accent: var (--accent);
+$clr-light: var(--light);
+$clr-dark: var(--dark);
 
 // $bp-xs: 32rem;
 // $bp-sm: 55rem;
