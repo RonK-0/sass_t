@@ -16,6 +16,7 @@
                 width: 100%;
                 padding: 1rem;
                 border: none;
+                background-color: transparent;
                 border-bottom: 1px solid $clr-dark;
             }
             button{
@@ -24,7 +25,6 @@
                 top: 1rem;
                 text-transform: uppercase;
                 font-weight: 600;
-                color: #000;
             }
         }
     }

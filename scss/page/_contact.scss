@@ -18,6 +18,7 @@
         border: none;
         border-bottom: 1px solid $clr-dark;
         outline: none;
+        background-color: $clr-light;
         &:focus, &:valid{
             border-color: coral;
             & + label{
@@ -51,6 +52,8 @@
         // 
         left: 0.85rem;
         top: 0.75rem;
+        color: $clr-dark;
+
     }
     span{
         color: red;
