@@ -51,7 +51,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(3rem, 8vw, 4.5rem);
+  font-size: clamp(2.7rem, 6vw, 4.5rem);
   margin-bottom: 2rem;
 }
 
@@ -82,6 +82,20 @@ button {
 
 input, textarea {
   background: transparent;
+}
+
+.logo {
+  display: block;
+  letter-spacing: 0.5rem;
+  font-weight: 900;
+  font-size: 3rem;
+  color: var(--light);
+  -webkit-text-stroke: 1px var(--accent);
+  text-shadow: 2px 1px 0px var(--accent), 3px 2px 0px var(--accent), 3px 2px 0px var(--accent), 3px 3px 0 var(--accent), 1px 1px 0 var(--accent);
+  -webkit-transform: scale(1.5, 1.25);
+  -moz-transform: scale(1.5, 1.25);
+  -ms-transform: scale(1.5, 1.25);
+  -o-transform: scale(1.5, 1.25);
 }
 
 * {
@@ -854,13 +868,6 @@ body {
   margin-bottom: 1rem;
 }
 .header__wrapper .logo {
-  display: block;
-  letter-spacing: 0.5rem;
-  font-weight: 900;
-  font-size: 3rem;
-  color: var(--light);
-  -webkit-text-stroke: 1px var(--accent);
-  text-shadow: 2px 1px 0px var(--accent), 3px 2px 0px var(--accent), 3px 2px 0px var(--accent), 3px 3px 0 var(--accent), 1px 1px 0 var(--accent);
   transform: scale(1.5, 1.25) translateX(1.5rem);
 }
 .header li a {
@@ -925,23 +932,40 @@ body {
 .footer__wrapper h4 {
   font-weight: 500;
 }
+.footer__wrapper * {
+  font-size: clamp(1.5rem, 6vw, 2rem);
+}
+.footer__links {
+  flex-wrap: wrap;
+}
+@media (max-width: 505px) {
+  .footer__links {
+    justify-content: center;
+  }
+}
 .footer__box {
   text-align: left;
   min-width: 10rem;
-  max-width: 24rem;
+  max-width: 30rem;
 }
-@media (max-width: 42rem) {
+@media (max-width: 505px) {
   .footer__box {
     text-align: center;
     align-items: center;
+    max-width: unset;
   }
 }
-.footer__box ul li {
-  font-size: 1.5rem;
+.footer__box .logo {
+  font-size: 3rem;
+  transform: scale(1.5, 1.25) translateX(-5.5rem);
+}
+@media (max-width: 505px) {
+  .footer__box .logo {
+    transform: scale(1.5, 1.25) translateX(0rem);
+  }
 }
 .footer__box ul li i {
   padding-right: 1rem;
-  font-size: 2rem;
 }
 .footer__box ul li img {
   min-width: 16rem;
@@ -952,6 +976,7 @@ body {
 }
 .footer__bottom {
   border-top: 1px solid var(--light);
+  font-size: inherit;
 }
 @media (max-width: 42rem) {
   .footer__bottom {
@@ -974,11 +999,12 @@ body {
   margin-bottom: -1rem;
   letter-spacing: 0.15rem;
   font-family: "FS Pimlico";
-  font-size: 11rem;
+  font-size: clamp(6rem, 8vw, 11rem);
 }
 @media (max-width: 42rem) {
   .banner__text h1 {
-    font-size: 3.75rem;
+    font-size: clamp(3rem, 6vw, 5rem);
+    margin-bottom: 1rem;
   }
 }
 .banner__text p {
@@ -992,6 +1018,11 @@ body {
   letter-spacing: 0.1rem;
   padding: 2rem 1.75rem;
   font-size: 1.5rem;
+}
+@media (max-width: 42rem) {
+  .banner__action button {
+    min-width: unset;
+  }
 }
 @media (max-width: 42rem) {
   .banner__action {
@@ -1155,9 +1186,9 @@ body {
   color: var(--dark);
   text-align: center;
   width: 100%;
-  height: 15%;
+  height: 5rem;
   background-color: rgba(107, 106, 94, 0.8);
-  font-size: 2.2rem;
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
   font-weight: 500;
   color: var(--light);
 }
@@ -1206,7 +1237,7 @@ body {
   max-width: 85rem;
 }
 .testimonies__right p {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 6vw, 2rem);
   letter-spacing: 0.05rem;
   text-wrap: wrap;
 }
@@ -1219,6 +1250,12 @@ body {
 }
 .testimonies__right__client__details h4 {
   margin: 0;
+}
+@media (max-width: 42rem) {
+  .testimonies__right__client {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 80rem) {
   .testimonies__right {
