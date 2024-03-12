@@ -1,0 +1,113 @@
+@use "../abstract" as *;
+
+$colors: (
+    "light" : $clr-light,
+    "dark" : $clr-dark,
+    "accent" : $clr-accent,
+    "gray" : $clr-gray,
+);
+
+@each $key, $val in $colors{
+    .bg-#{$key}{
+        background-color: #{$val};
+    }
+    .text-#{$key}{
+        color: #{$val};
+    }
+    .border-#{$key}{
+        border: 1px solid #{$val};
+    }
+}
+$displays: (flex, grid, block, inline);
+
+@each $display in $displays{
+    .#{$display}{
+        display: #{$display};
+    }
+}
+
+@for $i from 1 through 10{
+    .m-#{$i}{
+        margin: #{$i}rem;
+    }
+    .mt-#{$i}{
+        margin-top: #{$i}rem;
+    }
+    .mb-#{$i}{
+        margin-bottom: #{$i}rem;
+    }
+    .mx-#{$i}{
+        margin-left: #{$i}rem;
+        margin-right: #{$i}rem;
+    }
+    .my-#{$i}{
+        margin-top: #{$i}rem;
+        margin-bottom: #{$i}rem;
+    }
+    .p-#{$i}{
+        padding: #{$i}rem;
+    }
+    .px-#{$i}{
+        padding-left: #{$i}rem;
+        padding-right: #{$i}rem;
+    }
+    .py-#{$i}{
+        padding-top: #{$i}rem;
+        padding-bottom: #{$i}rem;
+    }
+    .pt-#{$i}{
+        padding-top: #{$i}rem;
+    }
+    .pb-#{$i}{
+        padding-bottom: #{$i}rem;
+    }
+    .gap-#{$i}{
+        gap: #{$i}rem;
+    }
+}
+
+$width: (
+    "full" : 100%,
+    "1-2" : 50%,
+    "1-4" : 25%,
+    "1-3" : 33.33%,
+);
+
+@each $key, $val in $width{
+    .w-#{$key}{
+        width: #{$val};
+    }
+}
+
+$alignments: (left, right, center, justify);
+@each $alignment in $alignments{
+    .text-#{$alignment}{
+        text-align: #{$alignment};
+    }
+}
+
+$justify: (
+    "center": center,
+    "between": space-between,
+    "around": space-around,
+    "end": flex-end,
+);
+@each $key, $val in $justify{
+    .justify-#{$key}{
+        justify-content: #{$val};
+    }
+}
+
+$align: (
+    "center": center,
+    "end": flex-end,
+);
+@each $key, $val in $align{
+    .items-#{$key}{
+        align-items: #{$val};
+    }
+}
+
+.f-col{
+    flex-direction: column;
+}
