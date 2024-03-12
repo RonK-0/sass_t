@@ -1,0 +1,45 @@
+@use "../abstract" as *;
+@use "../base" as *;
+@use "../component" as *;
+@use "../layout" as *;
+@use "../vendor" as *;
+
+.single__banner{
+    img{
+        @include imgCover(400px, 100%);
+        @include mediaQuery{
+            @include imgCover(600px, 100%);
+        }
+    }
+    &__wrapper{
+        @include mediaQuery{
+            margin-bottom: 5rem;
+            @include grid(2, 5rem);
+        }
+    }
+    &__article{
+        @include mediaQuery{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            p{ margin-bottom: 0; }
+        }
+    }
+    
+}
+article{
+    figure{
+        margin-bottom: 5rem;
+        img{
+            @include imgCover(500px, 100%);
+        }
+    }
+    figcaption{
+        font-size: 1.2rem;
+        text-wrap: balance;
+    }
+    p{
+        text-align: justify;
+    }
+    margin-bottom: 5rem;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Home</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- TINY SLIDER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
+</head>
+
+<body>
+    <!-- section.banner>.container>.banner__wrapper>(.banner__top(.banner__text>p{THE BEST FITNESS CLUB IN TOWN}+h1{IMPROVE YOUR FITNESS LEVEL FOR THE BETTER})+(.banner__action>button.btn{BUTTON}*2))+(.banner__images>.banner__images__left>img+p^.banner__images__right>img) -->
+    <section class="banner m-2 p-1">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <button id="toggleMenu" class="fas fa-bars"></button>
+                    <a href="#" class="logo">GYM</a>
+                    <ul class="flex gap-2" id="menu">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Class</a></li>
+                        <li><a href="#">Trainers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <button class="btn btn-accent text-light">Sign up</button>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="banner__wrapper pb-8 flex f-col gap-4">
+                <div class="banner__top flex justify-between">
+                    <div class="banner__text">
+                        <p>THE BEST FITNESS CLUB IN TOWN</p>
+                        <h1>IMPROVE YOUR FITNESS LEVEL FOR THE BETTER</h1>
+                    </div>
+                    <div class="banner__action flex items-end gap-2 justify-center">
+                        <button class="btn btn-accent text-light flex align justify-center">BE A MEMBER</button>
+                        <button class="btn btn-light text-dark border-accent flex align justify-center"><i class="fa-regular fa-circle-play text-dark"></i>&nbsp; LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="banner__images flex gap-4">
+                    <div class="banner__images__left flex f-col gap-2">
+                        <img src="https://via.placeholder.com/150x100" alt="">
+                        <p class="text-justify">Gym session or brisk walk can help. Physical activity stimulates many chemical that may leave you Gym session or brisk walk can help. physical activity stimulated many chemicals that may leave you</p>
+                    </div>
+                    <div class="banner__images__right">
+                        <img src="https://via.placeholder.com/600x350" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section.testimonies>.container>.testimonies__wrapper>.testimonites__entry*4>h3{500+}+h4{Happy Members}+p{Our community is growing fast!} -->
+    <section class="testimonies m-1 p-2">
+        <div class="container">
+            <div class="testimonies__wrapper flex justify-between">
+                <div class="testimonites__entry flex f-col">
+                    <h3>500+</h3>
+                    <h4>Happy Members</h4>
+                    <p>Our community is growing fast!</p>
+                </div>
+                <div class="testimonites__entry flex f-col">
+                    <h3>500+</h3>
+                    <h4>Happy Members</h4>
+                    <p>Our community is growing fast!</p>
+                </div>
+                <div class="testimonites__entry flex f-col">
+                    <h3>500+</h3>
+                    <h4>Happy Members</h4>
+                    <p>Our community is growing fast!</p>
+                </div>
+                <div class="testimonites__entry flex f-col">
+                    <h3>500+</h3>
+                    <h4>Happy Members</h4>
+                    <p>Our community is growing fast!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="cta py-10 mb-2">
+        <div class="container">
+            <div class="cta__wrapper text-center flex justify-center items-center">
+                <h2>Join the Gymnastic family</h2>
+                <p>Gym session or brisk walk can help. Physical activity stimulates many brain chemicals that may leave you.</p>
+                <button class="btn btn-accent text-light">BE A MEMBER</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer py-2 pt-10">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__links">
+                    <div class="footer__box mb-2">
+                        <h4>CONTENT</h4>
+                        <ul>
+                            <li>Blog</li>
+                            <li>Podcasts</li>
+                            <li>Books</li>
+                            <li>Subscription</li>
+                        </ul>
+                    </div>
+                    <div class="footer__box mb-2">
+                        <h4>COMPANY</h4>
+                        <ul>
+                            <li>About</li>
+                            <li>Contact Us</li>
+                            <li>Partnership</li>
+                            <li>Careers</li>
+                        </ul>
+                    </div>
+                    <div class="footer__box mb-2">
+                        <h4>SOCIAL</h4>
+                        <ul>
+                            <li>Instagram</li>
+                            <li>Facebook</li>
+                            <li>LinkedIn</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <a href="#">Q Studio</a>
+                <ul>
+                    <li>&copy; 2021 Q Studio By loverboy</li>
+                    <li>All Rights reserved</li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

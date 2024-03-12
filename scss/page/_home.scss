@@ -1,0 +1,85 @@
+@use "../abstract" as *;
+@use "../base" as *;
+// @use "../component" as *;
+// @use "../layout" as *;
+// @use "../vendor" as *;
+
+.banner{
+    background-color: $clr-light;
+    color: $clr-dark;
+    border-radius: 5rem;
+    &__top{
+        flex-wrap: wrap;
+    }
+    &__text{
+        // width: 100%;
+        h1{
+            max-width: 76rem;
+            text-wrap: wrap;
+            margin: 0;
+            margin-bottom: -1rem;
+            letter-spacing: 0.15rem;
+            font-family: $ft-fspmlico;
+        }
+        p{
+            font-weight: 500;
+            color: #5a5958;
+            letter-spacing: 0.2rem;
+        }
+    }
+    &__action{
+        button{
+            min-width: 17.5rem;
+            font-weight: 500;
+            letter-spacing: 0.1rem;
+            padding: 2rem 1.75rem;
+            font-size: 1.5rem;
+        }
+        @include mediaQueryMxW{
+            width: 100%;
+        }
+    }
+    &__images{
+        img{ border-radius: 2.5rem; }
+        &__left{
+            max-width: 40rem;
+            width: 100%;
+            overflow: hidden;
+            img{ @include imgCover(30rem, 100%); }
+            p{
+                font-size: 1.5rem;
+                margin-bottom: 0;;
+            }
+            @include mediaQueryMxW{ max-width: unset; }
+        }
+        &__right{
+            width: 100%;
+            img{ @include imgCover(100%, 100%); }
+        }
+        @include mediaQueryMxW{ flex-wrap: wrap; }
+    }
+}
+
+.testimonies{
+    background-color: $clr-gray;
+    border-radius: 5rem;
+    *{
+        color: $clr-light;
+    }
+
+}
+
+.cta{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(https://via.placeholder.com/800x300);
+
+    &__wrapper{
+        flex-direction: column;
+        button{
+            max-width: 16rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+    }
+}

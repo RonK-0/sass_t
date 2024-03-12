@@ -1,0 +1,24 @@
+:root{
+    --light: #fff;
+    --dark: #131313;
+    --accent: #ff7906;
+    --gray: #222222;
+    --secondary: #000815;
+}
+
+$clr-light: var(--light);
+$clr-accent: var(--accent);
+$clr-secondary: var(--secondary);
+$clr-dark: var(--dark);
+$clr-gray: var(--gray);
+
+// $bp-xs: 32rem;
+// $bp-sm: 55rem;
+// $bp-md: 80rem;
+// $bp-lg: 144rem;
+// $bp-xl: 180rem;
+
+$sm: "42rem";
+$md: "80rem";
+$lg: "144rem";
+$xl: "180rem";
