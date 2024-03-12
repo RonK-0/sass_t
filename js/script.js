@@ -6,26 +6,20 @@ toggleMenu.addEventListener("click", () => {
     dropdown.classList.toggle("open");
     body.classList.toggle("open");
 });
-// toggleMenu.addEventListener("click", (e) => {
-//     dropdown.classList.toggle("open");
-//     body.classList.toggle("open");
-// });
 
-var slider = tns({
-    container: '.trending__slider',
-    items: 1,
-    slideBy: 'page',
-    autoplay: false,
-    autoplayButtonOutput: false,
-    nav: false,
-    controlsText: [
-        '<i class="fas fa-arrow-left-long"></i>',
-        '<i class="fas fa-arrow-right-long"></i>'
-    ],
-    responsive: {
-        420: {
-          items: 3,
-          gutter: 20,
-        },
-      },
+const btnTheme = document.querySelector('.theme');
+const root = document.querySelector(':root');
+// const body = document.querySelector('body');
+
+btnTheme.addEventListener("click", () => {
+  if(body.classList.contains('dark')){
+    body.classList.remove('dark');
+    root.style.setProperty('--light', '#fff');
+    root.style.setProperty('--dark', '#000');
+  }
+  else{
+    body.classList.add('dark');
+    root.style.setProperty('--light', '#000');
+    root.style.setProperty('--dark', '#fff');
+  }
 });

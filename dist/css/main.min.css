@@ -2,7 +2,6 @@
 :root {
   --light: #fff;
   --dark: #000;
-  --accent: #202221;
 }
 
 .banner img {
@@ -128,16 +127,18 @@ a {
 
 ul {
   list-style: none;
+  color: var(--dark);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   font-family: "Sprat Condensed", "Times New Roman", serif;
   text-wrap: balance;
+  color: var(--dark);
 }
 
 h1 {
-  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-size: clamp(3.5rem, 6vw, 5.5rem);
   margin-bottom: 2rem;
 }
 
@@ -161,9 +162,18 @@ p {
   margin-bottom: 1.3rem;
 }
 
+p {
+  color: var(--dark);
+}
+
 button {
   border: none;
   background: transparent;
+  color: var(--dark);
+}
+
+.fas, .fa-regular {
+  color: var(--dark);
 }
 
 * {
@@ -660,9 +670,6 @@ body {
   border: none;
   background: transparent;
 }
-.header i:first-of-type {
-  padding-right: 2rem;
-}
 .header li a {
   padding-bottom: 0.5rem;
 }
@@ -684,7 +691,7 @@ body {
     visibility: hidden;
     opacity: 0;
     position: fixed;
-    background: rgba(255, 255, 255, 0.98);
+    background-color: var(--light);
     top: 5rem;
     left: 0;
     height: 100%;
@@ -709,6 +716,9 @@ body {
     visibility: visible;
     opacity: 1;
   }
+}
+.header .theme {
+  font-size: 1.6rem;
 }
 
 @media (min-width: 42rem) {
@@ -736,6 +746,7 @@ body {
   top: 1rem;
   text-transform: uppercase;
   font-weight: 600;
+  color: #000;
 }
 @media (min-width: 42rem) {
   .footer__links {
@@ -851,4 +862,171 @@ article figcaption {
 }
 article p {
   text-align: justify;
+}
+
+@media (min-width: 42rem) {
+  .contact__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5rem;
+  }
+}
+
+.input--wrap {
+  position: relative;
+}
+.input--wrap input, .input--wrap textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-bottom: 1px solid var(--dark);
+  outline: none;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+.input--wrap input:focus, .input--wrap input:valid, .input--wrap textarea:focus, .input--wrap textarea:valid {
+  border-color: coral;
+}
+.input--wrap input:focus + label, .input--wrap input:valid + label, .input--wrap textarea:focus + label, .input--wrap textarea:valid + label {
+  top: -2rem;
+  left: 0;
+  font-size: 1.2rem;
+  color: coral;
+}
+.input--wrap input:focus, .input--wrap textarea:focus {
+  border: 2px solid coral;
+  border-radius: 0.5rem;
+}
+.input--wrap label {
+  position: absolute;
+  opacity: 0.5;
+  font-size: 1.4rem;
+  transition: 0.25s ease;
+  left: 0.85rem;
+  top: 0.75rem;
+}
+.input--wrap span {
+  color: red;
+  font-size: 1.2rem;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.contact__form button {
+  min-width: 20rem;
+  margin-bottom: 5rem;
+  padding: 1.2rem 1rem;
+  text-transform: uppercase;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+@media (min-width: 42rem) {
+  .contact__info {
+    justify-self: flex-end;
+    align-self: flex-end;
+    transform: translateY(-10rem);
+  }
+}
+.contact__info ul {
+  margin-bottom: 2rem;
+}
+.contact__info ul li {
+  margin-bottom: 1rem;
+}
+.contact__info ul li i {
+  padding-right: 1rem;
+}
+
+.bestseller {
+  margin-bottom: 5rem;
+}
+.bestseller__card img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bestseller__card h4 {
+  margin: 0.5rem 0;
+}
+.bestseller__card p {
+  margin-bottom: 1rem;
+}
+.bestseller__card button {
+  width: 100%;
+  padding: 1.2rem 1rem;
+  border: 1px solid var(--dark);
+  background: transparent;
+  transition: 0.5s ease;
+}
+.bestseller__card button:hover {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.selection ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+  overflow-x: auto;
+  width: 100%;
+}
+.selection__card {
+  margin-bottom: 5rem;
+}
+.selection__card img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 42rem) {
+  .selection__card img {
+    height: 300px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (min-width: 42rem) {
+  .selection__card {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 5rem;
+  }
+}
+.selection small {
+  opacity: 0.5;
+}
+.selection h5 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.selection h5 span {
+  font-size: 1.8rem;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+.selection p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.selection button {
+  width: 100%;
+  padding: 1.2rem 1rem;
+  border: 1px solid var(--dark);
+  background: transparent;
+  transition: 0.5s ease;
+}
+.selection button:hover {
+  background-color: var(--dark);
+  color: var(--light);
+}
+@media (min-width: 42rem) {
+  .selection button {
+    width: 20%;
+  }
 }/*# sourceMappingURL=main.min.css.map */

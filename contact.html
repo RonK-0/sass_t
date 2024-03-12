@@ -25,10 +25,14 @@
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./single.html">Blog</a></li>
                     <li><a href="#">Podcasts</a></li>
-                    <li><a href="#">Books</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="./book.html">Books</a></li>
+                    <li><a href="#" class="active">About</a></li>
                 </ul>
-                <div class="header__right__icons"><i class="fa-solid fa-bag-shopping"></i><i class="fa-regular fa-user"></i></div>
+                <div class="header__right__icons flex gap-1">
+                    <button class="theme fas fa-circle-half-stroke"></button>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <i class="fa-regular fa-user"></i>
+                </div>
                 <button id="toggleMenu" class="fas fa-bars"></button>
             </div>
         </div>
@@ -37,21 +41,28 @@
     <!-- main.contact>.container>.contact__wrapper>(.contact__form>form>(.input--wrap>input:text+label{Name}+span{Required*})+(.input--wrap>input:email+label{Email}+span{Required*})+(.input--wrap>textarea+label{Message}+span{Required*})+button{Send Message})+(.contact__info>ul>(li>(i.fas.fa-envelope){myblog@somewhere.com})+(li>(i.fas.fa-phone){0922-2222-222})+(li>(i.fas.fa-map-marker-alt){222 Street 31st Avenue Makati City})) -->
     <main class="contact">
         <div class="container">
+            <h1>Contact Us</h1>
+            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque explicabo ab rerum harum vero nostrum consequuntur provident quia! Adipisci, doloremque!</p>
             <div class="contact__wrapper">
                 <div class="contact__form">
                     <form action="">
                         <div class="input--wrap">
-                            <input type="text" name="" id="">
+                            <input type="text" name="" id="" required>
                             <label for="">Name</label>
                             <span>Required*</span>
                         </div>
                         <div class="input--wrap">
-                            <input type="email" name="" id="">
+                            <input type="text" name="" id="" required>
+                            <label for="">Subject</label>
+                            <span>Required*</span>
+                        </div>
+                        <div class="input--wrap">
+                            <input type="email" name="" id="" required>
                             <label for="">Email</label>
                             <span>Required*</span>
                         </div>
                         <div class="input--wrap">
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <textarea name="" id="" cols="30" rows="10" required></textarea>
                             <label for="">Message</label>
                             <span>Required*</span>
                         </div>

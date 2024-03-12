@@ -1,0 +1,72 @@
+@use "../abstract" as *;
+// @use "../base" as *;
+// @use "../component" as *;
+// @use "../layout" as *;
+// @use "../vendor" as *;
+
+.bestseller{
+    margin-bottom: 5rem;
+    &__card{
+        img{@include imgCover(400px, 100%);}
+        h4{margin: 0.5rem 0; }
+        p{ margin-bottom: 1rem; }
+        button{
+            width: 100%;
+            padding: 1.2rem 1rem;
+            border:  1px solid $clr-dark;
+            background: transparent;
+            transition: 0.5s ease;
+            &:hover{
+                background-color: $clr-dark;
+                color: $clr-light;
+            }
+        }
+    }
+
+}
+
+.selection{
+    ul{
+        @include flex(space-around, center);
+        gap: 3rem;
+        // flex-wrap: wrap;
+        overflow-x: auto;
+        width: 100%;
+    }
+    &__card{
+        margin-bottom: 5rem;
+        img{
+            @include imgCover(400px, 100%);
+            @include mediaQuery{ @include imgCover(300px, 100%); }
+        }
+        @include mediaQuery{ @include unevenGrid(200px 1fr, 5rem); }
+    }
+    small{ opacity: 0.5; }
+    h5{
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        span{
+            font-size: 1.8rem;
+            opacity: 0.5;
+            text-decoration: line-through;
+        }
+    }
+    p{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+    button{
+        width: 100%;
+        padding: 1.2rem 1rem;
+        border:  1px solid $clr-dark;
+        background: transparent;
+        transition: 0.5s ease;
+        &:hover{
+            background-color: $clr-dark;
+            color: $clr-light;
+        }
+        @include mediaQuery{ width: 20%; }
+    }
+}

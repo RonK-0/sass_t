@@ -12,6 +12,7 @@
 }
 
 $ft-roboto-regular: "Roboto", "Arial", sans-serif;
+$ft-roboto-bold: "Roboto Bold", "Arial Black", sans-serif;
 $ft-sprat: "Sprat Condensed", "Times New Roman", serif;
 $ft-sprat-bold: "Sprat Condensed Bold", "Times New Roman Bold", serif;
 
@@ -44,21 +45,32 @@ a {
 
 ul{
     list-style: none;
+    color: $clr-dark;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-weight: bold;
     font-family: $ft-sprat;
     text-wrap: balance;
+    color: $clr-dark;
 }
 
-h1{ font-size:clamp(2.5rem, 6vw, 4rem); margin-bottom: 2rem; }
+h1{ font-size:clamp(3.5rem, 6vw, 5.5rem); margin-bottom: 2rem; }
 h2{ font-size:clamp(2.2rem, 6vw, 3rem); margin-bottom: 2rem; }
 h3{ font-size:clamp(2rem, 6vw, 2.5rem); margin-bottom: 1.6rem; }
 h4{ font-size:clamp(1.4rem, 6vw, 1.6rem); margin-bottom: 1.6rem; }
 p{ font-size:clamp(1.4rem, 6vw, 1.6rem); margin-bottom: 1.3rem; }
 
+p{
+    color: $clr-dark;
+}
+
 button{
     border: none;
     background: transparent;
+    color: $clr-dark;
+}
+
+.fas, .fa-regular{
+    color: $clr-dark;
 }
