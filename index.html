@@ -17,7 +17,7 @@
 
 <body>
     <!-- section.banner>.container>.banner__wrapper>(.banner__top(.banner__text>p{THE BEST FITNESS CLUB IN TOWN}+h1{IMPROVE YOUR FITNESS LEVEL FOR THE BETTER})+(.banner__action>button.btn{BUTTON}*2))+(.banner__images>.banner__images__left>img+p^.banner__images__right>img) -->
-    <section class="banner m-2 p-1">
+    <section class="banner m-2 p-1 mb-3 bg-light text-dark">
         <header class="header">
             <div class="container">
                 <div class="header__wrapper">
@@ -58,9 +58,9 @@
     </section>
 
     <!-- section.testimonies>.container>.testimonies__wrapper>.testimonies__entry*4>h3{500+}+h4{Happy Members}+p{Our community is growing fast!} -->
-    <section class="testimonies m-1 p-2">
+    <section class="testimonies m-1 p-2 py-4 mb-5">
         <div class="container">
-            <div class="testimonies__wrapper flex justify-between">
+            <div class="testimonies__wrapper flex justify-between items-center gap-2">
                 <div class="testimonies__entry flex f-col">
                     <h3>500+</h3>
                     <h5>Happy Members</h5>
@@ -85,49 +85,79 @@
         </div>
     </section>
 
-    <!-- sections.amenities>.container>(.amenities__label>h2{Why Choose Us}+p{When Picking a gym, consider its amenities Like gues access, hours, location,<br>and extra benefits to enhance your experience.})+(.amenities__wrapper>(.amenities__entry*4>(.amenities__entry__logo>span)+.amenities__entry__details>h4{Facility Amenities}+p{Best Training dolor sit amet consectetur Cras eros molestie habitasse sed proin volutpat sollctudin adipsicing.})+img[src="https://via.placeholder.com/300x400"]) -->
-    <sections class="amenities">
-        <div class="container">
-            <div class="amenities__label text-center">
+    <!-- sections.amenities>(.amenities__label>.container>h2{Why Choose Us}+p{When Picking a gym, consider its amenities Like gues access, hours, location,<br>and extra benefits to enhance your experience.})+(.amenities__wrapper>.container>.amenities__entries>(.amenities__entry*4>(.amenities__entry__logo>span)+.amenities__entry__details>h4{Facility Amenities}+p{Best Training dolor sit amet consectetur Cras eros molestie habitasse sed proin volutpat sollctudin adipsicing.})^img[src="https://via.placeholder.com/300x400"]) -->
+    <sections class="amenities my-10">
+        <div class="amenities__label text-center">
+            <div class="container">
                 <h2>Why Choose Us</h2>
                 <p>When Picking a gym, consider its amenities Like gues access, hours, location,<br>and extra benefits to enhance your experience.</p>
             </div>
-            <div class="amenities__wrapper">
-                <div class="amenities__entry">
-                    <div class="amenities__entry__logo"><span></span></div>
+        </div>
+        <div class="amenities__wrapper flex justify-center items-center gap-2 bg-gray p-2 m-1">
+            <div class="amenities__entries flex justify-center items-center gap-2">
+                <div class="amenities__entry flex justify-center gap-2">
+                    <div class="amenities__entry__logo"><span class="fas fa-dumbbell bg-accent border-light p-1"></span></div>
                     <div class="amenities__entry__details">
                         <h4>Facility Amenities</h4>
                         <p>Best Training dolor sit amet consectetur Cras eros molestie habitasse sed proin volutpat sollctudin adipsicing.</p>
                     </div>
                 </div>
-                <div class="amenities__entry">
-                    <div class="amenities__entry__logo"><span></span></div>
+                <div class="amenities__entry flex justify-center gap-2">
+                    <div class="amenities__entry__logo"><span class="fas fa-money-bill bg-accent border-light p-1"></span></div>
                     <div class="amenities__entry__details">
-                        <h4>Facility Amenities</h4>
-                        <p>Best Training dolor sit amet consectetur Cras eros molestie habitasse sed proin volutpat sollctudin adipsicing.</p>
+                        <h4>Membership Cost</h4>
+                        <p>Experience Trainers  dolor sit amet volutpa Cras eros molestie habitasse sed proin volutpat sollicitudin adipiscing.</p>
                     </div>
                 </div>
-                <div class="amenities__entry">
-                    <div class="amenities__entry__logo"><span></span></div>
+                <div class="amenities__entry flex justify-center gap-2">
+                    <div class="amenities__entry__logo"><span class="fas fa-dumbbell bg-accent border-light p-1"></span></div>
                     <div class="amenities__entry__details">
-                        <h4>Facility Amenities</h4>
-                        <p>Best Training dolor sit amet consectetur Cras eros molestie habitasse sed proin volutpat sollctudin adipsicing.</p>
+                        <h4>Trainer Qualifications</h4>
+                        <p>Experience Trainers dolor sit amet volutpa Cras eros molestie habitasse sed proin volutpat sollicitudin adipiscing.</p>
                     </div>
                 </div>
-                <div class="amenities__entry">
-                    <div class="amenities__entry__logo"><span></span></div>
+                <div class="amenities__entry flex justify-center gap-2">
+                    <div class="amenities__entry__logo"><span class="far fa-clock bg-accent border-light p-1"></span></div>
                     <div class="amenities__entry__details">
-                        <h4>Facility Amenities</h4>
-                        <p>Best Training dolor sit amet consectetur Cras eros molestie habitasse sed proin volutpat sollctudin adipsicing.</p>
+                        <h4>Operating Hours</h4>
+                        <p>Experience Trainers dolor sit amet volutpa Cras eros molestie habitasse sed proin volutpat sollicitudin adipiscing.</p>
                     </div>
                 </div>
-                <img src="https://via.placeholder.com/300x400" alt="">
             </div>
+            <img src="https://via.placeholder.com/300x400" alt="">
         </div>
     </sections>
 
 
+    <!-- section.trainer>.container>(.trainer__label>h2{Meet Our Trainers}+p{Whether you're looking to bould strength, improve flexibility, or embark on a transformative fitness journey.})+(.trainer__wrapper>.trainer__cards>.trainer__card*3>img+p{Esther Howard}) -->
+    <section class="trainer py-10 m-1">
+        <div class="container">
+            <div class="trainer__label text-center">
+                <h2>Meet Our Trainers</h2>
+                <p>Whether you're looking to bould strength, improve flexibility, or embark on a transformative fitness journey.</p>
+            </div>
+            <div class="trainer__wrapper">
+                <div class="trainer__cards flex justify-center items-center gap-3">
+                    <div class="trainer__card  text-center">
+                        <img src="http://via.placeholder.com/300x400" alt="">
+                        <p>Esther Howard</p>
+                    </div>
+                    <div class="trainer__card text-center">
+                        <img src="http://via.placeholder.com/300x400" alt="">
+                        <p>Esther Howard</p>
+                    </div>
+                    <div class="trainer__card text-center">
+                        <img src="http://via.placeholder.com/300x400" alt="">
+                        <p>Esther Howard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+
+
+    
 
     <section class="cta py-10 mb-2">
         <div class="container">

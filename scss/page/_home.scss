@@ -5,21 +5,23 @@
 // @use "../vendor" as *;
 
 .banner{
-    background-color: $clr-light;
-    color: $clr-dark;
-    border-radius: 5rem;
+    border-radius: 6.5rem;
     &__top{
         flex-wrap: wrap;
     }
     &__text{
         // width: 100%;
         h1{
-            max-width: 76rem;
+            max-width: 88rem;
             text-wrap: wrap;
             margin: 0;
             margin-bottom: -1rem;
             letter-spacing: 0.15rem;
             font-family: $ft-fspmlico;
+            font-size: 11rem;
+            @include mediaQueryMxW{
+                font-size: 3.75rem;
+            }
         }
         p{
             font-weight: 500;
@@ -37,6 +39,7 @@
         }
         @include mediaQueryMxW{
             width: 100%;
+            flex-wrap: wrap;
         }
     }
     &__images{
@@ -45,12 +48,18 @@
             max-width: 40rem;
             width: 100%;
             overflow: hidden;
-            img{ @include imgCover(30rem, 100%); }
+            img{ @include imgCover(38rem, 100%); }
             p{
-                font-size: 1.5rem;
+                font-size: 2rem;
                 margin-bottom: 0;;
+                font-weight: 500;
             }
-            @include mediaQueryMxW{ max-width: unset; }
+            @include mediaQueryMxW{ 
+                max-width: unset;
+                p{
+                    font-size: 1.75rem
+                }
+            }
         }
         &__right{
             width: 100%;
@@ -62,21 +71,95 @@
 
 .testimonies{
     background-color: $clr-gray;
-    border-radius: 5rem;
+    border-radius: 10rem;
+    
     *{ color: $clr-light; }
+    &__wrapper{
+        flex-wrap: wrap;
+        @include mediaQueryMxW{ justify-content: center; }
+    }
     &__entry{
+        width: clamp(24rem, 30rem, 35rem);
         h3{
-            font-size: 2.5rem;
+            font-size: 4rem;
             margin: 0;
+            font-weight: 550;
         }
         h5{
-            font-size: 1.25rem;
+            font-size: 1.5rem;
             font-weight: 500;
         }
-        p{
-            font-size: 1.25rem;
-        }
+        p{ font-size: 1.25rem; }
+    }
+}
 
+.amenities{
+    *{ color:$clr-light; }
+    &__wrapper{
+        border-radius: 3rem;
+        overflow: hidden;
+        min-height: 40rem;
+        img{
+            position: absolute;
+            max-width: 30rem;
+            max-height: 40rem;
+            right: 0;
+            transform: translateX(-2.5%);
+            @include imgCover(100%, 30rem);
+            border-top-right-radius: 3rem;
+            border-bottom-right-radius: 3rem;
+            @include mediaQueryMxW{
+                order: -1;
+                position: relative;
+            }
+            @include mediaQueryMxW(1500px){
+                border-radius: 0rem;
+            }
+        }
+        @include mediaQueryMxW{
+            flex-wrap: wrap;
+        }
+    }
+    &__entries{
+        flex-wrap: wrap;
+        margin-right: 40rem;
+        @include mediaQueryMxW{
+            margin-right: 0rem;
+        }
+    }
+    &__entry{
+        max-width: 50rem;
+        &__logo{ span{ border-radius: 100rem; } }
+        @include mediaQueryMxW{
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.trainer{
+    *{ color: $clr-light; }
+    &__cards{
+        flex-wrap: wrap;
+    }
+    &__card{
+        position: relative;
+        border-radius: 3rem;
+        overflow: hidden;
+        img{ @include imgCover(100%, 30rem); }
+        p{
+            position: absolute;
+            bottom: -3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            color: $clr-dark;
+            text-align: center;
+            width: 100%;
+            height: 15%;
+            background-color: rgba(107, 106, 94, 0.8);
+            font-size: 2.2rem;
+            font-weight: 500;
+            color: $clr-light;
+        }
     }
 }
 
@@ -84,6 +167,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(https://via.placeholder.com/800x300);
+    background-position: center center;
 
     &__wrapper{
         flex-direction: column;
@@ -94,3 +178,4 @@
         }
     }
 }
+

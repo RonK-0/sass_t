@@ -29,7 +29,7 @@ a {
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 150rem;
   padding: 0 1.6rem;
   margin: 0 auto;
 }
@@ -855,15 +855,19 @@ body {
   margin-bottom: 1rem;
 }
 .header__wrapper .logo {
+  display: block;
   letter-spacing: 0.5rem;
   font-weight: 900;
   font-size: 3rem;
-  color: var(--accent);
-  text-shadow: 3px 3px 0 var(--dark), -1px -1px 0 var(--dark), 1px -1px 0 var(--dark), -1px 1px 0 var(--dark), 1px 1px 0 var(--dark);
+  color: var(--light);
+  -webkit-text-stroke: 1px var(--accent);
+  text-shadow: 2px 1px 0px var(--accent), 3px 2px 0px var(--accent), 3px 2px 0px var(--accent), 3px 3px 0 var(--accent), 1px 1px 0 var(--accent);
+  transform: scale(1.5, 1.25) translateX(1.5rem);
 }
 .header li a {
   padding-bottom: 0.5rem;
   font-weight: 500;
+  font-size: 2rem;
 }
 .header .active {
   border-bottom: 2px solid var(--accent);
@@ -884,7 +888,7 @@ body {
     opacity: 0;
     position: fixed;
     background-color: var(--light);
-    top: 5rem;
+    top: 9.25rem;
     left: 0;
     height: 100%;
     width: 100%;
@@ -978,20 +982,24 @@ body {
 }
 
 .banner {
-  background-color: var(--light);
-  color: var(--dark);
-  border-radius: 5rem;
+  border-radius: 6.5rem;
 }
 .banner__top {
   flex-wrap: wrap;
 }
 .banner__text h1 {
-  max-width: 76rem;
+  max-width: 88rem;
   text-wrap: wrap;
   margin: 0;
   margin-bottom: -1rem;
   letter-spacing: 0.15rem;
   font-family: "FS Pimlico";
+  font-size: 11rem;
+}
+@media (max-width: 42rem) {
+  .banner__text h1 {
+    font-size: 3.75rem;
+  }
 }
 .banner__text p {
   font-weight: 500;
@@ -1008,6 +1016,7 @@ body {
 @media (max-width: 42rem) {
   .banner__action {
     width: 100%;
+    flex-wrap: wrap;
   }
 }
 .banner__images img {
@@ -1019,18 +1028,22 @@ body {
   overflow: hidden;
 }
 .banner__images__left img {
-  height: 30rem;
+  height: 38rem;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .banner__images__left p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 0;
+  font-weight: 500;
 }
 @media (max-width: 42rem) {
   .banner__images__left {
     max-width: unset;
+  }
+  .banner__images__left p {
+    font-size: 1.75rem;
   }
 }
 .banner__images__right {
@@ -1050,27 +1063,130 @@ body {
 
 .testimonies {
   background-color: var(--gray);
-  border-radius: 5rem;
+  border-radius: 10rem;
 }
 .testimonies * {
   color: var(--light);
 }
+.testimonies__wrapper {
+  flex-wrap: wrap;
+}
+@media (max-width: 42rem) {
+  .testimonies__wrapper {
+    justify-content: center;
+  }
+}
+.testimonies__entry {
+  width: 30rem;
+}
 .testimonies__entry h3 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin: 0;
+  font-weight: 550;
 }
 .testimonies__entry h5 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 .testimonies__entry p {
   font-size: 1.25rem;
 }
 
+.amenities * {
+  color: var(--light);
+}
+.amenities__wrapper {
+  border-radius: 3rem;
+  overflow: hidden;
+  min-height: 40rem;
+}
+.amenities__wrapper img {
+  position: absolute;
+  max-width: 30rem;
+  max-height: 40rem;
+  right: 0;
+  transform: translateX(-2.5%);
+  height: 100%;
+  width: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+@media (max-width: 42rem) {
+  .amenities__wrapper img {
+    order: -1;
+    position: relative;
+  }
+}
+@media (max-width: 1500px) {
+  .amenities__wrapper img {
+    border-radius: 0rem;
+  }
+}
+@media (max-width: 42rem) {
+  .amenities__wrapper {
+    flex-wrap: wrap;
+  }
+}
+.amenities__entries {
+  flex-wrap: wrap;
+  margin-right: 40rem;
+}
+@media (max-width: 42rem) {
+  .amenities__entries {
+    margin-right: 0rem;
+  }
+}
+.amenities__entry {
+  max-width: 50rem;
+}
+.amenities__entry__logo span {
+  border-radius: 100rem;
+}
+@media (max-width: 42rem) {
+  .amenities__entry {
+    flex-wrap: wrap;
+  }
+}
+
+.trainer * {
+  color: var(--light);
+}
+.trainer__cards {
+  flex-wrap: wrap;
+}
+.trainer__card {
+  position: relative;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+.trainer__card img {
+  height: 100%;
+  width: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.trainer__card p {
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--dark);
+  text-align: center;
+  width: 100%;
+  height: 15%;
+  background-color: rgba(107, 106, 94, 0.8);
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--light);
+}
+
 .cta {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(https://via.placeholder.com/800x300);
+  background-position: center center;
 }
 .cta__wrapper {
   flex-direction: column;
