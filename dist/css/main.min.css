@@ -1071,7 +1071,7 @@ body {
 .proof__wrapper {
   flex-wrap: wrap;
 }
-@media (max-width: 42rem) {
+@media (max-width: 749px) {
   .proof__wrapper {
     justify-content: center;
   }
@@ -1105,7 +1105,7 @@ body {
   max-width: 30rem;
   max-height: 40rem;
   right: 0;
-  transform: translateX(-2.5%);
+  transform: translateX(-5%);
   height: 100%;
   width: 30rem;
   -o-object-fit: cover;
@@ -1180,6 +1180,71 @@ body {
   font-size: 2.2rem;
   font-weight: 500;
   color: var(--light);
+}
+
+.testimonies {
+  border-radius: 3.5rem;
+}
+.testimonies * {
+  color: var(--light);
+}
+@media (max-width: 80rem) {
+  .testimonies__wrapper {
+    flex-direction: column;
+  }
+}
+.testimonies__left {
+  max-width: 50rem;
+}
+.testimonies__left p {
+  margin: 0;
+}
+@media (max-width: 42rem) {
+  .testimonies__left p {
+    font-size: 1.2rem;
+  }
+}
+.testimonies__left h2 {
+  font-weight: 500;
+}
+.testimonies__left__buttons button {
+  border-radius: 10rem;
+  font-size: 2rem;
+}
+@media (max-width: 80rem) {
+  .testimonies__left__buttons {
+    justify-content: center;
+  }
+}
+@media (max-width: 80rem) {
+  .testimonies__left {
+    width: 100%;
+    max-width: unset;
+  }
+}
+.testimonies__right {
+  max-width: 85rem;
+}
+.testimonies__right p {
+  font-size: 2rem;
+  letter-spacing: 0.05rem;
+  text-wrap: wrap;
+}
+.testimonies__right__client img {
+  height: 10rem;
+  width: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10rem;
+}
+.testimonies__right__client__details h4 {
+  margin: 0;
+}
+@media (max-width: 80rem) {
+  .testimonies__right {
+    width: 100%;
+    max-width: unset;
+  }
 }
 
 .cta {

@@ -76,7 +76,7 @@
     *{ color: $clr-light; }
     &__wrapper{
         flex-wrap: wrap;
-        @include mediaQueryMxW{ justify-content: center; }
+        @include mediaQueryMxW(749px){ justify-content: center; }
     }
     &__entry{
         width: clamp(24rem, 30rem, 35rem);
@@ -104,7 +104,7 @@
             max-width: 30rem;
             max-height: 40rem;
             right: 0;
-            transform: translateX(-2.5%);
+            transform: translateX(-5%);
             @include imgCover(100%, 30rem);
             border-top-right-radius: 3rem;
             border-bottom-right-radius: 3rem;
@@ -163,8 +163,62 @@
     }
 }
 
-.words{
-
+.testimonies{
+    *{ color: $clr-light; }
+    border-radius: 3.5rem;
+    &__wrapper{
+        @include mediaQueryMxW($md){
+            flex-direction: column;
+        }
+    }
+    &__left{
+        max-width: 50rem;
+        p{
+            margin: 0;
+            @include mediaQueryMxW{
+                font-size: 1.2rem;
+            }
+        }
+        h2{
+            font-weight: 500;
+        }
+        &__buttons{
+            button{
+                border-radius: 10rem;
+                font-size: 2rem;
+            }
+            @include mediaQueryMxW($md){
+                justify-content: center;
+            }
+        }
+        @include mediaQueryMxW($md){
+            width: 100%;
+            max-width: unset;
+        }
+    }
+    &__right{
+        max-width: 85rem;
+        p{
+            font-size: 2rem;
+            letter-spacing: 0.05rem;
+            text-wrap: wrap;
+        }
+        &__client{
+            img{
+                @include imgCover(10rem, 10rem);
+                border-radius: 10rem;
+            }
+            &__details{
+                h4{
+                    margin: 0;
+                }
+            }
+        }
+        @include mediaQueryMxW($md){
+            width: 100%;
+            max-width: unset;
+        }
+    }
 }
 
 .cta{
