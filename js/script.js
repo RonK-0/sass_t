@@ -17,13 +17,15 @@ btnTheme.addEventListener("click", () => {
     body.classList.remove('dark');
     root.style.setProperty('--light', '#fff');
     root.style.setProperty('--dark', '#000');
+    root.style.setProperty('--gray', '#222');
     icon.classList.remove("fa-sun");
     icon.classList.add("fa-moon");
   }
   else{
     body.classList.add('dark');
-    root.style.setProperty('--light', '#000');
+    root.style.setProperty('--light', '#333');
     root.style.setProperty('--dark', '#fff');
+    root.style.setProperty('--gray', '#ccc');
     icon.classList.add("fa-sun");
     icon.classList.remove("fa-moon");
   }

@@ -7,6 +7,10 @@
         margin-bottom: 1rem;
         .logo{
             transform:scale(1.5,1.25) translateX(1.5rem);
+            @include mediaQueryMxW($sm){ transform:scale(1.5,1.25); }
+        }
+        button:last-child{
+            @include mediaQueryMxW(450px){ display: none; }
         }
     }
     li a{
@@ -16,7 +20,7 @@
     }
     .active{ border-bottom: 2px solid $clr-accent;}
     #toggleMenu{ display: none; }
-    @include mediaQueryMxW($sm){
+    @include mediaQueryMxW(740px){
         #toggleMenu{ display: block; order: -1; }
         i{ display: none; }
         ul{

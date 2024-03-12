@@ -7,23 +7,22 @@
 .banner{
     border-radius: 6.5rem;
     &__text{
-        // width: 100%;
         h1{
             max-width: 88rem;
             text-wrap: wrap;
             margin: 0;
-            margin-bottom: -1rem;
             letter-spacing: 0.15rem;
             font-family: $ft-fspmlico;
             font-size: clamp(6rem, 8vw, 11rem);
+            line-height: 1;
             @include mediaQueryMxW{
-                font-size: clamp(3rem, 6vw, 5rem);
+                font-size: clamp(3.5rem, 6vw, 5rem);
                 margin-bottom: 1rem;
             }
         }
         p{
             font-weight: 500;
-            color: #5a5958;
+            opacity: 0.5;
             letter-spacing: 0.2rem;
         }
     }
@@ -33,7 +32,7 @@
             font-weight: 500;
             letter-spacing: 0.1rem;
             padding: 2rem 1.75rem;
-            font-size: 1.5rem;
+            font-size: clamp(1.15rem, 4vw, 1.5rem);
             @include mediaQueryMxW{
                 min-width: unset;
             }
@@ -57,9 +56,7 @@
             }
             @include mediaQueryMxW{ 
                 max-width: unset;
-                p{
-                    font-size: 1.75rem
-                }
+                p{ font-size: 1.75rem }
             }
         }
         &__right{
@@ -73,8 +70,6 @@
 .proof{
     background-color: $clr-gray;
     border-radius: 10rem;
-    
-    *{ color: $clr-light; }
     &__wrapper{ @include mediaQueryMxW(749px){ justify-content: center; } }
     &__entry{
         width: clamp(24rem, 30rem, 35rem);
@@ -106,30 +101,39 @@
             @include imgCover(100%, 30rem);
             border-top-right-radius: 3rem;
             border-bottom-right-radius: 3rem;
-            @include mediaQueryMxW{
+            @include mediaQueryMxW($md){
                 order: -1;
+                @include imgCover(100%, 100%);
+            }
+            @include mediaQueryMxW(1515px){
+                border-radius: 0rem;
+                transform: unset;
                 position: relative;
             }
-            @include mediaQueryMxW(1500px){
-                border-radius: 0rem;
-            }
         }
-        @include mediaQueryMxW{ flex-wrap: wrap; }
+        @include mediaQueryMxW($md){ flex-wrap: wrap; }
     }
     &__entries{
         flex-wrap: wrap;
         margin-right: 40rem;
-        @include mediaQueryMxW{ margin-right: 0rem; }
+        // @include mediaQueryMxW{ margin-right: 0rem; }
+        @include mediaQueryMxW(1515px){
+            margin-right: 0rem
+        }
     }
     &__entry{
         max-width: 50rem;
-        &__logo{ span{ border-radius: 100rem; } }
+        &__logo{ 
+            span{
+                border-radius: 100rem;
+                @include mediaQueryMxW{ font-size: 2rem;}
+            }
+        }
         @include mediaQueryMxW{ flex-wrap: wrap; }
     }
 }
 
 .trainer{
-    *{ color: $clr-light; }
     &__card{
         position: relative;
         border-radius: 3rem;
@@ -145,7 +149,7 @@
             background-color: rgba(107, 106, 94, 0.8);
             font-size: clamp(1.5rem, 5vw, 2.2rem);
             font-weight: 500;
-            color: $clr-light;
+            color: #fff;
         }
     }
 }

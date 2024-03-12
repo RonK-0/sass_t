@@ -29,7 +29,7 @@ a {
 }
 
 .container {
-    max-width: 150rem;
+    max-width: 100%;
     padding: 0 1.6rem;
     margin: 0 auto;
 }
@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6{
     font-weight: bold;
     font-family: $ft-clash;
     text-wrap: balance;
-    color: $clr-dark;
+    // color: $clr-dark;
 }
 
 h1{ font-size:clamp(5.5rem, 8vw, 7rem); margin-bottom: 2rem; }

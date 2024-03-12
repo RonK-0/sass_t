@@ -28,7 +28,7 @@ a {
 }
 
 .container {
-  max-width: 150rem;
+  max-width: 100%;
   padding: 0 1.6rem;
   margin: 0 auto;
 }
@@ -42,7 +42,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   font-family: "ClashDisplay-Variable", "Arial", sans-serif;
   text-wrap: balance;
-  color: var(--dark);
 }
 
 h1 {
@@ -874,6 +873,16 @@ body {
 .header__wrapper .logo {
   transform: scale(1.5, 1.25) translateX(1.5rem);
 }
+@media (max-width: 42rem) {
+  .header__wrapper .logo {
+    transform: scale(1.5, 1.25);
+  }
+}
+@media (max-width: 450px) {
+  .header__wrapper button:last-child {
+    display: none;
+  }
+}
 .header li a {
   padding-bottom: 0.5rem;
   font-weight: 500;
@@ -885,7 +894,7 @@ body {
 .header #toggleMenu {
   display: none;
 }
-@media (max-width: 42rem) {
+@media (max-width: 740px) {
   .header #toggleMenu {
     display: block;
     order: -1;
@@ -912,12 +921,12 @@ body {
     font-size: 3rem;
   }
 }
-@media (max-width: 42rem) and (max-width: 25rem) {
+@media (max-width: 740px) and (max-width: 25rem) {
   .header ul a {
     font-size: 2rem;
   }
 }
-@media (max-width: 42rem) {
+@media (max-width: 740px) {
   .header ul.open {
     visibility: visible;
     opacity: 1;
@@ -937,10 +946,7 @@ body {
   font-weight: 500;
 }
 .footer__wrapper * {
-  font-size: clamp(1.5rem, 6vw, 2rem);
-}
-.footer__links {
-  flex-wrap: wrap;
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 @media (max-width: 505px) {
   .footer__links {
@@ -948,7 +954,6 @@ body {
   }
 }
 .footer__box {
-  text-align: left;
   min-width: 10rem;
   max-width: 30rem;
 }
@@ -968,6 +973,9 @@ body {
     transform: scale(1.5, 1.25) translateX(0rem);
   }
 }
+.footer__box ul li {
+  text-wrap: wrap;
+}
 .footer__box ul li i {
   padding-right: 1rem;
 }
@@ -978,15 +986,25 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 42rem) {
+  .footer__box ul li img {
+    min-width: unset;
+  }
+}
+@media (max-width: 42rem) {
+  .footer__box ul li {
+    flex-direction: column;
+  }
+}
 .footer__bottom {
   border-top: 1px solid var(--light);
-  font-size: inherit;
 }
 @media (max-width: 42rem) {
   .footer__bottom {
     flex-direction: column;
     align-items: center;
     gap: 0;
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
   }
 }
 
@@ -997,20 +1015,20 @@ body {
   max-width: 88rem;
   text-wrap: wrap;
   margin: 0;
-  margin-bottom: -1rem;
   letter-spacing: 0.15rem;
   font-family: "FS Pimlico";
   font-size: clamp(6rem, 8vw, 11rem);
+  line-height: 1;
 }
 @media (max-width: 42rem) {
   .banner__text h1 {
-    font-size: clamp(3rem, 6vw, 5rem);
+    font-size: clamp(3.5rem, 6vw, 5rem);
     margin-bottom: 1rem;
   }
 }
 .banner__text p {
   font-weight: 500;
-  color: #5a5958;
+  opacity: 0.5;
   letter-spacing: 0.2rem;
 }
 .banner__action button {
@@ -1018,7 +1036,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.1rem;
   padding: 2rem 1.75rem;
-  font-size: 1.5rem;
+  font-size: clamp(1.15rem, 4vw, 1.5rem);
 }
 @media (max-width: 42rem) {
   .banner__action button {
@@ -1077,9 +1095,6 @@ body {
   background-color: var(--gray);
   border-radius: 10rem;
 }
-.proof * {
-  color: var(--light);
-}
 @media (max-width: 749px) {
   .proof__wrapper {
     justify-content: center;
@@ -1122,18 +1137,23 @@ body {
   border-top-right-radius: 3rem;
   border-bottom-right-radius: 3rem;
 }
-@media (max-width: 42rem) {
+@media (max-width: 80rem) {
   .amenities__wrapper img {
     order: -1;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 1515px) {
+  .amenities__wrapper img {
+    border-radius: 0rem;
+    transform: unset;
     position: relative;
   }
 }
-@media (max-width: 1500px) {
-  .amenities__wrapper img {
-    border-radius: 0rem;
-  }
-}
-@media (max-width: 42rem) {
+@media (max-width: 80rem) {
   .amenities__wrapper {
     flex-wrap: wrap;
   }
@@ -1142,7 +1162,7 @@ body {
   flex-wrap: wrap;
   margin-right: 40rem;
 }
-@media (max-width: 42rem) {
+@media (max-width: 1515px) {
   .amenities__entries {
     margin-right: 0rem;
   }
@@ -1154,14 +1174,16 @@ body {
   border-radius: 100rem;
 }
 @media (max-width: 42rem) {
+  .amenities__entry__logo span {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 42rem) {
   .amenities__entry {
     flex-wrap: wrap;
   }
 }
 
-.trainer * {
-  color: var(--light);
-}
 .trainer__card {
   position: relative;
   border-radius: 3rem;
@@ -1183,7 +1205,7 @@ body {
   background-color: rgba(107, 106, 94, 0.8);
   font-size: clamp(1.5rem, 5vw, 2.2rem);
   font-weight: 500;
-  color: var(--light);
+  color: #fff;
 }
 
 .testimonies {
