@@ -1061,34 +1061,34 @@ body {
   }
 }
 
-.testimonies {
+.proof {
   background-color: var(--gray);
   border-radius: 10rem;
 }
-.testimonies * {
+.proof * {
   color: var(--light);
 }
-.testimonies__wrapper {
+.proof__wrapper {
   flex-wrap: wrap;
 }
 @media (max-width: 42rem) {
-  .testimonies__wrapper {
+  .proof__wrapper {
     justify-content: center;
   }
 }
-.testimonies__entry {
+.proof__entry {
   width: 30rem;
 }
-.testimonies__entry h3 {
+.proof__entry h3 {
   font-size: 4rem;
   margin: 0;
   font-weight: 550;
 }
-.testimonies__entry h5 {
+.proof__entry h5 {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.testimonies__entry p {
+.proof__entry p {
   font-size: 1.25rem;
 }
 
