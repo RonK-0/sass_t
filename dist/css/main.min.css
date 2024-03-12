@@ -16,6 +16,7 @@ body {
   background-color: var(--dark);
   line-height: 1.6;
   font-size: 1.6rem;
+  transition: 0.5s ease;
 }
 body.open {
   overflow: hidden;
@@ -67,10 +68,6 @@ h4 {
 p {
   font-size: clamp(1.4rem, 6vw, 1.6rem);
   margin-bottom: 1.3rem;
-}
-
-p {
-  color: var(--dark);
 }
 
 button {
@@ -1284,6 +1281,7 @@ body {
   background-repeat: no-repeat;
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(https://via.placeholder.com/800x300);
   background-position: center center;
+  color: #000;
 }
 .cta__wrapper button {
   max-width: 16rem;

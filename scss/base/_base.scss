@@ -3,9 +3,6 @@
 $ft-clash: "ClashDisplay-Variable", "Arial", sans-serif;
 $ft-fspmlico: "FS Pimlico";
 
-*{
-    // transition: 0.35s linear;  //animation for changing between light and dark mode
-}
 
 html {
     font-size: 10px;
@@ -21,6 +18,7 @@ body {
         overflow: hidden;
         height: 100vh;
     }
+    transition: 0.5s ease;  //animation for changing between light and dark mode
 }
 
 a {
@@ -52,9 +50,9 @@ h3{ font-size:clamp(2rem, 6vw, 2.75rem); margin-bottom: 1.6rem; }
 h4{ font-size:clamp(1.4rem, 6vw, 1.6rem); margin-bottom: 1.6rem; }
 p{ font-size:clamp(1.4rem, 6vw, 1.6rem); margin-bottom: 1.3rem; }
 
-p{
-    color: $clr-dark;
-}
+// p{
+//     color: $clr-dark;
+// }
 
 button{
     border: none;
