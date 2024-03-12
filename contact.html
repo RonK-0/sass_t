@@ -34,7 +34,41 @@
         </div>
     </header>
 
-    section.contactForm>.container>.contactForm__wrapper>
+    <!-- main.contact>.container>.contact__wrapper>(.contact__form>form>(.input--wrap>input:text+label{Name}+span{Required*})+(.input--wrap>input:email+label{Email}+span{Required*})+(.input--wrap>textarea+label{Message}+span{Required*})+button{Send Message})+(.contact__info>ul>(li>(i.fas.fa-envelope){myblog@somewhere.com})+(li>(i.fas.fa-phone){0922-2222-222})+(li>(i.fas.fa-map-marker-alt){222 Street 31st Avenue Makati City})) -->
+    <main class="contact">
+        <div class="container">
+            <div class="contact__wrapper">
+                <div class="contact__form">
+                    <form action="">
+                        <div class="input--wrap">
+                            <input type="text" name="" id="">
+                            <label for="">Name</label>
+                            <span>Required*</span>
+                        </div>
+                        <div class="input--wrap">
+                            <input type="email" name="" id="">
+                            <label for="">Email</label>
+                            <span>Required*</span>
+                        </div>
+                        <div class="input--wrap">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <label for="">Message</label>
+                            <span>Required*</span>
+                        </div>
+                        <button>Send Message</button>
+                    </form>
+                </div>
+                <div class="contact__info">
+                    <ul>
+                        <li><i class="fas fa-envelope"></i>myblog@somewhere.com</li>
+                        <li><i class="fas fa-phone"></i>0922-2222-222</li>
+                        <li><i class="fas fa-map-marker-alt"></i>222 Street 31st Avenue Makati City</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    
 
     <!-- footer.footer>.container>.footer__wrapper>(.footer__form>h3{Send Me News}+form>input:text[placeholder="Enter your email"]+button{GET INSIGHTS})+(.footer__links>.footer__box*3>h4{CONTENT}+ul>li*4{Blog}) -->
     <footer class="footer">
