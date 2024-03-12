@@ -16,6 +16,10 @@ $ft-roboto-bold: "Roboto Bold", "Arial Black", sans-serif;
 $ft-sprat: "Sprat Condensed", "Times New Roman", serif;
 $ft-sprat-bold: "Sprat Condensed Bold", "Times New Roman Bold", serif;
 
+*{
+    transition: 0.35s linear;  //animation for changing between light and dark mode
+}
+
 html {
     font-size: 10px;
 }
@@ -30,7 +34,6 @@ body {
         overflow: hidden;
         height: 100vh;
     }
-    transition: 0.5s ease;  //animation for changing between light and dark mode
 }
 
 a {
@@ -74,4 +77,8 @@ button{
 
 .fas, .fa-regular{
     color: $clr-dark;
+}
+
+input, textarea{
+    background: transparent;
 }

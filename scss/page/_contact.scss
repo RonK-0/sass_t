@@ -14,11 +14,14 @@
     position: relative;
     input,textarea{
         width: 100%;
+        min-height: 4rem;
+        box-sizing: border-box;
         padding: 1rem;
         border: none;
         border-bottom: 1px solid $clr-dark;
         outline: none;
-        background-color: $clr-light;
+        color: $clr-dark;
+        // background-color: $clr-light;        
         &:focus, &:valid{
             border-color: coral;
             & + label{
@@ -33,14 +36,6 @@
             border: 2px solid coral;
             border-radius: 0.5rem;
         }
-        // &:not(:placeholder-shown) + label , &:focus + label{
-        //     top: -0.5rem;
-        //     left: 0;
-        //     font-size: 1.2rem;
-        //     color: coral;
-        //     font-weight: bold;
-        //     opacity: 1;
-        // }
         font-family: $ft-roboto-regular;
     }
     label{

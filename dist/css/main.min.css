@@ -98,6 +98,10 @@
   font-family: "Sprat Condensed Bold";
   src: url("../../fonts/Sprat-CondensedBold.otf");
 }
+* {
+  transition: 0.35s linear;
+}
+
 html {
   font-size: 10px;
 }
@@ -108,7 +112,6 @@ body {
   background-color: var(--light);
   line-height: 1.6;
   font-size: 1.6rem;
-  transition: 0.5s ease;
 }
 body.open {
   overflow: hidden;
@@ -175,6 +178,10 @@ button {
 
 .fas, .fa-regular {
   color: var(--dark);
+}
+
+input, textarea {
+  background: transparent;
 }
 
 * {
@@ -739,7 +746,6 @@ body {
   width: 100%;
   padding: 1rem;
   border: none;
-  background-color: transparent;
   border-bottom: 1px solid var(--dark);
 }
 .footer__form form button {
@@ -878,11 +884,13 @@ article p {
 }
 .input--wrap input, .input--wrap textarea {
   width: 100%;
+  min-height: 4rem;
+  box-sizing: border-box;
   padding: 1rem;
   border: none;
   border-bottom: 1px solid var(--dark);
   outline: none;
-  background-color: var(--light);
+  color: var(--dark);
   font-family: "Roboto", "Arial", sans-serif;
 }
 .input--wrap input:focus, .input--wrap input:valid, .input--wrap textarea:focus, .input--wrap textarea:valid {
