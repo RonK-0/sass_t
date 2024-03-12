@@ -175,21 +175,15 @@
         max-width: 50rem;
         p{
             margin: 0;
-            @include mediaQueryMxW{
-                font-size: 1.2rem;
-            }
+            @include mediaQueryMxW{ font-size: 1.2rem; }
         }
-        h2{
-            font-weight: 500;
-        }
+        h2{ font-weight: 500; }
         &__buttons{
             button{
                 border-radius: 10rem;
                 font-size: 2rem;
             }
-            @include mediaQueryMxW($md){
-                justify-content: center;
-            }
+            @include mediaQueryMxW($md){ justify-content: center; }
         }
         @include mediaQueryMxW($md){
             width: 100%;
@@ -208,11 +202,7 @@
                 @include imgCover(10rem, 10rem);
                 border-radius: 10rem;
             }
-            &__details{
-                h4{
-                    margin: 0;
-                }
-            }
+            &__details{ h4{ margin: 0; } }
         }
         @include mediaQueryMxW($md){
             width: 100%;
