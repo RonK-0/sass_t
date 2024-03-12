@@ -717,6 +717,10 @@ body {
   flex-direction: column;
 }
 
+.f-wrap {
+  flex-wrap: wrap;
+}
+
 /**
  * @license
  *
@@ -989,9 +993,6 @@ body {
 .banner {
   border-radius: 6.5rem;
 }
-.banner__top {
-  flex-wrap: wrap;
-}
 .banner__text h1 {
   max-width: 88rem;
   text-wrap: wrap;
@@ -1079,9 +1080,6 @@ body {
 .proof * {
   color: var(--light);
 }
-.proof__wrapper {
-  flex-wrap: wrap;
-}
 @media (max-width: 749px) {
   .proof__wrapper {
     justify-content: center;
@@ -1164,9 +1162,6 @@ body {
 .trainer * {
   color: var(--light);
 }
-.trainer__cards {
-  flex-wrap: wrap;
-}
 .trainer__card {
   position: relative;
   border-radius: 3rem;
@@ -1183,8 +1178,6 @@ body {
   bottom: -3rem;
   left: 50%;
   transform: translateX(-50%);
-  color: var(--dark);
-  text-align: center;
   width: 100%;
   height: 5rem;
   background-color: rgba(107, 106, 94, 0.8);
@@ -1269,9 +1262,6 @@ body {
   background-repeat: no-repeat;
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(https://via.placeholder.com/800x300);
   background-position: center center;
-}
-.cta__wrapper {
-  flex-direction: column;
 }
 .cta__wrapper button {
   max-width: 16rem;
