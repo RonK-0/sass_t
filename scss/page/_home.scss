@@ -135,11 +135,11 @@
         p{
             position: absolute;
             bottom: -3rem;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 0;
             width: 100%;
             height: 7rem;
-            background-color: rgba(107, 106, 94, 0.8);
+            // background-color: rgba(107, 106, 94, 0.8);
+            backdrop-filter: blur(10px);
             font-size: clamp(1.5rem, 5vw, 2.2rem);
             color: #fff;
         }
@@ -188,6 +188,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(https://via.placeholder.com/800x300);
+    // backdrop-filter: blur(100px);    //not working here due to background-image
     background-position: center center;
     color: #000;
     &__wrapper{
