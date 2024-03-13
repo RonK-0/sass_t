@@ -13,7 +13,10 @@
         font-size: 2rem;
     }
     .active{ border-bottom: 2px solid $clr-accent;}
-    #toggleMenu{ display: none; }
+    #toggleMenu{ 
+        display: none;
+        font-size: 1.6rem;
+    }
     @include mediaQueryMxW(740px){
         #toggleMenu{ display: block; order: -1; }
         i{ display: none; }

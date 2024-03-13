@@ -127,3 +127,13 @@ $align: (
 .m-0{
     margin: 0;
 }
+
+$case: (
+    "upper": uppercase,
+    "lower": lowercase,
+);
+@each $key, $val in $case{
+    .text-#{$key}{
+        text-transform: #{$val};
+    }
+}

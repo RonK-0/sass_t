@@ -3,6 +3,9 @@
 $ft-clash: "ClashDisplay-Variable", "Arial", sans-serif;
 $ft-fspmlico: "FS Pimlico";
 
+body, h1, h2, h3, h4, h5, p, ul li, a, small {
+    transition: 0.5s ease;  //animation for changing between light and dark mode
+}
 
 html {
     font-size: 10px;
@@ -11,14 +14,14 @@ html {
 body {
     font-family: $ft-clash;
     color: $clr-light;
-    background-color: $clr-dark;
+    // background-color: $clr-dark;
+    background-color: #000;
     line-height: 1.6;
     font-size: 1.6rem;
     &.open{
         overflow: hidden;
         height: 100vh;
     }
-    transition: 0.5s ease;  //animation for changing between light and dark mode
 }
 
 a {
