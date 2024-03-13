@@ -1231,6 +1231,21 @@ body {
 }
 .testimonies__right {
   max-width: 85rem;
+  position: relative;
+}
+.testimonies__right i:first-of-type {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  position: absolute;
+  top: -4rem;
+  left: -4rem;
+  opacity: 0.5;
+}
+@media (max-width: 80rem) {
+  .testimonies__right i:first-of-type {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 }
 .testimonies__right p {
   font-size: clamp(1.5rem, 6vw, 2rem);

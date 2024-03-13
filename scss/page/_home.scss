@@ -159,6 +159,19 @@
     }
     &__right{
         max-width: 85rem;
+        position: relative;
+        i:first-of-type{
+            font-size: clamp(2.5rem, 4vw, 4rem);
+            position: absolute;
+            top: -4rem;
+            left: -4rem;
+            opacity: 0.5;
+            @include mediaQueryMxW($md){
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+        }
         p{
             font-size: clamp(1.5rem, 6vw, 2rem);
             letter-spacing: 0.05rem;
