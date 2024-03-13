@@ -5,11 +5,11 @@
     // background-color: #000815;
     *{ color: $clr-light; }
     &__wrapper{ *{ font-size: clamp(1.5rem, 3vw, 2rem); } }
-    &__links{ @include mediaQueryMxW(505px){ justify-content: center; } }
+    &__links{ @include mediaQueryMxW(505px){ justify-content: center; gap: 2rem; } }
     &__box{
         min-width: 10rem;
-        max-width: 30rem;
-        @include mediaQueryMxW(505px){
+        max-width: 33rem;
+        @include mediaQueryMxW(598px){
             text-align: center;
             align-items: center;
             max-width: unset;
@@ -17,7 +17,7 @@
         .logo{
             font-size: 3rem;
             transform:scale(1.5,1.25) translateX(-5.5rem);
-            @include mediaQueryMxW(505px){ transform:scale(1.5,1.25) translateX(0rem); }
+            @include mediaQueryMxW(598px){ transform:scale(1.5,1.25) translateX(0rem); }
         }
         ul{
             li{

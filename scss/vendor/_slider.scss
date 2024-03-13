@@ -23,12 +23,28 @@
 //     }
 // }
 
+// .tns-controls{
+//     @include flex(space-between, center);
+//     margin: 2rem 0;
+//     button{
+//         background: transparent;
+//         border: none;
+//         font-size: 3rem;
+//     }
+// }
 .tns-controls{
-    @include flex(space-between, center);
-    margin: 2rem 0;
+    position: absolute;
+    bottom: 5rem;
+    left: 10rem;
+    display: flex;
+    gap: 2rem;
     button{
-        background: transparent;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        @include flex(center, center);
+        background-color: $clr-accent;
         border: none;
-        font-size: 3rem;
+        color: $clr-light;
     }
 }
