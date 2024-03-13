@@ -3,10 +3,7 @@
 .footer{
     background-color: $clr-dark;
     *{ color: $clr-light; }
-    &__wrapper{
-        h4{ font-weight: 500; }
-        *{ font-size: clamp(1.5rem, 3vw, 2rem); }
-    }
+    &__wrapper{ *{ font-size: clamp(1.5rem, 3vw, 2rem); } }
     &__links{ @include mediaQueryMxW(505px){ justify-content: center; } }
     &__box{
         min-width: 10rem;

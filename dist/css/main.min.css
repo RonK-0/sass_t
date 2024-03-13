@@ -717,6 +717,18 @@ body {
   flex-wrap: wrap;
 }
 
+.fw-500 {
+  font-weight: 500;
+}
+
+.text-wrap {
+  text-wrap: wrap;
+}
+
+.m-0 {
+  margin: 0;
+}
+
 /**
  * @license
  *
@@ -860,13 +872,6 @@ body {
   font-size: 0.3rem;
 }
 
-.header__wrapper {
-  padding: 2rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-}
 .header__wrapper .logo {
   transform: scale(1.5, 1.25) translateX(1.5rem);
 }
@@ -882,7 +887,6 @@ body {
 }
 .header li a {
   padding-bottom: 0.5rem;
-  font-weight: 500;
   font-size: 2rem;
 }
 .header .active {
@@ -938,9 +942,6 @@ body {
 }
 .footer * {
   color: var(--light);
-}
-.footer__wrapper h4 {
-  font-weight: 500;
 }
 .footer__wrapper * {
   font-size: clamp(1.5rem, 3vw, 2rem);
@@ -1010,8 +1011,6 @@ body {
 }
 .banner__text h1 {
   max-width: 88rem;
-  text-wrap: wrap;
-  margin: 0;
   letter-spacing: 0.15rem;
   font-family: "FS Pimlico";
   font-size: clamp(6rem, 8vw, 11rem);
@@ -1024,13 +1023,11 @@ body {
   }
 }
 .banner__text p {
-  font-weight: 500;
   opacity: 0.5;
   letter-spacing: 0.2rem;
 }
 .banner__action button {
   min-width: 17.5rem;
-  font-weight: 500;
   letter-spacing: 0.1rem;
   padding: 2rem 1.75rem;
   font-size: clamp(1.15rem, 4vw, 1.5rem);
@@ -1052,7 +1049,6 @@ body {
 .banner__images__left {
   max-width: 40rem;
   width: 100%;
-  overflow: hidden;
 }
 .banner__images__left img {
   height: 38rem;
@@ -1063,7 +1059,6 @@ body {
 .banner__images__left p {
   font-size: 2rem;
   margin-bottom: 0;
-  font-weight: 500;
 }
 @media (max-width: 42rem) {
   .banner__images__left {
@@ -1102,12 +1097,10 @@ body {
 }
 .proof__entry h3 {
   font-size: 4rem;
-  margin: 0;
   font-weight: 550;
 }
 .proof__entry h5 {
   font-size: 1.5rem;
-  font-weight: 500;
 }
 .proof__entry p {
   font-size: 1.25rem;
@@ -1156,7 +1149,6 @@ body {
   }
 }
 .amenities__entries {
-  flex-wrap: wrap;
   margin-right: 40rem;
 }
 @media (max-width: 1515px) {
@@ -1201,7 +1193,6 @@ body {
   height: 5rem;
   background-color: rgba(107, 106, 94, 0.8);
   font-size: clamp(1.5rem, 5vw, 2.2rem);
-  font-weight: 500;
   color: #fff;
 }
 
@@ -1219,16 +1210,10 @@ body {
 .testimonies__left {
   max-width: 50rem;
 }
-.testimonies__left p {
-  margin: 0;
-}
 @media (max-width: 42rem) {
   .testimonies__left p {
     font-size: 1.2rem;
   }
-}
-.testimonies__left h2 {
-  font-weight: 500;
 }
 .testimonies__left__buttons button {
   border-radius: 10rem;
@@ -1251,7 +1236,6 @@ body {
 .testimonies__right p {
   font-size: clamp(1.5rem, 6vw, 2rem);
   letter-spacing: 0.05rem;
-  text-wrap: wrap;
 }
 .testimonies__right__client img {
   height: 10rem;
@@ -1259,9 +1243,6 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10rem;
-}
-.testimonies__right__client__details h4 {
-  margin: 0;
 }
 @media (max-width: 42rem) {
   .testimonies__right__client {

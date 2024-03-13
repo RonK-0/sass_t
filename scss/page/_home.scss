@@ -9,8 +9,6 @@
     &__text{
         h1{
             max-width: 88rem;
-            text-wrap: wrap;
-            margin: 0;
             letter-spacing: 0.15rem;
             font-family: $ft-fspmlico;
             font-size: clamp(6rem, 8vw, 11rem);
@@ -21,7 +19,6 @@
             }
         }
         p{
-            font-weight: 500;
             opacity: 0.5;
             letter-spacing: 0.2rem;
         }
@@ -29,13 +26,10 @@
     &__action{
         button{
             min-width: 17.5rem;
-            font-weight: 500;
             letter-spacing: 0.1rem;
             padding: 2rem 1.75rem;
             font-size: clamp(1.15rem, 4vw, 1.5rem);
-            @include mediaQueryMxW{
-                min-width: unset;
-            }
+            @include mediaQueryMxW{ min-width: unset; }
         }
         @include mediaQueryMxW{
             width: 100%;
@@ -47,12 +41,10 @@
         &__left{
             max-width: 40rem;
             width: 100%;
-            overflow: hidden;
             img{ @include imgCover(38rem, 100%); }
             p{
                 font-size: 2rem;
                 margin-bottom: 0;;
-                font-weight: 500;
             }
             @include mediaQueryMxW{ 
                 max-width: unset;
@@ -75,13 +67,9 @@
         width: clamp(24rem, 30rem, 35rem);
         h3{
             font-size: 4rem;
-            margin: 0;
             font-weight: 550;
         }
-        h5{
-            font-size: 1.5rem;
-            font-weight: 500;
-        }
+        h5{ font-size: 1.5rem; }
         p{ font-size: 1.25rem; }
     }
 }
@@ -114,12 +102,8 @@
         @include mediaQueryMxW($md){ flex-wrap: wrap; }
     }
     &__entries{
-        flex-wrap: wrap;
         margin-right: 40rem;
-        // @include mediaQueryMxW{ margin-right: 0rem; }
-        @include mediaQueryMxW(1515px){
-            margin-right: 0rem
-        }
+        @include mediaQueryMxW(1515px){ margin-right: 0rem }
     }
     &__entry{
         max-width: 50rem;
@@ -148,7 +132,6 @@
             height: 5rem;
             background-color: rgba(107, 106, 94, 0.8);
             font-size: clamp(1.5rem, 5vw, 2.2rem);
-            font-weight: 500;
             color: #fff;
         }
     }
@@ -160,11 +143,7 @@
     &__wrapper{ @include mediaQueryMxW($md){ flex-direction: column; } }
     &__left{
         max-width: 50rem;
-        p{
-            margin: 0;
-            @include mediaQueryMxW{ font-size: 1.2rem; }
-        }
-        h2{ font-weight: 500; }
+        p{ @include mediaQueryMxW{ font-size: 1.2rem; } }
         &__buttons{
             button{
                 border-radius: 10rem;
@@ -182,14 +161,12 @@
         p{
             font-size: clamp(1.5rem, 6vw, 2rem);
             letter-spacing: 0.05rem;
-            text-wrap: wrap;
         }
         &__client{
             img{
                 @include imgCover(10rem, 10rem);
                 border-radius: 10rem;
             }
-            &__details{  h4{ margin: 0; } }
             @include mediaQueryMxW{
                 justify-content: center;
                 flex-wrap: wrap;
