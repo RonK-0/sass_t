@@ -1111,47 +1111,21 @@ body {
 }
 .amenities__wrapper {
   border-radius: 3rem;
-  overflow: hidden;
   min-height: 40rem;
+  background-image: url(https://via.placeholder.com/300x400);
+  background-repeat: no-repeat;
+  background-position: center right;
 }
-.amenities__wrapper img {
-  position: absolute;
-  max-width: 30rem;
-  max-height: 40rem;
-  right: 0;
-  transform: translateX(-5%);
-  height: 100%;
-  width: 30rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-top-right-radius: 3rem;
-  border-bottom-right-radius: 3rem;
-}
-@media (max-width: 1515px) {
-  .amenities__wrapper img {
-    border-radius: 0rem;
-    transform: unset;
-    position: relative;
-  }
-}
-@media (max-width: 80rem) {
-  .amenities__wrapper img {
-    order: -1;
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-@media (max-width: 80rem) {
+@media (max-width: 1518px) {
   .amenities__wrapper {
     flex-wrap: wrap;
+    background-image: unset;
   }
 }
 .amenities__entries {
   margin-right: 40rem;
 }
-@media (max-width: 1515px) {
+@media (max-width: 1518px) {
   .amenities__entries {
     margin-right: 0rem;
   }

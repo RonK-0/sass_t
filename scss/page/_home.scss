@@ -72,32 +72,18 @@
     *{ color:$clr-light; }
     &__wrapper{
         border-radius: 3rem;
-        overflow: hidden;
         min-height: 40rem;
-        img{
-            position: absolute;
-            max-width: 30rem;
-            max-height: 40rem;
-            right: 0;
-            transform: translateX(-5%);
-            @include imgCover(100%, 30rem);
-            border-top-right-radius: 3rem;
-            border-bottom-right-radius: 3rem;
-            @include mediaQueryMxW(1515px){
-                border-radius: 0rem;
-                transform: unset;
-                position: relative;
-            }
-            @include mediaQueryMxW($md){
-                order: -1;
-                @include imgCover(100%, 100%);
-            }
+        background-image: url(https://via.placeholder.com/300x400);
+        background-repeat: no-repeat;
+        background-position: center right;
+        @include mediaQueryMxW(1518px){
+            flex-wrap: wrap;
+            background-image: unset;
         }
-        @include mediaQueryMxW($md){ flex-wrap: wrap; }
     }
     &__entries{
         margin-right: 40rem;
-        @include mediaQueryMxW(1515px){ margin-right: 0rem }
+        @include mediaQueryMxW(1518px){ margin-right: 0rem }
     }
     &__entry{
         max-width: 50rem;
