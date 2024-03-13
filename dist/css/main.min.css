@@ -1106,6 +1106,13 @@ body {
   font-size: clamp(1.3rem, 4vw, 1.25rem);
 }
 
+.amenities * {
+  color: var(--light);
+}
+.amenities__label p {
+  max-width: 60rem;
+  margin: 0 auto;
+}
 .amenities__wrapper {
   border-radius: 3rem;
   overflow: hidden;
@@ -1172,6 +1179,10 @@ body {
 
 .trainer * {
   color: var(--light);
+}
+.trainer__label p {
+  max-width: 60rem;
+  margin: 0 auto;
 }
 .trainer__card {
   position: relative;

@@ -69,11 +69,13 @@
 }
 
 .amenities{
-    // *{ color:$clr-light; }
-    // &__label{
-    //     max-width: 60rem;
-    //     justify-self: center;
-    // }
+    *{ color:$clr-light; }
+    &__label{
+        p{
+            max-width: 60rem;
+            margin: 0 auto;
+        }
+    }
     &__wrapper{
         border-radius: 3rem;
         overflow: hidden;
@@ -117,6 +119,12 @@
 
 .trainer{
     *{ color: $clr-light; }
+    &__label{
+        p{
+            max-width: 60rem;
+            margin: 0 auto;
+        }
+    }
     &__card{
         position: relative;
         border-radius: 3rem;
