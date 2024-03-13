@@ -32,19 +32,20 @@
 //         font-size: 3rem;
 //     }
 // }
-.tns-controls{
-    position: absolute;
-    bottom: 5rem;
-    left: 10rem;
-    display: flex;
-    gap: 2rem;
-    button{
-        width: 5rem;
-        height: 5rem;
-        border-radius: 50%;
-        @include flex(center, center);
-        background-color: $clr-accent;
-        border: none;
-        color: $clr-light;
-    }
-}
+
+// .tns-controls{
+//     position: absolute;
+//     bottom: 5rem;
+//     left: 10rem;
+//     display: flex;
+//     gap: 2rem;
+//     button{
+//         width: 5rem;
+//         height: 5rem;
+//         border-radius: 50%;
+//         @include flex(center, center);
+//         background-color: $clr-accent;
+//         border: none;
+//         color: $clr-light;
+//     }
+// }

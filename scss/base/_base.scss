@@ -3,19 +3,23 @@
 $ft-clash: "ClashDisplay-Variable", "Arial", sans-serif;
 $ft-fspmlico: "FS Pimlico";
 
-body, h1, h2, h3, h4, h5, p, ul li, a, small {
-    transition: 0.5s ease;  //animation for changing between light and dark mode
-}
+$ft-economica: "Economica", sans-serif;
+$ft-montserrat: "Montserrat", sans-serif;
+$ft-walter: "Walter Turncoat";
+
+
+// body, h1, h2, h3, h4, h5, p, ul li, a, small {
+//     transition: 0.5s ease;  //animation for changing between light and dark mode
+// }
 
 html {
     font-size: 10px;
 }
 
 body {
-    font-family: $ft-clash;
-    color: $clr-light;
-    // background-color: $clr-dark;
-    background-color: #000;
+    font-family: $ft-montserrat;
+    color: $clr-text;
+    background-color: $clr-white;
     line-height: 1.6;
     font-size: 1.6rem;
     &.open{
@@ -26,66 +30,60 @@ body {
 
 a {
     text-decoration: none;
-    color: $clr-dark;
+    color: $clr-white;
 }
 
 .container {
     // max-width: 100%;
-    max-width: 170rem;
+    max-width: 98rem;
     padding: 0 1.6rem;
     margin: 0 auto;
 }
 
 ul{
     list-style: none;
-    color: $clr-dark;
+    // color: $clr-dark;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-weight: bold;
-    font-family: $ft-clash;
-    text-wrap: balance;
-    // color: $clr-dark;
+    color: $clr-white;
 }
 
 h1{ font-size:clamp(5.5rem, 8vw, 7rem); margin-bottom: 2rem; }
 h2{ font-size:clamp(2.7rem, 6vw, 4.5rem); margin-bottom: 2rem; }
 h3{ font-size:clamp(2rem, 6vw, 2.75rem); margin-bottom: 1.6rem; }
-h4{ font-size:clamp(1.4rem, 6vw, 1.6rem); margin-bottom: 1.6rem; }
+h4{ font-size:clamp(1.6rem, 6vw, 1.8rem); margin-bottom: 1.6rem; }
+h5{ font-size:clamp(1.4rem, 6vw, 1.6rem); margin-bottom: 1.6rem; }
 p{ font-size:clamp(1.4rem, 6vw, 1.6rem); margin-bottom: 1.3rem; }
-
-// p{
-//     color: $clr-dark;
-// }
 
 button{
     border: none;
     background: transparent;
-    color: $clr-dark;
 }
 
 input, textarea{
     background: transparent;
 }
 
-.logo{
-    display: block;
-    letter-spacing: 0.5rem;
-    font-family: "Bauhaus 93";
-    font-weight: 900;
-    font-size: 3rem;
-    color: $clr-light;
-    -webkit-text-stroke: 1px $clr-accent;
-    text-shadow:
-        -1px -1px 0 $clr-light,
-        -1px 1px 0 $clr-light,
-        1px -1px 0 $clr-light,
-        1px 1px 0 $clr-light;    
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-transform:scale(1.5, 1.25);
-    -moz-transform:scale(1.5, 1.25);
-    -ms-transform:scale(1.5, 1.25);
-    -o-transform:scale(1.5, 1.25);
-}
+// .logo{
+//     display: block;
+//     letter-spacing: 0.5rem;
+//     font-family: "Bauhaus 93";
+//     font-weight: 900;
+//     font-size: 3rem;
+//     color: $clr-light;
+//     -webkit-text-stroke: 1px $clr-accent;
+//     text-shadow:
+//         -1px -1px 0 $clr-light,
+//         -1px 1px 0 $clr-light,
+//         1px -1px 0 $clr-light,
+//         1px 1px 0 $clr-light;    
+//     -webkit-background-clip: text;
+//     -moz-background-clip: text;
+//     background-clip: text;
+//     -webkit-transform:scale(1.5, 1.25);
+//     -moz-transform:scale(1.5, 1.25);
+//     -ms-transform:scale(1.5, 1.25);
+//     -o-transform:scale(1.5, 1.25);
+// }

@@ -1,14 +1,16 @@
 :root{
-    --light: #fff;
-    --dark: #131313;
-    --accent: #ff7906;
-    --gray: #222222;
+    --white: #fff;
+    --red: #e60033;
+    --gray: #808080;
+    --text: #433d3c;
+    --primary: #f6ad49 ;
 }
 
-$clr-light: var(--light);
-$clr-accent: var(--accent);
-$clr-dark: var(--dark);
+$clr-white: var(--white);
+$clr-red: var(--red);
 $clr-gray: var(--gray);
+$clr-text: var(--text);
+$clr-primary: var(--primary);
 
 // $bp-xs: 32rem;
 // $bp-sm: 55rem;

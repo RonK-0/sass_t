@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gym Home</title>
+    <title>Michi Ramen</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./dist/css/main.min.css">
@@ -14,366 +14,433 @@
 </head>
 
 <body>
-    <!-- section.banner>.container>.banner__wrapper>(.banner__top(.banner__text>p{THE BEST FITNESS CLUB IN TOWN}+h1{IMPROVE YOUR FITNESS LEVEL FOR THE BETTER})+(.banner__action>button.btn{BUTTON}*2))+(.banner__images>.banner__images__left>img+p^.banner__images__right>img) -->
-    <section class="banner m-2 p-1 mb-3 bg-light text-dark">
-        <header class="header">
-            <div class="container">
-                <div class="header__wrapper py-2 mb-1 flex justify-between items-center">
-                    <button id="toggleMenu" class="fas fa-bars"></button>
-                    <a href="#" class="logo">GYM</a>
-                    <ul class="flex gap-2" id="menu">
-                        <li><a href="#" class="fw-500 active">Home</a></li>
-                        <li><a href="#" class="fw-500">Class</a></li>
-                        <li><a href="#" class="fw-500">Trainers</a></li>
-                        <li><a href="#" class="fw-500">Contact</a></li>
-                    </ul>
-                    <div class="flex gap-1 items-center">
-                        <button class="theme far fa-moon"></button>
-                        <button class="btn btn-accent text-light">Sign up</button>
-                    </div>
-                </div>
-            </div>
-        </header>
+    <!-- section.banner>.container>(header.header>.header__wrapper>img[src="../images/logo/logo.png"]+(nav>ul>li*4>a{MENU})+button.btn{ORDER ONLINE})+(.banner__wrapper>h1{MICHI RAMEN}+p{NORTH: TUE - SUN 11AM - MIDNIGHT | SOUTH: TUE - SUN 5PM - MIDNIGHT}) -->
+    <section class="banner">
         <div class="container">
-            <div class="banner__wrapper pb-8 flex f-col gap-4 mt-6">
-                <div class="banner__top flex justify-between f-wrap">
-                    <div class="banner__text">
-                        <p class="text-dark fw-500">THE BEST FITNESS CLUB IN TOWN</p>
-                        <h1 class="text-wrap m-0">IMPROVE YOUR FITNESS LEVEL FOR THE BETTER</h1>
-                    </div>
-                    <div class="banner__action flex items-end gap-2 justify-center">
-                        <button class="btn btn-accent text-light flex align justify-center fw-500">BE A MEMBER</button>
-                        <button class="btn btn-light text-dark border-accent flex align justify-center fw-500"><i class="fa-regular fa-circle-play text-dark"></i>&nbsp; LEARN MORE</button>
-                    </div>
-                </div>
-                <div class="banner__images flex gap-4">
-                    <div class="banner__images__left flex f-col gap-2">
-                        <img src="https://via.placeholder.com/150x100" alt="">
-                        <p class="text-justify fw-500">Gym session or brisk walk can help. Physical activity stimulates many chemical that may leave you Gym session or brisk walk can help. physical activity stimulated many chemicals that may leave you</p>
-                    </div>
-                    <div class="banner__images__right">
-                        <img src="https://via.placeholder.com/600x350" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- section.proof>.container>.proof__wrapper>.proof__entry*4>h3{500+}+h4{Happy Members}+p{Our community is growing fast!} -->
-    <section class="proof m-2 p-2 py-4 mb-10">
-        <div class="container">
-            <div class="proof__wrapper flex f-wrap justify-between items-center gap-2">
-                <div class="proof__entry flex f-col text-light">
-                    <h3 class="m-0">500+</h3>
-                    <h5 class="fw-500">Happy Members</h5>
-                    <small>Our community is growing fast!</small>
-                </div>
-                <div class="proof__entry flex f-col text-light">
-                    <h3 class="m-0">30+</h3>
-                    <h5 class="fw-500">Weekly Classes</h5>
-                    <small>Pic from various workouts</small>
-                </div>
-                <div class="proof__entry flex f-col text-light">
-                    <h3 class="m-0">10</h3>
-                    <h5 class="fw-500">Certified Trainers</h5>
-                    <small>Guidance at every step.</small>
-                </div>
-                <div class="proof__entry flex f-col text-light">
-                    <h3 class="m-0">99%</h3>
-                    <h5 class="fw-500">Customer Satisfaction</h5>
-                    <small>We ensure your progress satisfaction</small>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- sections.amenities>(.amenities__label>.container>h2{Why Choose Us}+p{When Picking a gym, consider its amenities Like gues access, hours, location,<br>and extra benefits to enhance your experience.})+(.amenities__wrapper>.container>.amenities__entries>(.amenities__entry*4>(.amenities__entry__logo>span)+.amenities__entry__details>h4{Facility Amenities}+p{Best Training dolor sit amet consectetur Cras eros molestie habitasse sed proin volutpat sollctudin adipsicing.})^img[src="https://via.placeholder.com/300x400"]) -->
-    <sections class="amenities my-10">
-        <div class="amenities__label text-center mb-6">
-            <div class="container">
-                <h2>Why Choose Us</h2>
-                <p>When Picking a gym, consider its amenities Like gues access, hours, location, and extra benefits to enhance your experience.</p>
-            </div>
-        </div>
-        <div class="amenities__wrapper flex justify-center items-center gap-2 bg-gray p-2 m-2">
-            <div class="amenities__entries flex f-wrap justify-center items-center gap-2">
-                <div class="amenities__entry flex justify-center gap-2">
-                    <div class="amenities__entry__logo bg-accent border-light flex justify-center items-center"><span class="fas fa-dumbbell text-dark"></span></div>
-                    <div class="amenities__entry__details">
-                        <h4>Facility Amenities</h4>
-                        <p>Best Training dolor sit amet consectetur Cras eros molestie habitasse sed proin volutpat sollctudin adipsicing.</p>
-                    </div>
-                </div>
-                <div class="amenities__entry flex justify-center gap-2">
-                    <div class="amenities__entry__logo bg-accent border-light flex justify-center items-center"><span class="fas fa-money-bill text-dark"></span></div>
-                    <div class="amenities__entry__details">
-                        <h4>Membership Cost</h4>
-                        <p>Experience Trainers  dolor sit amet volutpa Cras eros molestie habitasse sed proin volutpat sollicitudin adipiscing.</p>
-                    </div>
-                </div>
-                <div class="amenities__entry flex justify-center gap-2">
-                    <div class="amenities__entry__logo bg-accent border-light flex justify-center items-center"><span class="fas fa-dumbbell text-dark"></span></div>
-                    <div class="amenities__entry__details">
-                        <h4>Trainer Qualifications</h4>
-                        <p>Experience Trainers dolor sit amet volutpa Cras eros molestie habitasse sed proin volutpat sollicitudin adipiscing.</p>
-                    </div>
-                </div>
-                <div class="amenities__entry flex justify-center gap-2">
-                    <div class="amenities__entry__logo bg-accent border-light flex justify-center items-center"><span class="far fa-clock text-dark"></span></div>
-                    <div class="amenities__entry__details">
-                        <h4>Operating Hours</h4>
-                        <p>Experience Trainers dolor sit amet volutpa Cras eros molestie habitasse sed proin volutpat sollicitudin adipiscing.</p>
-                    </div>
-                </div>
-            </div>
-            <img src="https://via.placeholder.com/300x400" alt="">
-        </div>
-    </sections>
-
-
-    <!-- section.trainer>.container>(.trainer__label>h2{Meet Our Trainers}+p{Whether you're looking to bould strength, improve flexibility, or embark on a transformative fitness journey.})+(.trainer__wrapper>.trainer__cards>.trainer__card*3>img+p{Esther Howard}) -->
-    <section class="trainer py-10 m-2">
-        <div class="container">
-            <div class="trainer__label text-center mb-6">
-                <h2>Meet Our Trainers</h2>
-                <p>Whether you're looking to bould strength, improve flexibility, or embark on a transformative fitness journey.</p>
-            </div>
-            <div class="trainer__wrapper">
-                <div class="trainer__cards flex f-wrap justify-center items-center gap-3">
-                    <div class="trainer__card  text-center">
-                        <img src="http://via.placeholder.com/300x400" alt="">
-                        <p class="text-dark text-center fw-500 pt-1 text-center">Esther Howard</p>
-                    </div>
-                    <div class="trainer__card text-center">
-                        <img src="http://via.placeholder.com/300x400" alt="">
-                        <p class="text-dark text-center fw-500 pt-1 text-center">Jenny Wilson</p>
-                    </div>
-                    <div class="trainer__card text-center">
-                        <img src="http://via.placeholder.com/300x400" alt="">
-                        <p class="text-dark text-center fw-500 pt-1 text-center">Ralph Edwards</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- section.testimonies>.container>.testimonies__wrapper>(.testimonies__left>.testimonies__left__text(p{DON"T TAKE OUR WORDS}+h2{Listern from our Happy Clients})+(.testimonies__left__buttons>button.fas.fa-arrow-left+button.fas.fa-arrow-right))+(.testimonies__right>p{lorem30}+.testimonies__right__client>img>.testimonies__right__client__details>h4+small) -->
-    <section class="testimonies m-2 py-10 bg-gray mt-4">
-        <div class="container">
-            <div class="testimonies__wrapper flex gap-5">
-                <div class="testimonies__left flex f-col justify-between">
-                    <div class="testimonies__left__text">
-                        <p class="m-0">DON"T TAKE OUR WORDS</p>
-                        <h2 class="mb-4 fw-500">Listern from our Happy Clients</h2>
-                    </div>
-                    <div class="testimonies__left__buttons flex items-center gap-2">
-                        <button class="fas fa-arrow-left p-1 bg-accent text-light"></button>
-                        <button class="fas fa-arrow-right p-1 bg-accent text-light"></button>
-                    </div>
-                </div>
-                <div class="testimonies__right flex f-col justify-between">
-                    <i class="fas fa-quote-left"></i>
-                    <p class="text-wrap">"I have been a proud member of this incredible gym for over a year now, and the experience has been nothign short of amazing. The state-of-the-art equipment, knowledgable staff, and diverse group classes have made my fitness journey not only effective but truly enjoyable"</p>
-                    <div class="testimonies__right__client flex items-center gap-2">
-                        <img src="https://media1.tenor.com/m/x8v1oNUOmg4AAAAd/rickroll-roll.gif" alt="">
-                        <!-- <h4 class="m-0">Eleanor Pena</h4> -->
-                            <span class="testimonies__right__client__details flex f-col">
-                                <h4 class="m-0">Rickroll</h4>
-                                <!-- <h4 class="m-0">Eleanor Pena</h4> -->
-                                <small>Rick</small>
-                                <!-- <small>Athletes</small> -->
-                            </span>
-                        </img>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="slider">
-        <div class="container">
-          <div class="slider__wrapper">
-            <div class="slider__content">
-              <p>Dont Take Our Words</p>
-              <h3>
-                Listen From our <br />
-                Happy Clients
-              </h3>
-            </div>
-            <div class="slider__main">
-              <div class="slider__box">
-                <i class="fa-solid fa-quote-left"></i>
-                <div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Rerum blanditiis dolor illum exercitationem dolore cumque
-                    error quia perferendis officiis, nesciunt soluta tempore?
-                    Recusandae aut alias aspernatur, voluptatibus at dolorum
-                    dicta? Maiores dolor molestiae commodi suscipit repudiandae
-                    rem placeat, quidem eius.
-                  </p>
-                  <div class="profile">
-                    <img src="https://via.placeholder.com/120x120" alt="" />
-                    <ul>
-                      <li><h4>Loverboy</h4></li>
-                      <li><p>Athletes</p></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="slider__box">
-                <i class="fa-solid fa-quote-left"></i>
-                <div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Rerum blanditiis dolor illum exercitationem dolore cumque
-                    error quia perferendis officiis, nesciunt soluta tempore?
-                    Recusandae aut alias aspernatur, voluptatibus at dolorum
-                    dicta? Maiores dolor molestiae commodi suscipit repudiandae
-                    rem placeat, quidem eius.
-                  </p>
-                  <div class="profile">
-                    <img src="https://via.placeholder.com/120x120" alt="" />
-                    <ul>
-                      <li><h4>Loverboy</h4></li>
-                      <li><p>Athletes</p></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="slider__box">
-                <i class="fa-solid fa-quote-left"></i>
-                <div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Rerum blanditiis dolor illum exercitationem dolore cumque
-                    error quia perferendis officiis, nesciunt soluta tempore?
-                    Recusandae aut alias aspernatur, voluptatibus at dolorum
-                    dicta? Maiores dolor molestiae commodi suscipit repudiandae
-                    rem placeat, quidem eius.
-                  </p>
-                  <div class="profile">
-                    <img src="https://via.placeholder.com/120x120" alt="" />
-                    <ul>
-                      <li><h4>Loverboy</h4></li>
-                      <li><p>Athletes</p></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="slider__box">
-                <i class="fa-solid fa-quote-left"></i>
-                <div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Rerum blanditiis dolor illum exercitationem dolore cumque
-                    error quia perferendis officiis, nesciunt soluta tempore?
-                    Recusandae aut alias aspernatur, voluptatibus at dolorum
-                    dicta? Maiores dolor molestiae commodi suscipit repudiandae
-                    rem placeat, quidem eius.
-                  </p>
-                  <div class="profile">
-                    <img src="https://via.placeholder.com/120x120" alt="" />
-                    <ul>
-                      <li><h4>Loverboy</h4></li>
-                      <li><p>Athletes</p></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="slider__box">
-                <i class="fa-solid fa-quote-left"></i>
-                <div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Rerum blanditiis dolor illum exercitationem dolore cumque
-                    error quia perferendis officiis, nesciunt soluta tempore?
-                    Recusandae aut alias aspernatur, voluptatibus at dolorum
-                    dicta? Maiores dolor molestiae commodi suscipit repudiandae
-                    rem placeat, quidem eius.
-                  </p>
-                  <div class="profile">
-                    <img src="https://via.placeholder.com/120x120" alt="" />
-                    <ul>
-                      <li><h4>Loverboy</h4></li>
-                      <li><p>Athletes</p></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- section.cta.py-10.mt-10>.container>.cta__wrapper.text-center.flex.f-col.justify-center.items-center>h2{Join the Gymnastic family}+p{Gym session or brisk walk can help. Physical activity stimulates many brain chemicals that may leave you}+button.btn.btn-accent.text-light{BE A MEMBER} -->
-    <section class="cta py-10 mt-10 mx-1">
-        <div class="container">
-            <div class="cta__wrapper text-center flex f-col justify-center items-center">
-                <h2>Join the Gymnastic family</h2>
-                <p>Gym session or brisk walk can help. Physical activity stimulates many brain chemicals that may leave you.</p>
-                <button class="btn btn-accent text-light">BE A MEMBER</button>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer py-2 pt-10 mx-1">
-        <div class="container">
-            <div class="footer__wrapper mx-2">
-                <div class="footer__links flex f-wrap justify-between gap-6">
-                    <div class="footer__box mb-2 flex f-col justify-center items-center gap-1 text-left">
-                        <a href="#" class="logo">GYM</a>
-                        <p>Gym session or brisk walk can help. physical activity stimulates many chemical that may leave you</p>
-                        <ul class="flex gap-1 justify-center">
-                            <li><i class="fab fa-facebook"></i></li>
-                            <li><i class="fab fa-instagram"></i></li>
-                            <li><i class="fab fa-twitter"></i></li>
-                            
+            <header class="header">
+                <div class="header__wrapper">
+                    <img src="../images/logo/logo.png" alt="">
+                    <nav>
+                        <ul>
+                            <li><a href="">MENU</a></li>
+                            <li><a href="">MENU</a></li>
+                            <li><a href="">MENU</a></li>
+                            <li><a href="">MENU</a></li>
                         </ul>
-                    </div>
-                    <div class="footer__box mb-2 flex f-col gap-1 text-left">
-                        <h4 class="fw-500">Company</h4>
-                        <ul class="flex f-col gap-1">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Class</a></li>
-                            <li><a href="#">Trainers</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__box mb-2 flex f-col gap-1 text-left">
-                        <h4 class="fw-500">Category</h4>
-                        <ul class="flex f-col gap-1">
-                            <li><a href="#">Strength</a></li>
-                            <li><a href="#">Body Building</a></li>
-                            <li><a href="#">Weight Loss</a></li>
-                            <li><a href="#">Basic Yoga</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__box mb-2 flex f-col gap-1 text-left">
-                        <h4 class="fw-500">Contact us</h4>
-                        <ul class="flex f-col gap-1">
-                            <li class="flex items-center gap-1"><i class="fas fa-phone"></i>+97150 467 7274</li>
-                            <li class="flex items-center gap-1"><i class="far fa-envelope"></i>info@domain.com</li>
-                            <li class="flex items-center gap-1"><i class="fas fa-location-dot"></i>Warehouse 4,5th street, Al Quoze 3, dubai</li>
-                        </ul>
-                    </div>
-                    <div class="footer__box mb-2 flex f-col gap-1 text-left">
-                        <h4 class="fw-500">Get the app</h4>
-                        <ul class="flex f-col gap-2">
-                            <li><img src="https://lh3.googleusercontent.com/q1k2l5CwMV31JdDXcpN4Ey7O43PxnjAuZBTmcHEwQxVuv_2wCE2gAAQMWxwNUC2FYEOnYgFPOpw6kmHJWuEGeIBLTj9CuxcOEeU8UXyzWJq4NJM3lg=s0" alt=""></li>
-                            <li><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt=""></li>
-                        </ul>
-                    </div>
+                    </nav>
+                    <button class="btn">ORDER ONLINE</button>
+                </div>
+            </header>
+            <div class="banner__wrapper">
+                <h1>MICHI RAMEN</h1>
+                <p>NORTH: TUE - SUN 11AM - MIDNIGHT | SOUTH: TUE - SUN 5PM - MIDNIGHT</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- section.orderIns>.container>.orderIns__wrapper>h2{HOW TO ORDER AT MICHI}+.orderIns__instruction>.(orderIns__instruction__step>img[src="../images/2_how to order/pick-ramen.png"]+h4{PICK YOUR RAMEN})+i.fas.fa-arrow-right+(orderIns__instruction__step>img[src="../images/2_how to order/pick-broth.png"]+h4{PICK YOUR BROTH})+i.fas.fa-arrow-right+(orderIns__instruction__step>img[src="../images/2_how to order/add-toppings.png"]+h4{ADD TOPPINGS}) -->
+    <section class="orderIns">
+        <div class="container">
+            <div class="orderIns__wrapper">
+                <h2>HOW TO ORDER AT MICHI</h2>
+                <div class="orderIns__instruction">
+                    <div class=""></div>
+                    <orderIns__instruction__step>
+                        <img src="../images/2_how to order/pick-ramen.png" alt="">
+                        <h4>PICK YOUR RAMEN</h4>
+                    </orderIns__instruction__step>
+                    <i class="fas fa-arrow-right"></i>
+                    <orderIns__instruction__step>
+                        <img src="../images/2_how to order/pick-broth.png" alt="">
+                        <h4>PICK YOUR BROTH</h4>
+                    </orderIns__instruction__step>
+                    <i class="fas fa-arrow-right"></i>
+                    <orderIns__instruction__step>
+                        <img src="../images/2_how to order/add-toppings.png" alt="">
+                        <h4>ADD TOPPINGS</h4>
+                    </orderIns__instruction__step>
                 </div>
             </div>
-            <div class="footer__bottom flex gap-4 pt-2 mx-2">
-                <a href="#">&copy;2024 Gymnastic</a>
-                <a href="#">Terms of use | Privacy Policy</a>
+        </div>
+    </section>
+
+
+    <!-- section.menu>.container>h2{RAMEN MENU}+.menu__wrapper>.menu__item*7>((.menu__item__details>h3.menu__item__name{MICHI}+h4.menu__item__price{$9.75}+(.menu__item__ingredients>ul>li{chashu slices}+li{roasted nori}+li{mayu oil}+li{woodear mushrooms}+li{green onions}+li{contains shellfish}+li.callout{TEXT})+span.menu__item__broth>{SHOYU TONKOTSU}))+(.menu__item__image>img[src="../images/3_ramens/michi.png"]) -->
+    <section class="menu">
+        <div class="container">
+            <h2>RAMEN MENU</h2>
+            <div class="menu__wrapper">
+                <div class="menu__item">
+                    <div class="menu__item__details">
+                        <h3 class="menu__item__name">MICHI</h3>
+                        <h4 class="menu__item__price">$9.75</h4>
+                        <div class="menu__item__ingredients">
+                            <ul>
+                                <li>chashu slices</li>
+                                <li>roasted nori</li>
+                                <li>mayu oil</li>
+                                <li>woodear mushrooms</li>
+                                <li>green onions</li>
+                                <li>*contains shellfish</li>
+                            </ul>
+                        </div>
+                        <span class="menu__item__broth">SHOYU TONKOTSU</span>
+                    </div>
+                    <div class="menu__item__image"><img src="../images/3_ramens/michi.png" alt=""></div>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__item__details">
+                        <h3 class="menu__item__name">SAPPORO</h3>
+                        <h4 class="menu__item__price">$10.75</h4>
+                        <div class="menu__item__ingredients">
+                            <ul>
+                                <li>chashu slices</li>
+                                <li>bean sprouts</li>
+                                <li>corn/butter</li>
+                                <li>woodear mushrooms</li>
+                                <li>green onions</li>
+                            </ul>
+                        </div>
+                        <span class="menu__item__broth">MISO TONKOTSU</span>
+                    </div>
+                    <div class="menu__item__image"><img src="../images/3_ramens/sapporo.png" alt=""></div>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__item__details">
+                        <h3 class="menu__item__name">MICHI</h3>
+                        <h4 class="menu__item__price">39.75</h4>
+                        <div class="menu__item__ingredients">
+                            <ul>
+                                <li>chashu slices</li>
+                                <li>roasted nori</li>
+                                <li>mayu oil</li>
+                                <li>woodear mushrooms</li>
+                                <li>green onions</li>
+                                <li>*contains shellfish</li>
+                                <li class="callout">TEXT</li>
+                            </ul>
+                        </div>
+                        <span class="menu__item__broth">SHOYU TONKOTSU</span>
+                    </div>
+                    <div class="menu__item__image"><img src="../images/3_ramens/michi.png" alt=""></div>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__item__details">
+                        <h3 class="menu__item__name">MICHI</h3>
+                        <h4 class="menu__item__price">49.75</h4>
+                        <div class="menu__item__ingredients">
+                            <ul>
+                                <li>chashu slices</li>
+                                <li>roasted nori</li>
+                                <li>mayu oil</li>
+                                <li>woodear mushrooms</li>
+                                <li>green onions</li>
+                                <li>*contains shellfish</li>
+                                <li class="callout">TEXT</li>
+                            </ul>
+                        </div>
+                        <span class="menu__item__broth">SHOYU TONKOTSU</span>
+                    </div>
+                    <div class="menu__item__image"><img src="../images/3_ramens/michi.png" alt=""></div>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__item__details">
+                        <h3 class="menu__item__name">MICHI</h3>
+                        <h4 class="menu__item__price">59.75</h4>
+                        <div class="menu__item__ingredients">
+                            <ul>
+                                <li>chashu slices</li>
+                                <li>roasted nori</li>
+                                <li>mayu oil</li>
+                                <li>woodear mushrooms</li>
+                                <li>green onions</li>
+                                <li>*contains shellfish</li>
+                                <li class="callout">TEXT</li>
+                            </ul>
+                        </div>
+                        <span class="menu__item__broth">SHOYU TONKOTSU</span>
+                    </div>
+                    <div class="menu__item__image"><img src="../images/3_ramens/michi.png" alt=""></div>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__item__details">
+                        <h3 class="menu__item__name">MICHI</h3>
+                        <h4 class="menu__item__price">69.75</h4>
+                        <div class="menu__item__ingredients">
+                            <ul>
+                                <li>chashu slices</li>
+                                <li>roasted nori</li>
+                                <li>mayu oil</li>
+                                <li>woodear mushrooms</li>
+                                <li>green onions</li>
+                                <li>*contains shellfish</li>
+                                <li class="callout">TEXT</li>
+                            </ul>
+                        </div>
+                        <span class="menu__item__broth">SHOYU TONKOTSU</span>
+                    </div>
+                    <div class="menu__item__image"><img src="../images/3_ramens/michi.png" alt=""></div>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__item__details">
+                        <h3 class="menu__item__name">MICHI</h3>
+                        <h4 class="menu__item__price">79.75</h4>
+                        <div class="menu__item__ingredients">
+                            <ul>
+                                <li>chashu slices</li>
+                                <li>roasted nori</li>
+                                <li>mayu oil</li>
+                                <li>woodear mushrooms</li>
+                                <li>green onions</li>
+                                <li>*contains shellfish</li>
+                                <li class="callout">TEXT</li>
+                            </ul>
+                        </div>
+                        <span class="menu__item__broth">SHOYU TONKOTSU</span>
+                    </div>
+                    <div class="menu__item__image"><img src="../images/3_ramens/michi.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+	
+---
+
+MICHI
+$9.75
+chashu slices
+roasted nori
+mayu oil
+woodear mushrooms
+green onions
+*contains shellfish
+
+SHOYU TONKOTSU
+
+---
+
+SAPPORO
+$10.75
+<li>chashu slices</li>
+<li>bean sprouts</li>
+<li>corn/butter</li>
+<li>woodear mushrooms</li>
+<li>green onions</li>
+<li>MISO TONKOTSU</li>
+
+---
+
+VEGGIE
+$8.75
+mix of garlic chives, 
+sprouts and cabbage
+woodear mushrooms
+green onions
++ egg-free noodles $1.00
+
+SHOYU OR MISO SHIITAKE
+---
+
+MEAT LOVERS
+$11.75
+chashu slices
+ground chashu
+mayu oil
+woodear mushrooms
+green onions
+*contains shellfish
+
+SHOYU TONKOTSU
+
+---
+
+JUNGLE
+$10.75
+chashu slices
+bean sprouts
+thai chilis
+woodear mushrooms
+green onions
+toasted lemongrass
+lime wedge
+cilantro
+*contains shellfish
+
+
+LEMONGRASS TONKOTSU
+
+---
+
+DIPPING
+$11.75
+chashu slices
+shredded nori
+woodear mushrooms
+green onions
+ground chashu
+fresh garlic
+fried onions
+mayu oil
+lime wedge
+*broth served on the side
+*contains shellfish
+
+FISH TONKOTSU
+
+---
+
+
+TEXAS
+$13.75
+smoked BBQ pork ribs
+vinegar slaw
+red onions
+mayu oil
+Texas toast
+jalapenos
+pickle spear
+spicy BBQ sauce
+
+TOMATO TONKOTSU
+
+	
+---
+
+MICHI
+$9.75
+chashu slices
+roasted nori
+mayu oil
+woodear mushrooms
+green onions
+*contains shellfish
+
+SHOYU TONKOTSU
+
+---
+
+SAPPORO
+$10.75
+chashu slices
+bean sprouts
+corn/butter
+woodear mushrooms
+green onions
+
+MSIO TONKOTSU
+
+---
+
+VEGGIE
+$8.75
+mix of garlic chives, 
+sprouts and cabbage
+woodear mushrooms
+green onions
++ egg-free noodles $1.00
+
+SHOYU OR MISO SHIITAKE
+---
+
+MEAT LOVERS
+$11.75
+chashu slices
+ground chashu
+mayu oil
+woodear mushrooms
+green onions
+*contains shellfish
+
+SHOYU TONKOTSU
+
+---
+
+JUNGLE
+$10.75
+chashu slices
+bean sprouts
+thai chilis
+woodear mushrooms
+green onions
+toasted lemongrass
+lime wedge
+cilantro
+*contains shellfish
+
+
+LEMONGRASS TONKOTSU
+
+---
+
+DIPPING
+$11.75
+chashu slices
+shredded nori
+woodear mushrooms
+green onions
+ground chashu
+fresh garlic
+fried onions
+mayu oil
+lime wedge
+*broth served on the side
+*contains shellfish
+
+FISH TONKOTSU
+
+---
+
+
+TEXAS
+$13.75
+smoked BBQ pork ribs
+vinegar slaw
+red onions
+mayu oil
+Texas toast
+jalapenos
+pickle spear
+spicy BBQ sauce
+
+TOMATO TONKOTSU
+
+
+
+    <!-- section.hours>.container>.hours__wrapper>(.hours__header>h3{JOIN US FOR HAPPY HOUR}+p{3-6PM / 9-11PM • $1 OFF ALL BEER | WEDNESDAYS 5-11PM • $2 SAKE CARAFFES})+(.hours__images>img[src="../images/4_above footer/Spices.jpg"]+img[src="../images/4_above footer/Broth.jpg"]+img[src="../images/4_above footer/Mochi.jpg"]) -->
+    <section class="hours">
+        <div class="container">
+            <div class="hours__wrapper">
+                <div class="hours__header">
+                    <h3>JOIN US FOR HAPPY HOUR</h3>
+                    <p>3-6PM / 9-11PM • 11 OFF ALL BEER | WEDNESDAYS 5-11PM • 12 SAKE CARAFFES</p>
+                </div>
+                <div class="hours__images">
+                    <img src="../images/4_above footer/Spices.jpg" alt="">
+                    <img src="../images/4_above footer/Broth.jpg" alt="">
+                    <img src="../images/4_above footer/Mochi.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- footer.footer>.container>.footer_wrapper>(.footer_socials>i.fab.fa-yelp+i.fab.fa-twitter+i.fab.fa-facebook-f+i.fab.fa-instagram)+(.footer__locations>p{North: (512) 386-1908 • 6519 N. Lamar 78752<br>South: (512) 394-6350 • 3005 S. Lamar D-114B 78704})+button.btn{ORDER ONLINE} -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrapper">
+                <div class="footer_socials"><i class="fab fa-yelp"></i><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i><i class="fab fa-instagram"></i></div>
+                <div class="footer__locations">
+                    <p>North: (512) 386-1908 • 6519 N. Lamar 78752<br>South: (512) 394-6350 • 3005 S. Lamar D-114B 78704</p>
+                </div>
+                <button class="btn">ORDER ONLINE</button>
             </div>
         </div>
     </footer>
 
+    
     <script src="./js/script.js"></script>
 </body>
 
