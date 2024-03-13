@@ -69,7 +69,11 @@
 }
 
 .amenities{
-    *{ color:$clr-light; }
+    // *{ color:$clr-light; }
+    // &__label{
+    //     max-width: 60rem;
+    //     justify-self: center;
+    // }
     &__wrapper{
         border-radius: 3rem;
         overflow: hidden;
