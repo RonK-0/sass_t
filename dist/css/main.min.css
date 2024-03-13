@@ -1153,7 +1153,7 @@ body {
   }
 }
 .amenities__entries {
-  margin-right: 40rem;
+  margin-right: 28rem;
 }
 @media (max-width: 1515px) {
   .amenities__entries {
@@ -1163,8 +1163,12 @@ body {
 .amenities__entry {
   max-width: 50rem;
 }
-.amenities__entry__logo span {
-  border-radius: 100rem;
+.amenities__entry__logo {
+  width: 4rem;
+  height: 4rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
 }
 @media (max-width: 42rem) {
   .amenities__entry__logo span {

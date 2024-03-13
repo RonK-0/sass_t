@@ -102,16 +102,18 @@
         @include mediaQueryMxW($md){ flex-wrap: wrap; }
     }
     &__entries{
-        margin-right: 40rem;
+        margin-right: 28rem;
         @include mediaQueryMxW(1515px){ margin-right: 0rem }
     }
     &__entry{
         max-width: 50rem;
         &__logo{ 
-            span{
-                border-radius: 100rem;
-                @include mediaQueryMxW{ font-size: 2rem;}
-            }
+            width: 4rem;
+            height: 4rem;
+            flex-shrink: 0;
+            overflow: hidden;
+            border-radius: 50%;
+            span{ @include mediaQueryMxW{ font-size: 2rem;} }
         }
         @include mediaQueryMxW{ flex-wrap: wrap; }
     }
