@@ -7,15 +7,11 @@
 }
 
 @mixin mediaQuery($width: $sm){
-    @media (min-width: $width){
-        @content;
-    }
+    @media (min-width: $width){ @content; }
 }
 
 @mixin mediaQueryMxW($width: $sm){
-    @media (max-width: $width){
-        @content;
-    }
+    @media (max-width: $width){ @content; }
 }
 
 @mixin grid($cols: 1, $gap: 1rem){

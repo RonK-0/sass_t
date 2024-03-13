@@ -862,27 +862,6 @@ body {
   text-decoration: underline;
 }
 
-.card__info {
-  margin: 0.5rem 0 1rem 0;
-  opacity: 0.5;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.card__info ul {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0.5rem;
-}
-.card__info ul li, .card__info ul small {
-  font-size: 1.2rem;
-  line-height: 0;
-}
-.card__info i {
-  font-size: 0.3rem;
-}
-
 .header__wrapper .logo {
   transform: scale(1.5, 1.25) translateX(1.5rem);
 }
@@ -1022,7 +1001,7 @@ body {
   border-radius: 6.5rem;
 }
 .banner__text h1 {
-  max-width: 88rem;
+  max-width: 89rem;
   letter-spacing: 0.15rem;
   font-family: "FS Pimlico";
   font-size: clamp(6rem, 8vw, 11rem);
