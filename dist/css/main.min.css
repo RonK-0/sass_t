@@ -1056,16 +1056,21 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 42rem) {
+  .banner__images__left img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .banner__images__left p {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   margin-bottom: 0;
 }
 @media (max-width: 42rem) {
   .banner__images__left {
     max-width: unset;
-  }
-  .banner__images__left p {
-    font-size: 1.75rem;
   }
 }
 .banner__images__right {
@@ -1096,14 +1101,14 @@ body {
   width: 30rem;
 }
 .proof__entry h3 {
-  font-size: 4rem;
+  font-size: clamp 2rem, 4vw, 4rem;
   font-weight: 550;
 }
 .proof__entry h5 {
-  font-size: 1.5rem;
+  font-size: clamp(1.35rem, 4vw, 1.5rem);
 }
 .proof__entry p {
-  font-size: 1.25rem;
+  font-size: clamp(1.3rem, 4vw, 1.25rem);
 }
 
 .amenities * {

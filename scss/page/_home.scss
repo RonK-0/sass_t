@@ -41,15 +41,15 @@
         &__left{
             max-width: 40rem;
             width: 100%;
-            img{ @include imgCover(38rem, 100%); }
+            img{
+                @include imgCover(38rem, 100%);
+                @include mediaQueryMxW{ @include imgCover(100%, 100%); }
+            }
             p{
-                font-size: 2rem;
-                margin-bottom: 0;;
+                font-size: clamp(1.5rem, 4vw, 2rem);
+                margin-bottom: 0;
             }
-            @include mediaQueryMxW{ 
-                max-width: unset;
-                p{ font-size: 1.75rem }
-            }
+            @include mediaQueryMxW{  max-width: unset; }
         }
         &__right{
             width: 100%;
@@ -66,11 +66,11 @@
     &__entry{
         width: clamp(24rem, 30rem, 35rem);
         h3{
-            font-size: 4rem;
+            font-size: clamp (2rem, 4vw, 4rem);
             font-weight: 550;
         }
-        h5{ font-size: 1.5rem; }
-        p{ font-size: 1.25rem; }
+        h5{ font-size: clamp(1.35rem, 4vw, 1.5rem); }
+        p{ font-size: clamp(1.3rem, 4vw, 1.25rem); }
     }
 }
 
