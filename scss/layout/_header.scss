@@ -8,25 +8,17 @@
         }
         button:last-child{  @include mediaQueryMxW(450px){ display: none; } }
     }
-    li a{
-        padding-bottom: 0.5rem;
-        font-size: 2rem;
-    }
+    li a{ padding-bottom: 0.5rem; font-size: 2rem; }
     .active{ border-bottom: 2px solid $clr-accent;}
-    #toggleMenu{ 
-        display: none;
-        font-size: 1.6rem;
-    }
+    #toggleMenu{ display: none; font-size: 1.6rem; }
     @include mediaQueryMxW(740px){
         #toggleMenu{ display: block; order: -1; }
         i{ display: none; }
         ul{
-            visibility: hidden;
-            opacity: 0;            
+            visibility: hidden; opacity: 0;            
             position: fixed;
             background-color: $clr-light;
-            top: 9.25rem;
-            left: 0;
+            top: 9.25rem;  left: 0;
             height: 100%;
             width: 100%;
             z-index: 9999;
@@ -39,10 +31,7 @@
             }
             transition: 0.5s ease;
         }
-        ul.open{
-            visibility: visible;
-            opacity: 1;
-        }
+        ul.open{ visibility: visible; opacity: 1; }
     }
     .theme{ font-size: 1.6rem; }
 }

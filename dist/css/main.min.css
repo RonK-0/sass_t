@@ -1127,6 +1127,13 @@ body {
   border-top-right-radius: 3rem;
   border-bottom-right-radius: 3rem;
 }
+@media (max-width: 1515px) {
+  .amenities__wrapper img {
+    border-radius: 0rem;
+    transform: unset;
+    position: relative;
+  }
+}
 @media (max-width: 80rem) {
   .amenities__wrapper img {
     order: -1;
@@ -1134,13 +1141,6 @@ body {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-}
-@media (max-width: 1515px) {
-  .amenities__wrapper img {
-    border-radius: 0rem;
-    transform: unset;
-    position: relative;
   }
 }
 @media (max-width: 80rem) {

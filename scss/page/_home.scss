@@ -18,10 +18,7 @@
                 margin-bottom: 1rem;
             }
         }
-        p{
-            opacity: 0.5;
-            letter-spacing: 0.2rem;
-        }
+        p{ opacity: 0.5; letter-spacing: 0.2rem; }
     }
     &__action{
         button{
@@ -31,10 +28,7 @@
             font-size: clamp(1.15rem, 4vw, 1.5rem);
             @include mediaQueryMxW{ min-width: unset; }
         }
-        @include mediaQueryMxW{
-            width: 100%;
-            flex-wrap: wrap;
-        }
+        @include mediaQueryMxW{ width: 100%; flex-wrap: wrap; }
     }
     &__images{
         img{ border-radius: 2.5rem; }
@@ -89,14 +83,14 @@
             @include imgCover(100%, 30rem);
             border-top-right-radius: 3rem;
             border-bottom-right-radius: 3rem;
-            @include mediaQueryMxW($md){
-                order: -1;
-                @include imgCover(100%, 100%);
-            }
             @include mediaQueryMxW(1515px){
                 border-radius: 0rem;
                 transform: unset;
                 position: relative;
+            }
+            @include mediaQueryMxW($md){
+                order: -1;
+                @include imgCover(100%, 100%);
             }
         }
         @include mediaQueryMxW($md){ flex-wrap: wrap; }
@@ -146,16 +140,10 @@
         max-width: 50rem;
         p{ @include mediaQueryMxW{ font-size: 1.2rem; } }
         &__buttons{
-            button{
-                border-radius: 10rem;
-                font-size: 2rem;
-            }
+            button{ border-radius: 10rem; font-size: 2rem; }
             @include mediaQueryMxW($md){ justify-content: center; }
         }
-        @include mediaQueryMxW($md){
-            width: 100%;
-            max-width: unset;
-        }
+        @include mediaQueryMxW($md){  width: 100%; max-width: unset; }
     }
     &__right{
         max-width: 85rem;
@@ -163,33 +151,22 @@
         i:first-of-type{
             font-size: clamp(2.5rem, 4vw, 4rem);
             position: absolute;
-            top: -4rem;
-            left: -4rem;
+            top: -4rem; left: -4rem;
             opacity: 0.5;
             @include mediaQueryMxW($md){
                 position: relative;
-                top: 0;
-                left: 0;
+                top: 0; left: 0;
             }
         }
-        p{
-            font-size: clamp(1.5rem, 6vw, 2rem);
-            letter-spacing: 0.05rem;
-        }
+        p{ font-size: clamp(1.5rem, 6vw, 2rem); letter-spacing: 0.05rem; }
         &__client{
             img{
                 @include imgCover(10rem, 10rem);
                 border-radius: 10rem;
             }
-            @include mediaQueryMxW{
-                justify-content: center;
-                flex-wrap: wrap;
-            }
+            @include mediaQueryMxW{ justify-content: center; flex-wrap: wrap;}
         }
-        @include mediaQueryMxW($md){
-            width: 100%;
-            max-width: unset;
-        }
+        @include mediaQueryMxW($md){ width: 100%;  max-width: unset; }
     }
 }
 
