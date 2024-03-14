@@ -789,7 +789,6 @@ body {
   line-height: 1;
   color: var(--white);
   background-color: var(--primary);
-  text-align: center;
   font-size: clamp(1.25rem, 4vw, 1.75rem);
   font-weight: bold;
 }
@@ -830,8 +829,7 @@ body {
     visibility: hidden;
     opacity: 0;
     position: fixed;
-    background-color: rgb(246, 173, 73);
-    color: var(--white);
+    background-color: var(--primary);
     top: 10.5rem;
     left: 0;
     height: 100%;

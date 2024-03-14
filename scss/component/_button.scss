@@ -11,7 +11,6 @@
     color: $clr-white;
     background-color: $clr-primary;
     &:hover{ background-color: $clr-red; }
-    text-align: center;
     font-size: clamp(1.25rem, 4vw, 1.75rem);
     font-weight: bold;
 
