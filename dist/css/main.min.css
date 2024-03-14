@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  color: var(--dark);
-  background-color: var(--white);
+  color: var(--white);
+  background-color: var(--dark);
   line-height: 2.4;
   font-size: 1.5rem;
   font-weight: 300;
@@ -90,9 +90,20 @@ input, textarea {
   background: transparent;
 }
 
-.fa .fa-cogs, .fa .fa-tint, .fa .fa-filter, .fa .fa-wrench {
+.fa-cogs, .fa-tint, .fa-filter, .fa-wrench {
   font-size: clamp(2.5rem, 5vw, 5rem);
   line-height: 5;
+  color: var(--dark);
+}
+
+.fa-calendar-alt {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 3;
+  color: var(--white);
+}
+
+.fa:hover {
+  color: var(--accent);
 }
 
 * {
@@ -860,40 +871,47 @@ body {
   display: none;
   font-size: 3rem;
 }
-.header__wrapper .active {
-  border-bottom: 3px solid var(--accent);
-}
 @media (max-width: 42rem) {
   .header__wrapper #toggleMenu {
     display: block;
-    order: 2;
   }
+}
+.header__wrapper ul {
+  transition: 0.35s ease-in-out;
+}
+@media (max-width: 42rem) {
   .header__wrapper ul {
     visibility: hidden;
     opacity: 0;
     position: fixed;
-    top: 10.5rem;
+    background-color: var(--dark);
+    top: 108rem;
     left: 0;
     height: 100%;
     width: 100%;
     z-index: 9999;
     flex-direction: column;
   }
-  .header__wrapper ul a {
-    font-size: clamp(2rem, 6vw, 3.5rem);
-  }
-  .header__wrapper ul a.active {
-    color: var(--dark);
-  }
   .header__wrapper ul.open {
     visibility: visible;
     opacity: 1;
+    top: 8rem;
   }
 }
-@media (max-width: 290px) {
-  .header__wrapper button.btn {
-    display: none;
+.header__wrapper ul li a {
+  font-size: clamp(1.5rem, 4vw, 1.9rem);
+}
+@media (max-width: 42rem) {
+  .header__wrapper ul li a {
+    font-size: clamp(1.75rem, 8vw, 2.75rem);
+    padding: 1rem;
   }
+}
+.header__wrapper ul li a:hover {
+  color: var(--accent);
+}
+.header__wrapper ul li a.active {
+  border-bottom: clamp(5px, 5vw, 10px) solid var(--accent);
 }
 
 .banner {

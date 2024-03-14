@@ -6,30 +6,30 @@
             @include imgCover(10rem, 10rem);
             @include mediaQueryMxW{ @include imgCover(6rem, 6rem); }
         }
-        #toggleMenu{ display: none; font-size: 3rem; }
-        ul>li>a:hover{
-            // color: $clr-red;
+        #toggleMenu{
+            display: none; font-size: 3rem;
+            @include mediaQueryMxW{ display: block; }
         }
-        .active{
-            border-bottom: 3px solid $clr-accent;
-        }
-        @include mediaQueryMxW{
-            #toggleMenu{ display: block; order: 2; }
-            ul{
+        ul{
+            transition: 0.35s ease-in-out;
+            @include mediaQueryMxW{
                 visibility: hidden; opacity: 0;            
                 position: fixed;
-                // background-color: $clr-primary;
-                top: 10.5rem;  left: 0;
+                background-color: $clr-dark;
+                top: 108rem;  left: 0;
                 height: 100%;  width: 100%;
                 z-index: 9999;
                 flex-direction: column;
+                &.open{ visibility: visible; opacity: 1; top:8rem; }
+            }
+            li{
                 a{
-                    font-size: clamp(2rem, 6vw, 3.5rem);
-                    &.active{ color: $clr-dark; }
+                    font-size: clamp(1.5rem, 4vw, 1.9rem);
+                    @include mediaQueryMxW{ font-size: clamp(1.75rem, 8vw, 2.75rem); padding: 1rem;}
+                    &:hover{ color: $clr-accent; }
+                    &.active{ border-bottom: clamp(5px, 5vw, 10px) solid $clr-accent; }
                 }
             }
-            ul.open{ visibility: visible; opacity: 1; }
         }
-        button.btn{ @include mediaQueryMxW(290px){ display: none; } }
     }
 }

@@ -20,235 +20,49 @@
 </head>
 
 <body>
-    <i class="fa fa-cogs"></i>
+    <!-- <i class="fa fa-cogs"></i>
     <i class="fa fa-tint"></i>
     <i class="fa fa-filter"></i>
     <i class="fa fa-wrench"></i>
 
-    <i class="fa fa-calendar"></i>
+    <i class="fa fa-calendar-alt"></i> -->
 
-    <div class="map">
-        <figure class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24214.807650104907!2d-73.94846048422478!3d40.65521573400813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395650655094" style="border:0"></iframe>
-        </figure>
-    </div>
-
-    <!-- section.banner>.container>(header.header>.header__wrapper>img[src="../images/logo/logo.png"]+(nav>ul>li*4>a{MENU})+button.btn{ORDER ONLINE})+(.banner__wrapper>h1{MICHI RAMEN}+p{NORTH: TUE - SUN 11AM - MIDNIGHT | SOUTH: TUE - SUN 5PM - MIDNIGHT}) -->
-    <section class="banner bg-text">
-        <div class="container">
-            <header class="header py-2">
-                <div class="header__wrapper flex justify-between items-center">
-                    <img src="../images/logo/logo.png" alt="">
-                    <ul class="flex justify-center items-center gap-2" id="menu">
-                        <li><a href="#" class="fw-600 active">MENU</a></li>
-                        <li><a href="#" class="fw-600">LOCATIONS</a></li>
-                        <li><a href="#" class="fw-600">ABOUT</a></li>
-                        <li><a href="#" class="fw-600">BLOG</a></li>
-                    </ul>
-                    <button class="btn">ORDER ONLINE</button>
-                    <button id="toggleMenu" class="fas fa-bars text-white"></button>
-                </div>
-            </header>
-            <div class="banner__wrapper m-a">
-                <h1 class="text-center text-white m-0">MICHI RAMEN</h1>
-                <p class="text-center text-white fw-600 m-0">NORTH: TUE - SUN 11AM - MIDNIGHT | SOUTH: TUE - SUN 5PM - MIDNIGHT</p>
-            </div>
-            <img src="../images/1_banner/hero-image-2.png" alt="" class="bannerRamen">
-        </div>
-    </section>
-
-    <!-- section.orderIns>.container>h2{HOW TO ORDER AT MICHI}+.orderIns__wrapper>.orderIns__instruction>(.orderIns__instruction__step>img[src="../images/2_how to order/pick-ramen.png"]+h4.text-dark{PICK YOUR RAMEN})+i.fas.fa-angle-right.text-red+(.orderIns__instruction__step>img[src="../images/2_how to order/pick-broth.png"]+h4{PICK YOUR BROTH})+i.fas.fa-angle-right.text-red+(.orderIns__instruction__step>img[src="../images/2_how to order/add-toppings.png"]+h4{ADD TOPPINGS}) -->
-    <section class="orderIns">
-        <div class="container py-7">
-            <h2 class="text-red text-center">HOW TO ORDER AT MICHI</h2>
-            <div class="orderIns__wrapper py-3">
-                <div class="orderIns__instruction flex justify-between items-center gap-2">
-                    <div class="orderIns__instruction__step">
-                        <img src="../images/2_how to order/pick-ramen.png" alt="" class="m-a">
-                        <h4 class="text-dark text-center mt-2 ft-walter">PICK YOUR RAMEN</h4>
-                    </div>
-                    <i class="fas fa-chevron-right text-red arrow"></i>
-                    <div class="orderIns__instruction__step">
-                        <img src="../images/2_how to order/pick-broth.png" alt="" class="m-a">
-                        <h4 class="text-dark text-center mt-2 ft-walter">PICK YOUR BROTH</h4>
-                    </div>
-                    <i class="fas fa-chevron-right text-red arrow"></i>
-                    <div class="orderIns__instruction__step">
-                        <img src="../images/2_how to order/add-toppings.png" alt="" class="m-a">
-                        <h4 class="text-dark text-center mt-2 ft-walter">ADD TOPPINGS</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     
-    <!-- section.menu>.container>h2{RAMEN MENU}+(.menu__wrapper>.menu__item*7>((.menu__item__details>h3.menu__item__details__name{MICHI}+h4.menu__item__details__price{$9.75}+(.menu__item__details__ingredients>ul>li{chashu slices}+li{roasted nori}+li{mayu oil}+li{woodear mushrooms}+li{green onions}+li{contains shellfish}+li.text-red{TEXT})+span.menu__item__details__broth>{SHOYU TONKOTSU}))+(.menu__item__image>img[src="../images/3_ramens/michi.png"]))+button.btn{VIEW OUR FULL MENU} -->
-    <section class="menu bg-primary">
-        <div class="container py-6">
-            <h2 class="text-white text-center fw-900">RAMEN MENU</h2>
-            <div class="menu__wrapper py-4">
-                <div class="menu__item flex justify-between py-2">
-                    <div class="menu__item__details">
-                        <h3 class="menu__item__details__name text-dark ft-economica">MICHI</h3>
-                        <h4 class="menu__item__details__price text-red fw-700">$9.75</h4>
-                        <div class="menu__item__details__ingredients mb-2">
-                            <ul>
-                                <li class="fw-600 text-white">chashu slices</li>
-                                <li class="fw-600 text-white">roasted nori</li>
-                                <li class="fw-600 text-white">mayu oil</li>
-                                <li class="fw-600 text-white">woodear mushrooms</li>
-                                <li class="fw-600 text-white">green onions</li>
-                                <li class="fw-600 text-white">*contains shellfish</li>
-                            </ul>
-                        </div>
-                        <span class="menu__item__details__broth text-dark fw-700 ft-walter">SHOYU TONKOTSU</span>
-                    </div>
-                    <img src="../images/3_ramens/michi.png" alt="">
-                </div>
 
-                <div class="menu__item flex justify-between py-2">
-                    <div class="menu__item__details">
-                        <h3 class="menu__item__details__name text-dark ft-economica">SAPPORO</h3>
-                        <h4 class="menu__item__details__price text-red fw-700">$10.75</h4>
-                        <div class="menu__item__details__ingredients mb-2">
-                            <ul>
-                                <li class="fw-600 text-white">chashu slices</li>
-                                <li class="fw-600 text-white">bean sprouts</li>
-                                <li class="fw-600 text-white">corn/butter</li>
-                                <li class="fw-600 text-white">woodear mushrooms</li>
-                                <li class="fw-600 text-white">green onions</li>
-                            </ul>
-                        </div>
-                        <span class="menu__item__details__broth text-dark fw-700 ft-walter">MISO TONKOTSU</span>
-                    </div>
-                    <img src="../images/3_ramens/sapporo.png" alt="">
-                </div>
-
-                <div class="menu__item flex justify-between py-2">
-                    <div class="menu__item__details">
-                        <h3 class="menu__item__details__name text-dark ft-economica">VEGGIE</h3>
-                        <h4 class="menu__item__details__price text-red fw-700">$8.75</h4>
-                        <div class="menu__item__details__ingredients mb-2">
-                            <ul>
-                                <li class="fw-600 text-white">mix of garlic chives, </li>
-                                <li class="fw-600 text-white">sprouts and cabbage</li>
-                                <li class="fw-600 text-white">woodear mushrooms</li>
-                                <li class="fw-600 text-white">green onions</li>
-                                <li class="fw-600 text-red">+ egg-free noodles $1.00</li>
-                            </ul>
-                        </div>
-                        <span class="menu__item__details__broth text-dark fw-700 ft-walter">SHOYU SHIITAKE</span>
-                    </div>
-                    <img src="../images/3_ramens/veggie.png" alt="">
-                </div>
-
-                <div class="menu__item flex justify-between py-2">
-                    <div class="menu__item__details">
-                        <h3 class="menu__item__details__name text-dark ft-economica">MEAT LOVERS</h3>
-                        <h4 class="menu__item__details__price text-red fw-700">$11.75</h4>
-                        <div class="menu__item__details__ingredients mb-2">
-                            <ul>
-                                <li class="fw-600 text-white">chashu slices</li>
-                                <li class="fw-600 text-white">ground chashu</li>
-                                <li class="fw-600 text-white">mayu oil</li>
-                                <li class="fw-600 text-white">woodear mushrooms</li>
-                                <li class="fw-600 text-white">green onions</li>
-                                <li class="fw-600 text-red">*contains shellfish</li>
-                            </ul>
-                        </div>
-                        <span class="menu__item__details__broth text-dark fw-700 ft-walter">SHOYU TONKOTSU</span>
-                    </div>
-                    <img src="../images/3_ramens/meat.png" alt="">
-                </div>
-                
-                <div class="menu__item flex justify-between py-2">
-                    <div class="menu__item__details">
-                        <h3 class="menu__item__details__name text-dark ft-economica">DIPPING</h3>
-                        <h4 class="menu__item__details__price text-red fw-700">$11.755</h4>
-                        <div class="menu__item__details__ingredients mb-2">
-                            <ul>
-                                <li class="fw-600 text-white">chashu slices</li>
-                                <li class="fw-600 text-white">shredded nori</li>
-                                <li class="fw-600 text-white">woodear mushrooms</li>
-                                <li class="fw-600 text-white">green onions</li>
-                                <li class="fw-600 text-white">ground chashu</li>
-                                <li class="fw-600 text-white">fresh garlic</li>
-                                <li class="fw-600 text-white">fried onions</li>
-                                <li class="fw-600 text-white">mayu oil</li>
-                                <li class="fw-600 text-red">*broth served on the side</li>
-                            </ul>
-                        </div>
-                        <span class="menu__item__details__broth text-dark fw-700 ft-walter">FISH TONKOTSU</span>
-                    </div>
-                    <img src="../images/3_ramens/dipping.png" alt="">
-                </div>
-
-                <div class="menu__item flex justify-between py-2">
-                    <div class="menu__item__details">
-                        <h3 class="menu__item__details__name text-dark ft-economica">TEXAS</h3>
-                        <h4 class="menu__item__details__price text-red fw-700">$13.75</h4>
-                        <div class="menu__item__details__ingredients mb-2">
-                            <ul>
-                                <li class="fw-600 text-white">smoked BBQ pork ribs</li>
-                                <li class="fw-600 text-white">vinegar slaw</li>
-                                <li class="fw-600 text-white">red onions</li>
-                                <li class="fw-600 text-white">mayu oil</li>
-                                <li class="fw-600 text-white">Texas toast</li>
-                                <li class="fw-600 text-white">jalapenos</li>
-                                <li class="fw-600 text-white">pickle spear</li>
-                                <li class="fw-600 text-white">spicy BBQ sauce</li>
-                            </ul>
-                        </div>
-                        <span class="menu__item__details__broth text-dark fw-700 ft-walter">TOMATO TONKOTSU</span>
-                    </div>
-                    <img src="../images/3_ramens/texas.png" alt="">
-                </div>
-
-                <div class="menu__item flex justify-between py-2">
-                    <div class="menu__item__details">
-                        <h3 class="menu__item__details__name text-dark ft-economica">JUNGLE</h3>
-                        <h4 class="menu__item__details__price text-red fw-700">$9.75</h4>
-                        <div class="menu__item__details__ingredients mb-2">
-                            <ul>
-                                <li class="fw-600 text-white">chashu slices</li>
-                                <li class="fw-600 text-white">bean sprouts</li>
-                                <li class="fw-600 text-white">thai chilis</li>
-                                <li class="fw-600 text-white">woodear mushrooms</li>
-                                <li class="fw-600 text-white">green onions</li>
-                                <li class="fw-600 text-white">toasted lemongrass</li>
-                                <li class="fw-600 text-white">lime wedge</li>
-                                <li class="fw-600 text-white">cilantro</li>
-                                <li class="fw-600 text-red">*contains shellfish</li>
-                            </ul>
-                        </div>
-                        <span class="menu__item__details__broth text-dark fw-700 ft-walter">LEMONGRASS TONKOTSU</span>
-                    </div>
-                    <img src="../images/3_ramens/jungle.png" alt="">
-                </div>
+    <header class="header py-2">
+        <div class="container">
+            <div class="header__wrapper flex justify-between items-center">
+                <img src="../images/logo.png" alt="">
+                <ul class="flex justify-center items-center gap-3" id="menu">
+                    <li><a href="#" class="text-white py-3 ft-u-condensed active">HOME</a></li>
+                    <li><a href="#" class="text-white py-3 ft-u-condensed ">ABOUT</a></li>
+                    <li><a href="#" class="text-white py-3 ft-u-condensed ">SERVICES</a></li>
+                    <li><a href="#" class="text-white py-3 ft-u-condensed ">BLOG</a></li>
+                    <li><a href="#" class="text-white py-3 ft-u-condensed ">CONTACTS</a></li>
+                </ul>
+                <button id="toggleMenu" class="fas fa-bars text-white"></button>
             </div>
-            <button class="btn m-a">VIEW OUR FULL MENU</button>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="banner__slider">
+            <h1 class="text-center text-white m-0">[BANNA here]</h1>
         </div>
     </section>
 
-    <!-- section.hours>.hours__wrapper>(.hours__header>h3{JOIN US FOR HAPPY HOUR}+p{3-6PM / 9-11PM • $1 OFF ALL BEER | WEDNESDAYS 5-11PM • $2 SAKE CARAFFES})+(.hours__images>img[src="../images/4_above footer/Spices.jpg"]+img[src="../images/4_above footer/Broth.jpg"]+img[src="../images/4_above footer/Mochi.jpg"]) -->
-    <section class="hours bg-white">
-        <div class="hours__wrapper flex f-col justify-center items-center">
-            <div class="container hours__header flex f-col gap-1 py-4 m-a">
-                <h3 class="text-center text-red fw-900">JOIN US FOR HAPPY HOUR</h3>
-                <p class="text-center text-primary fw-600">3-6PM / 9-11PM • $1 OFF ALL BEER | WEDNESDAYS 5-11PM • $2 SAKE CARAFFES</p>
-            </div>
-            <div class="hours__images flex justify-center">
-                <img src="../images/4_above footer/Spices.jpg" alt="">
-                <img src="../images/4_above footer/Broth.jpg" alt="">
-                <img src="../images/4_above footer/Mochi.jpg" alt="">
-            </div>
-        </div>
-    </section>
+
     
     <!-- footer.footer>.container>.footer_wrapper>(.footer_socials>i.fab.fa-yelp+i.fab.fa-twitter+i.fab.fa-facebook-f+i.fab.fa-instagram)+(p.footer__locations{North: (512) 386-1908 • 6519 N. Lamar 78752<br>South: (512) 394-6350 • 3005 S. Lamar D-114B 78704})+button.btn{ORDER ONLINE} -->
     <footer class="footer bg-dark">
         <div class="container">
             <div class="footer__wrapper flex f-wrap justify-between item-center py-4 gap-3">
+
+                <div class="footer__map">
+                    <!-- <figure class="map">
+                        
+                    </figure> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24214.807650104907!2d-73.94846048422478!3d40.65521573400813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395650655094" style="border:0"></iframe>
+                </div>
                 <div class="footer__socials flex justify-center items-center gap-3">
                     <i class="fab fa-yelp text-primary"></i>
                     <i class="fab fa-twitter text-primary"></i>

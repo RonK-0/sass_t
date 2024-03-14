@@ -14,8 +14,8 @@ $ft-ubuntu-condensed: 'Ubuntu Condensed', Arial, sans-serif;
 html { font-size: 10px; }
 
 body {
-    color: $clr-dark;
-    background-color: $clr-white;
+    color: $clr-white;
+    background-color: $clr-dark;
     line-height: 2.4;
     font-size: 1.5rem;
     font-weight: 300;
@@ -112,7 +112,16 @@ input, textarea{
 //     -o-transform:scale(1.5, 1.25);
 // }
 
-.fa .fa-cogs, .fa .fa-tint, .fa .fa-filter, .fa .fa-wrench{
+.fa-cogs, .fa-tint,  .fa-filter, .fa-wrench{
     font-size: clamp(2.5rem, 5vw, 5rem);
     line-height: clamp(3.0, 5.0, 7.0);
+    color: $clr-dark;
+}
+.fa-calendar-alt{
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: clamp(2.0, 3.0, 4.0);
+    color: $clr-white;
+}
+.fa:hover{
+    color: $clr-accent;
 }
