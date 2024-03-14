@@ -3,7 +3,8 @@
 $colors: (
     "white": $clr-white,
     "primary" : $clr-primary,
-    "gray": $clr-gray
+    "gray": $clr-gray,
+    "red": $clr-red,
 );
 
 @each $key, $val in $colors{
@@ -13,9 +14,9 @@ $colors: (
     .text-#{$key}{
         color: #{$val};
     }
-    .border-#{$key}{
-        border: 1px solid #{$val};
-    }
+    // .border-#{$key}{
+    //     border: 1px solid #{$val};
+    // }
 }
 $displays: (flex, grid, block, inline);
 
@@ -135,4 +136,8 @@ $case: (
     .text-#{$key}{
         text-transform: #{$val};
     }
+}
+
+.m-a{
+    margin: 0 auto;
 }

@@ -107,20 +107,12 @@ body {
   color: var(--white);
 }
 
-.border-white {
-  border: 1px solid var(--white);
-}
-
 .bg-primary {
   background-color: var(--primary);
 }
 
 .text-primary {
   color: var(--primary);
-}
-
-.border-primary {
-  border: 1px solid var(--primary);
 }
 
 .bg-gray {
@@ -131,8 +123,12 @@ body {
   color: var(--gray);
 }
 
-.border-gray {
-  border: 1px solid var(--gray);
+.bg-red {
+  background-color: var(--red);
+}
+
+.text-red {
+  color: var(--red);
 }
 
 .flex {
@@ -713,6 +709,10 @@ body {
 
 .text-lower {
   text-transform: lowercase;
+}
+
+.m-a {
+  margin: 0 auto;
 }
 
 .btn {
