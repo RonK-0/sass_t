@@ -11,9 +11,12 @@
 // .btnn{
 //     padding: 2rem;
 //     min-width: 120px;
-//     border-radius: 0.5rem;
-//     background-color: #000;
-//     color:set-color(#000);
+//     border-radius: .5rem;
+//     background-color: red;
+//     &:hover {
+//         background-color: scale-color(red, $lightness: -70%);
+//     }
+//     color: set-color(scale-color(red, $lightness: -70%)) ;
 // }
 
 // scale-color(COLOR, effect)
