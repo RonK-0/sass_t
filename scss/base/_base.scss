@@ -12,9 +12,7 @@ $ft-walter: "Walter Turncoat", cursive;
 //     transition: 0.5s ease;  //animation for changing between light and dark mode
 // }
 
-html {
-    font-size: 10px;
-}
+html { font-size: 10px; }
 
 body {
     font-family: $ft-montserrat;
@@ -40,10 +38,7 @@ a {
     margin: 0 auto;
 }
 
-ul{
-    list-style: none;
-    // color: $clr-dark;
-}
+ul{ list-style: none; }
 
 h1, h2, h3, h4, h5, h6{
     font-weight: bold;
