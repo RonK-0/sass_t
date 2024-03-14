@@ -21,13 +21,10 @@
                 width: 100%;
                 z-index: 9999;
                 flex-direction: column;
-                align-items: center;
-                justify-content: center;
                 a{
-                    font-size: clamp(2rem, 3vw, 3rem);
+                    font-size: clamp(2rem, 6vw, 3.5rem);
                     &.active{ color: $clr-dark; }
                 }
-                transition: 0.5s ease;
             }
             ul.open{ visibility: visible; opacity: 1; }
         }
