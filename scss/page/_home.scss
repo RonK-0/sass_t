@@ -3,24 +3,15 @@
 @use "../component" as *;
 @use "../layout" as *;
 
-
 .banner{
-    background-image: url("../../images/1_banner/wood.jpg");
+    background: url("../../images/1_banner/wood.jpg") repeat center;
     background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
     img.bannerRamen{ @include imgCover(150%, 100%); }
-    &__wrapper{
-        p{
-            font-weight: 400;
-            font-size: clamp(1.4rem, 2vw, 2rem);
-        }
-    }
+    &__wrapper p{ font-size: clamp(1.4rem, 2vw, 2rem); }
 }
 
 .orderIns{
-    background-image: url("../../images/2_how to order/texture_pattern_2X.jpg");
-    background-repeat: repeat;
+    background: url("../../images/2_how to order/texture_pattern_2X.jpg") repeat;
     &__instruction{
         @include mediaQueryMxW{ flex-direction: column; }
         &__step{
@@ -38,29 +29,20 @@
 }
 
 .menu{
-    background-image: url("../../images/3_ramens/bg/character_pattern_2X.jpg");
-    background-repeat: repeat;
+    background: url("../../images/3_ramens/bg/character_pattern_2X.jpg") repeat;
     background-size: 8rem;
-    h2{
-        font-weight: 900;
-        letter-spacing: 0.3rem;
-    }
+    h2{ letter-spacing: 0.3rem; }
     &__wrapper{
         @include grid(2,3rem);
         @include mediaQueryMxW(480px){ @include grid(1,3rem); }
     }
     &__item{
         &__details{
-            &__price{
-                font-size: clamp(1.8rem, 4vw, 2.5rem);
-                font-weight: 500;
-            }
-            &__ingredients{
-                ul>li{
-                    color: $clr-white;
-                    line-height: 1.4;
-                    font-weight: 600;
-                }
+            &__name{ font-family: $ft-economica; }
+            &__price{ font-size: clamp(1.8rem, 4vw, 2.5rem); }
+            &__ingredients>ul>li{
+                color: $clr-white;
+                line-height: 1.4;
             }
             &__broth{
                 font-family: $ft-walter;
@@ -73,21 +55,14 @@
         }
         @include mediaQueryMxW(790px){
             margin: 0 auto;
-            flex-direction: column;
+            flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
         }
     }
     button{ background-color: $clr-dark; }
 }
 
-
 .hours{
-    background-image: url("../../images/4_above footer/texture_pattern_2X.jpg");
-    background-repeat: repeat;
-    &__header{
-        h3{ font-weight: 900;}
-        p{ font-weight: bold; }
-    }
+    background: url("../../images/4_above footer/texture_pattern_2X.jpg") repeat;
     &__images{  img{ width: 33.33%; } }
 }

@@ -117,8 +117,10 @@ $align: (
     flex-wrap: wrap;
 }
 
-.fw-500{
-    font-weight: 500;
+@for $i from 1 through 10{
+    .fw-#{$i}00{
+        font-weight: #{$i}00;
+    }
 }
 
 .text-wrap{

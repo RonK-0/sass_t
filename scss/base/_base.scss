@@ -9,7 +9,7 @@ $ft-walter: "Walter Turncoat", cursive;
 
 
 * {
-    transition: 0.5s ease;  //animation for changing between light and dark mode
+    transition: 0.25s ease;  //animation for changing between light and dark mode
 }
 // body, h1, h2, h3, h4, h5, p, ul li, a, small {
 //     transition: 0.5s ease;  //animation for changing between light and dark mode
@@ -68,6 +68,8 @@ button{
 input, textarea{
     background: transparent;
 }
+
+i:hover{ color: $clr-red; }
 
 // .logo{
 //     display: block;

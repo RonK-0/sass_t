@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap");
 :root {
   --white: #fff;
@@ -10,7 +9,7 @@
 }
 
 * {
-  transition: 0.5s ease;
+  transition: 0.25s ease;
 }
 
 html {
@@ -86,6 +85,10 @@ button {
 
 input, textarea {
   background: transparent;
+}
+
+i:hover {
+  color: var(--red);
 }
 
 * {
@@ -703,8 +706,44 @@ body {
   flex-wrap: wrap;
 }
 
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
 .fw-500 {
   font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.fw-1000 {
+  font-weight: 1000;
 }
 
 .text-wrap {
@@ -764,9 +803,6 @@ body {
   display: none;
   font-size: 3rem;
 }
-.header__wrapper ul > li > a {
-  font-weight: bold;
-}
 .header__wrapper ul > li > a:hover {
   color: var(--red);
 }
@@ -795,15 +831,8 @@ body {
     transition: 0.5s ease;
   }
   .header__wrapper ul a {
-    font-size: 3rem;
+    font-size: clamp(2rem, 3vw, 3rem);
   }
-}
-@media (max-width: 42rem) and (max-width: 25rem) {
-  .header__wrapper ul a {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 42rem) {
   .header__wrapper ul a.active {
     color: var(--dark);
   }
@@ -819,21 +848,15 @@ body {
   }
 }
 .footer__wrapper p {
-  font-weight: bold;
   font-size: clamp(1.25rem, 4vw, 1.75rem);
 }
 .footer__socials i {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
 }
-.footer__socials i:hover {
-  color: var(--red);
-}
 
 .banner {
-  background-image: url("../../images/1_banner/wood.jpg");
+  background: url("../../images/1_banner/wood.jpg") repeat center;
   background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
 }
 .banner img.bannerRamen {
   height: 150%;
@@ -842,13 +865,11 @@ body {
      object-fit: cover;
 }
 .banner__wrapper p {
-  font-weight: 400;
   font-size: clamp(1.4rem, 2vw, 2rem);
 }
 
 .orderIns {
-  background-image: url("../../images/2_how to order/texture_pattern_2X.jpg");
-  background-repeat: repeat;
+  background: url("../../images/2_how to order/texture_pattern_2X.jpg") repeat;
 }
 @media (max-width: 42rem) {
   .orderIns__instruction {
@@ -875,12 +896,10 @@ body {
 }
 
 .menu {
-  background-image: url("../../images/3_ramens/bg/character_pattern_2X.jpg");
-  background-repeat: repeat;
+  background: url("../../images/3_ramens/bg/character_pattern_2X.jpg") repeat;
   background-size: 8rem;
 }
 .menu h2 {
-  font-weight: 900;
   letter-spacing: 0.3rem;
 }
 .menu__wrapper {
@@ -895,14 +914,15 @@ body {
     grid-gap: 3rem;
   }
 }
+.menu__item__details__name {
+  font-family: "Economica", sans-serif;
+}
 .menu__item__details__price {
   font-size: clamp(1.8rem, 4vw, 2.5rem);
-  font-weight: 500;
 }
-.menu__item__details__ingredients ul > li {
+.menu__item__details__ingredients > ul > li {
   color: var(--white);
   line-height: 1.4;
-  font-weight: 600;
 }
 .menu__item__details__broth {
   font-family: "Walter Turncoat", cursive;
@@ -922,9 +942,8 @@ body {
 @media (max-width: 790px) {
   .menu__item {
     margin: 0 auto;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
   }
 }
 .menu button {
@@ -932,14 +951,7 @@ body {
 }
 
 .hours {
-  background-image: url("../../images/4_above footer/texture_pattern_2X.jpg");
-  background-repeat: repeat;
-}
-.hours__header h3 {
-  font-weight: 900;
-}
-.hours__header p {
-  font-weight: bold;
+  background: url("../../images/4_above footer/texture_pattern_2X.jpg") repeat;
 }
 .hours__images img {
   width: 33.33%;
