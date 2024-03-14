@@ -4,8 +4,7 @@
 @use "../layout" as *;
 
 .banner{
-    background: url("../../images/1_banner/wood.jpg") repeat center;
-    background-size: cover;
+    background: url("../../images/1_banner/wood.jpg") repeat center / cover;
     img.bannerRamen{ @include imgCover(150%, 100%); }
     &__wrapper p{ font-size: clamp(1.4rem, 2vw, 2rem); }
 }
@@ -26,8 +25,7 @@
 }
 
 .menu{
-    background: url("../../images/3_ramens/bg/character_pattern_2X.jpg") repeat;
-    background-size: 8rem;
+    background: url("../../images/3_ramens/bg/character_pattern_2X.jpg") repeat center / 8rem;
     h2{ letter-spacing: 0.3rem; }
     &__wrapper{
         @include grid(2,3rem);

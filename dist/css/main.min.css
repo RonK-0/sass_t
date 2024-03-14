@@ -867,8 +867,7 @@ body {
 }
 
 .banner {
-  background: url("../../images/1_banner/wood.jpg") repeat center;
-  background-size: cover;
+  background: url("../../images/1_banner/wood.jpg") repeat center/cover;
 }
 .banner img.bannerRamen {
   height: 150%;
@@ -907,8 +906,7 @@ body {
 }
 
 .menu {
-  background: url("../../images/3_ramens/bg/character_pattern_2X.jpg") repeat;
-  background-size: 8rem;
+  background: url("../../images/3_ramens/bg/character_pattern_2X.jpg") repeat center/8rem;
 }
 .menu h2 {
   letter-spacing: 0.3rem;
