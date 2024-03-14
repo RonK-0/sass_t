@@ -842,9 +842,34 @@ body {
   font-size: clamp(1.4rem, 2vw, 2rem);
 }
 
-.arrow {
-  transform: rotate(0deg) rotateX(0) rotateY(0);
+.orderIns {
+  background-image: url("../../images/2_how to order/texture_pattern_2X.jpg");
+  background-repeat: repeat;
 }
+@media (max-width: 42rem) {
+  .orderIns__instruction {
+    flex-direction: column;
+  }
+}
+.orderIns__instruction__step img {
+  height: 12.1rem;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.orderIns__instruction__step h4 {
+  font-family: "Walter Turncoat";
+  font-size: clamp(2rem, 6vw, 2.25rem);
+}
+.orderIns__instruction i.arrow {
+  font-size: 3rem;
+}
+@media (max-width: 42rem) {
+  .orderIns__instruction i.arrow {
+    transform: rotate(90deg) rotateX(0) rotateY(0);
+  }
+}
+
 .arrow:hover {
   transform: rotate(90deg) rotateX(0) rotateY(0);
 }

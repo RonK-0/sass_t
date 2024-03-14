@@ -6,6 +6,12 @@
     object-fit: cover;
 }
 
+@mixin imgCover_contain ($ht: 10rem, $wd: 10rem){
+    height: $ht;
+    width: $wd;
+    object-fit: contain;
+}
+
 @mixin mediaQuery($width: $sm){
     @media (min-width: $width){ @content; }
 }

@@ -26,13 +26,37 @@
     }
 }
 
+.orderIns{
+    background-image: url("../../images/2_how to order/texture_pattern_2X.jpg");
+    background-repeat: repeat;
+    &__wrapper{
+
+    }
+    &__instruction{
+        @include mediaQueryMxW{
+            flex-direction: column;
+        }
+        &__step{
+            img{ @include imgCover_contain(12.1rem, 100%); }
+            h4{
+                font-family: $ft-walter;
+                font-size: clamp(2rem, 6vw, 2.25rem);
+            }
+        }
+        i.arrow{
+            font-size: 3rem;
+            @include mediaQueryMxW{
+                -moz-transform: rotate(90deg) rotateX(0) rotateY(0);
+                -ms-transform: rotate(90deg) rotateX(0) rotateY(0);
+                -o-transform: rotate(90deg) rotateX(0) rotateY(0);
+                transform: rotate(90deg) rotateX(0) rotateY(0);
+            }
+        }
+    }
+}
 
 .arrow{
-    -webkit-transform: rotate(0deg) rotateX(0) rotateY(0);
-    -moz-transform: rotate(0deg) rotateX(0) rotateY(0);
-    -ms-transform: rotate(0deg) rotateX(0) rotateY(0);
-    -o-transform: rotate(0deg) rotateX(0) rotateY(0);
-    transform: rotate(0deg) rotateX(0) rotateY(0);
+    
     &:hover{
         -moz-transform: rotate(90deg) rotateX(0) rotateY(0);
         -ms-transform: rotate(90deg) rotateX(0) rotateY(0);
@@ -44,9 +68,6 @@
 .hours{
     background-image: url("../../images/4_above footer/texture_pattern_2X.jpg");
     background-repeat: repeat;
-    &__wrapper{
-
-    }
     &__header{
         h3{ font-weight: 900;}
         p{ font-weight: bold; }
