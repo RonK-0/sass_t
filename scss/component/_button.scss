@@ -3,16 +3,15 @@
 
 .btn{
     display: block;
-    padding: 1rem 2rem;
+    padding: 1.6rem 3.2rem;
     border-radius: 0.25rem;
-    font-family: $ft-montserrat;
     @include flex(center, center);
-    line-height: 1;
     color: $clr-white;
-    background-color: $clr-primary;
-    &:hover{ background-color: $clr-red; }
-    font-size: clamp(1.25rem, 4vw, 1.75rem);
-    font-weight: bold;
+    background-color: $clr-accent;
+    &:hover{ background-color: $clr-white; color: $clr-dark; }
+    font-family: $ft-ubuntu-condensed;
+    font-size: clamp(1.25rem, 4vw, 2rem);
+    line-height: 1;
 
     // $colors: (
     //     "light" : $clr-light,

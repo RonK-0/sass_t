@@ -1,15 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 :root {
+  --dark: #26252a;
+  --gray: #343438;
   --white: #fff;
-  --red: #e60033;
-  --gray: #808080;
-  --dark: #433d3c;
-  --primary: #f6ad49 ;
-}
-
-* {
-  transition: 0.25s ease;
+  --accent: #f8565d;
+  --accent-alt: #fca8ac;
 }
 
 html {
@@ -17,11 +12,12 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
   color: var(--dark);
   background-color: var(--white);
-  line-height: 1.6;
-  font-size: 1.6rem;
+  line-height: 2.4;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: "Ubuntu", Arial, sans-serif;
 }
 body.open {
   overflow: hidden;
@@ -30,11 +26,15 @@ body.open {
 
 a {
   text-decoration: none;
-  color: var(--white);
+  color: var(--accent);
+  transition: 0.4s all ease;
+}
+a:hover {
+  color: var(--dark);
 }
 
 .container {
-  max-width: 98rem;
+  max-width: 139rem;
   padding: 0 1.6rem;
   margin: 0 auto;
 }
@@ -49,7 +49,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(4.5rem, 8vw, 9.1rem);
+  font-size: clamp(6rem, 8vw, 12.6rem);
+  font: 126px/110px "Ubuntu Condensed", Arial, sans-serif;
   margin-bottom: 2rem;
 }
 
@@ -74,8 +75,10 @@ h5 {
 }
 
 p {
-  font-size: clamp(1.4rem, 6vw, 1.9rem);
   margin-bottom: 1.3rem;
+  line-height: 2.4;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 button {
@@ -87,8 +90,9 @@ input, textarea {
   background: transparent;
 }
 
-i:hover {
-  color: var(--red);
+.fa .fa-cogs, .fa .fa-tint, .fa .fa-filter, .fa .fa-wrench {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 5;
 }
 
 * {
@@ -106,20 +110,20 @@ body {
   min-height: 100vh;
 }
 
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.text-dark {
+  color: var(--dark);
+}
+
 .bg-white {
   background-color: var(--white);
 }
 
 .text-white {
   color: var(--white);
-}
-
-.bg-primary {
-  background-color: var(--primary);
-}
-
-.text-primary {
-  color: var(--primary);
 }
 
 .bg-gray {
@@ -130,20 +134,12 @@ body {
   color: var(--gray);
 }
 
-.bg-red {
-  background-color: var(--red);
+.bg-accent {
+  background-color: var(--accent);
 }
 
-.text-red {
-  color: var(--red);
-}
-
-.bg-dark {
-  background-color: var(--dark);
-}
-
-.text-dark {
-  color: var(--dark);
+.text-accent {
+  color: var(--accent);
 }
 
 .flex {
@@ -766,34 +762,84 @@ body {
   margin: 0 auto;
 }
 
-.ft-economica {
-  font-family: Economica, sans-serif;
+.ft-ubuntu {
+  font-family: Ubuntu, Arial, sans-serif;
 }
 
-.ft-montserrat {
-  font-family: Montserrat, sans-serif;
+.ft-u-condensed {
+  font-family: Ubuntu Condensed, Arial, sans-serif;
 }
 
-.ft-walter {
-  font-family: Walter Turncoat, cursive;
+.ubuntu-condensed-regular {
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .btn {
   display: block;
-  padding: 1rem 2rem;
+  padding: 1.6rem 3.2rem;
   border-radius: 0.25rem;
-  font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 1;
   color: var(--white);
-  background-color: var(--primary);
-  font-size: clamp(1.25rem, 4vw, 1.75rem);
-  font-weight: bold;
+  background-color: var(--accent);
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
+  font-size: clamp(1.25rem, 4vw, 2rem);
+  line-height: 1;
 }
 .btn:hover {
-  background-color: var(--red);
+  background-color: var(--white);
+  color: var(--dark);
 }
 
 .header__wrapper img {
@@ -814,11 +860,8 @@ body {
   display: none;
   font-size: 3rem;
 }
-.header__wrapper ul > li > a:hover {
-  color: var(--red);
-}
 .header__wrapper .active {
-  color: var(--primary);
+  border-bottom: 3px solid var(--accent);
 }
 @media (max-width: 42rem) {
   .header__wrapper #toggleMenu {
@@ -829,7 +872,6 @@ body {
     visibility: hidden;
     opacity: 0;
     position: fixed;
-    background-color: var(--primary);
     top: 10.5rem;
     left: 0;
     height: 100%;
@@ -852,18 +894,6 @@ body {
   .header__wrapper button.btn {
     display: none;
   }
-}
-
-@media (max-width: 755px) {
-  .footer__wrapper {
-    flex-direction: column;
-  }
-}
-.footer__wrapper p {
-  font-size: clamp(1.25rem, 4vw, 1.75rem);
-}
-.footer__socials i {
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
 }
 
 .banner {

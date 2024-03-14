@@ -1,13 +1,12 @@
 @use "../abstract/" as *;
 
-$ft-economica: "Economica", sans-serif;
-$ft-montserrat: "Montserrat", sans-serif;
-$ft-walter: "Walter Turncoat", cursive;
+$ft-ubuntu: "Ubuntu", Arial, sans-serif;
+$ft-ubuntu-condensed: 'Ubuntu Condensed', Arial, sans-serif;
 
 
-* {
-    transition: 0.25s ease;  //animation for changing between light and dark mode
-}
+// * {
+//     transition: 0.25s ease;  //animation for changing between light and dark mode
+// }
 // body, h1, h2, h3, h4, h5, p, ul li, a, small {
 //     transition: 0.5s ease;  //animation for changing between light and dark mode
 // }
@@ -15,25 +14,32 @@ $ft-walter: "Walter Turncoat", cursive;
 html { font-size: 10px; }
 
 body {
-    font-family: $ft-montserrat;
     color: $clr-dark;
     background-color: $clr-white;
-    line-height: 1.6;
-    font-size: 1.6rem;
+    line-height: 2.4;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: $ft-ubuntu;
     &.open{
         overflow: hidden;
         height: 100vh;
     }
+    // font: 300 15px/24px $ft-ubuntu;
 }
 
 a {
     text-decoration: none;
-    color: $clr-white;
+    color: $clr-accent;
+    -webkit-transition: 0.4s all ease;
+    transition: 0.4s all ease;
+    &:hover{
+        color: $clr-dark;
+    }
 }
 
 .container {
     // max-width: 100%;
-    max-width: 98rem;
+    max-width: 139rem;
     padding: 0 1.6rem;
     margin: 0 auto;
 }
@@ -45,12 +51,35 @@ h1, h2, h3, h4, h5, h6{
     color: $clr-white;
 }
 
-h1{ font-size:clamp(4.5rem, 8vw, 9.1rem); margin-bottom: 2rem; }
-h2{ font-size:clamp(2.7rem, 6vw, 6.2rem); margin-bottom: 2rem; }
-h3{ font-size:clamp(2.75rem, 6vw, 4rem); margin-bottom: 1.6rem; }
-h4{ font-size:clamp(1.6rem, 6vw, 1.8rem); margin-bottom: 1.6rem; }
-h5{ font-size:clamp(1.4rem, 6vw, 1.6rem); margin-bottom: 1.6rem; }
-p{ font-size:clamp(1.4rem, 6vw, 1.9rem); margin-bottom: 1.3rem; }
+h1{ 
+    // font-size:clamp(4.5rem, 8vw, 9.1rem);
+    font-size:clamp(6rem, 8vw, 12.6rem);
+    font: 126px / 110px 'Ubuntu Condensed', Arial, sans-serif;
+    margin-bottom: 2rem;
+}
+h2{
+    font-size:clamp(2.7rem, 6vw, 6.2rem);
+    margin-bottom: 2rem;
+}
+h3{
+    font-size:clamp(2.75rem, 6vw, 4rem);
+    margin-bottom: 1.6rem;
+}
+h4{
+    font-size:clamp(1.6rem, 6vw, 1.8rem);
+    margin-bottom: 1.6rem;
+}
+h5{
+    font-size:clamp(1.4rem, 6vw, 1.6rem);
+    margin-bottom: 1.6rem;
+}
+p{
+    // font-size:clamp(1.4rem, 6vw, 1.9rem);
+    margin-bottom: 1.3rem;
+    line-height: 2.4;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
 
 button{
     border: none;
@@ -60,8 +89,6 @@ button{
 input, textarea{
     background: transparent;
 }
-
-i:hover{ color: $clr-red; }
 
 // .logo{
 //     display: block;
@@ -84,3 +111,8 @@ i:hover{ color: $clr-red; }
 //     -ms-transform:scale(1.5, 1.25);
 //     -o-transform:scale(1.5, 1.25);
 // }
+
+.fa .fa-cogs, .fa .fa-tint, .fa .fa-filter, .fa .fa-wrench{
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    line-height: clamp(3.0, 5.0, 7.0);
+}

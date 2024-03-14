@@ -2,11 +2,10 @@
 @use "base" as *;
 
 $colors: (
+    "dark": $clr-dark,    
     "white": $clr-white,
-    "primary" : $clr-primary,
     "gray": $clr-gray,
-    "red": $clr-red,
-    "dark": $clr-dark,
+    "accent" : $clr-accent,
 );
 
 @each $key, $val in $colors{
@@ -147,9 +146,8 @@ $case: (
 }
 
 $fonts: (
-    "economica": $ft-economica,
-    "montserrat": $ft-montserrat,
-    "walter": $ft-walter,
+    "ubuntu": $ft-ubuntu,
+    "u-condensed": $ft-ubuntu-condensed,
 );
 @each $key, $val in $fonts{
     .ft-#{$key}{

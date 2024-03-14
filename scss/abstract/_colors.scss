@@ -1,16 +1,16 @@
 :root{
+    --dark: #26252a;
+    --gray: #343438;
     --white: #fff;
-    --red: #e60033;
-    --gray: #808080;
-    --dark: #433d3c;
-    --primary: #f6ad49 ;
+    --accent: #f8565d;
+    --accent-alt: #fca8ac;
 }
 
-$clr-white: var(--white);
-$clr-red: var(--red);
-$clr-gray: var(--gray);
 $clr-dark: var(--dark);
-$clr-primary: var(--primary);
+$clr-gray: var(--gray);
+$clr-white: var(--white);
+$clr-accent: var(--accent);
+$clr-accent-alt: var(--accent-alt);
 
 // $bp-xs: 32rem;
 // $bp-sm: 55rem;
