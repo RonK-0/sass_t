@@ -9,6 +9,10 @@
   --primary: #f6ad49 ;
 }
 
+* {
+  transition: 0.5s ease;
+}
+
 html {
   font-size: 10px;
 }
@@ -750,15 +754,15 @@ body {
 }
 @media (max-width: 42rem) {
   .header__wrapper img {
-    height: 8rem;
-    width: 8rem;
+    height: 6rem;
+    width: 6rem;
     -o-object-fit: cover;
        object-fit: cover;
   }
 }
 .header__wrapper #toggleMenu {
   display: none;
-  font-size: 1.6rem;
+  font-size: 3rem;
 }
 .header__wrapper ul > li > a {
   font-weight: bold;
@@ -884,16 +888,21 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
 }
-@media (max-width: 790px) {
+@media (max-width: 480px) {
   .menu__wrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 3rem;
   }
 }
+.menu__item__details__price {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 500;
+}
 .menu__item__details__ingredients ul > li {
   color: var(--white);
   line-height: 1.4;
+  font-weight: 600;
 }
 .menu__item__details__broth {
   font-family: "Walter Turncoat", cursive;
@@ -906,9 +915,16 @@ body {
      object-fit: cover;
 }
 @media (max-width: 790px) {
+  .menu__item img {
+    order: -1;
+  }
+}
+@media (max-width: 790px) {
   .menu__item {
-    max-width: 40rem;
     margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 .menu button {

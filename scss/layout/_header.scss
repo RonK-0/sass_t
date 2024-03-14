@@ -18,11 +18,9 @@
     &__wrapper{
         img{
             @include imgCover(10rem, 10rem);
-            @include mediaQueryMxW{
-                @include imgCover(8rem, 8rem);
-            }
+            @include mediaQueryMxW{ @include imgCover(6rem, 6rem); }
         }
-        #toggleMenu{ display: none; font-size: 1.6rem; }
+        #toggleMenu{ display: none; font-size: 3rem; }
         ul>li>a{
             font-weight: bold;
             &:hover{color: $clr-red;}
