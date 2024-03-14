@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(5.5rem, 8vw, 7rem);
+  font-size: clamp(4.5rem, 8vw, 9.1rem);
   margin-bottom: 2rem;
 }
 
@@ -56,7 +56,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(3rem, 40px, 3.25rem);
+  font-size: clamp(2.75rem, 6vw, 4rem);
   margin-bottom: 1.6rem;
 }
 
@@ -71,7 +71,7 @@ h5 {
 }
 
 p {
-  font-size: clamp(1.4rem, 6vw, 1.6rem);
+  font-size: clamp(1.4rem, 6vw, 1.9rem);
   margin-bottom: 1.3rem;
 }
 
@@ -725,7 +725,8 @@ body {
 
 .btn {
   display: block;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
   font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: center;
@@ -733,11 +734,112 @@ body {
   line-height: 1;
   color: var(--white);
   background-color: var(--primary);
-  flex-grow: 0;
   text-align: center;
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
+  font-weight: bold;
 }
 .btn:hover {
   background-color: var(--red);
+}
+
+.header__wrapper img {
+  height: 10rem;
+  width: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 42rem) {
+  .header__wrapper img {
+    height: 8rem;
+    width: 8rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.header__wrapper #toggleMenu {
+  display: none;
+  font-size: 1.6rem;
+}
+.header__wrapper ul > li > a {
+  font-weight: bold;
+}
+.header__wrapper ul > li > a:hover {
+  color: var(--red);
+}
+.header__wrapper .active {
+  color: var(--primary);
+}
+@media (max-width: 42rem) {
+  .header__wrapper #toggleMenu {
+    display: block;
+    order: 2;
+  }
+  .header__wrapper ul {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    background-color: rgb(246, 173, 73);
+    color: var(--white);
+    top: 10.5rem;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+  }
+  .header__wrapper ul a {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 42rem) and (max-width: 25rem) {
+  .header__wrapper ul a {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 42rem) {
+  .header__wrapper ul a.active {
+    color: var(--dark);
+  }
+  .header__wrapper ul.open {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 755px) {
+  .footer__wrapper {
+    flex-direction: column;
+  }
+}
+.footer__wrapper p {
+  font-weight: bold;
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
+}
+.footer__socials i {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+.footer__socials i:hover {
+  color: var(--red);
+}
+
+.banner {
+  background-image: url("../../images/1_banner/wood.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+.banner img.bannerRamen {
+  height: 150%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner__wrapper p {
+  font-weight: 400;
+  font-size: clamp(1.4rem, 2vw, 2rem);
 }
 
 .arrow {

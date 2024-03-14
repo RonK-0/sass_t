@@ -11,32 +11,46 @@
 //     li a{ padding-bottom: 0.5rem; font-size: 2rem; }
 //     .active{ border-bottom: 2px solid $clr-accent;}
 //     #toggleMenu{ display: none; font-size: 1.6rem; }
-//     @include mediaQueryMxW(740px){
-//         #toggleMenu{ display: block; order: -1; }
-//         i{ display: none; }
-//         ul{
-//             visibility: hidden; opacity: 0;            
-//             position: fixed;
-//             background-color: $clr-light;
-//             top: 9.25rem;  left: 0;
-//             height: 100%;
-//             width: 100%;
-//             z-index: 9999;
-//             flex-direction: column;
-//             align-items: center;
-//             justify-content: center;
-//             a{
-//                 font-size: 3rem;
-//                 @include mediaQueryMxW(25rem){ font-size: 2rem; }
-//             }
-//             transition: 0.5s ease;
-//         }
-//         ul.open{ visibility: visible; opacity: 1; }
-//     }
+
 //     .theme{ font-size: 1.6rem; }
 // }
 .header{
     &__wrapper{
-        
+        img{
+            @include imgCover(10rem, 10rem);
+            @include mediaQueryMxW{
+                @include imgCover(8rem, 8rem);
+            }
+        }
+        #toggleMenu{ display: none; font-size: 1.6rem; }
+        ul>li>a{
+            font-weight: bold;
+            &:hover{color: $clr-red;}
+        }
+        .active{ color: $clr-primary;}
+        @include mediaQueryMxW{
+            #toggleMenu{ display: block; order: 2; }
+            ul{
+                visibility: hidden; opacity: 0;            
+                position: fixed;
+                background-color: rgb(246, 173, 73);
+                color: $clr-white;
+                top: 10.5rem;  left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: 9999;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                a{
+                    font-size: 3rem;
+                    @include mediaQueryMxW(25rem){ font-size: 2rem; }
+                    &.active{ color: $clr-dark; }
+                }
+                transition: 0.5s ease;
+            }
+            ul.open{ visibility: visible; opacity: 1; }
+        }
     }
+    
 }

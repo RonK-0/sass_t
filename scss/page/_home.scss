@@ -4,246 +4,29 @@
 @use "../layout" as *;
 // @use "../vendor" as *;
 
+.banner{
+    // background-image: url("../../images/1_banner/hero-image-2.png"), url("../../images/1_banner/wood.jpg");
+    // background-size: contain, cover;
+    // background-position: bottom center, center;
+    // background-repeat: no-repeat, repeat;
+    // height: 80vh;
+    background-image: url("../../images/1_banner/wood.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    img.bannerRamen{
+        @include imgCover(150%, 100%);
+    }
+    &__wrapper{
+        p{
+            font-weight: 400;
+            font-size: clamp(1.4rem, 2vw, 2rem);
+        }
 
-// .banner{
-//     border-radius: 6.5rem;
-//     &__text{
-//         h1{
-//             max-width: 89rem;
-//             letter-spacing: 0.15rem;
-//             font-family: $ft-fspmlico;
-//             font-size: clamp(6rem, 8vw, 11rem);
-//             line-height: 1;
-//             @include mediaQueryMxW{
-//                 font-size: clamp(3.5rem, 6vw, 5rem);
-//                 margin-bottom: 1rem;
-//             }
-//         }
-//         p{ opacity: 0.5; letter-spacing: 0.2rem; }
-//     }
-//     &__action{
-//         button{
-//             min-width: 17.5rem;
-//             letter-spacing: 0.1rem;
-//             padding: 2rem 1.75rem;
-//             font-size: clamp(1.15rem, 4vw, 1.5rem);
-//             @include mediaQueryMxW{ min-width: unset; }
-//         }
-//         @include mediaQueryMxW{ width: 100%; flex-wrap: wrap; }
-//     }
-//     &__images{
-//         img{ border-radius: 2.5rem; }
-//         &__left{
-//             max-width: 40rem;
-//             width: 100%;
-//             img{
-//                 @include imgCover(38rem, 100%);
-//                 @include mediaQueryMxW{ @include imgCover(100%, 100%); }
-//             }
-//             p{
-//                 font-size: clamp(1.5rem, 4vw, 2rem);
-//                 margin-bottom: 0;
-//             }
-//             @include mediaQueryMxW{  max-width: unset; }
-//         }
-//         &__right{
-//             width: 100%;
-//             img{ @include imgCover(60rem, 100%); }
-//         }
-//         @include mediaQueryMxW{ flex-wrap: wrap; }
-//     }
-// }
+    }
+}
 
-// .proof{
-//     background-color: $clr-gray;
-//     border-radius: 10rem;
-//     &__wrapper{ @include mediaQueryMxW(749px){ justify-content: center; } }
-//     &__entry{
-//         width: clamp(24rem, 30rem, 35rem);
-//         h3{
-//             font-size: clamp (2rem, 4vw, 4rem);
-//             font-weight: 550;
-//         }
-//         h5{ font-size: clamp(1.35rem, 4vw, 1.5rem); }
-//         p{ font-size: clamp(1.3rem, 4vw, 1.25rem); }
-//     }
-// }
 
-// .amenities{
-//     *{ color:$clr-light; }
-//     &__label{
-//         p{
-//             max-width: 60rem;
-//             margin: 0 auto;
-//         }
-//     }
-//     &__wrapper{
-//         border-radius: 3rem;
-//         overflow: hidden;
-//         min-height: 40rem;
-//         img{
-//             position: absolute;
-//             max-width: 30rem;
-//             max-height: 40rem;
-//             right: 0;
-//             transform: translateX(-5%);
-//             @include imgCover(100%, 30rem);
-//             border-top-right-radius: 3rem;
-//             border-bottom-right-radius: 3rem;
-//             @include mediaQueryMxW(1515px){
-//                 border-radius: 0rem;
-//                 transform: unset;
-//                 position: relative;
-//             }
-//             @include mediaQueryMxW($md){
-//                 order: -1;
-//                 @include imgCover(100%, 100%);
-//             }
-//         }
-//         @include mediaQueryMxW($md){ flex-wrap: wrap; }
-//     }
-//     &__entries{
-//         margin-right: 28rem;
-//         @include mediaQueryMxW(1515px){ margin-right: 0rem }
-//     }
-//     &__entry{
-//         max-width: 50rem;
-//         &__logo{ 
-//             width: 4rem;
-//             height: 4rem;
-//             flex-shrink: 0;
-//             overflow: hidden;
-//             border-radius: 50%;
-//             span{ @include mediaQueryMxW{ font-size: 2rem;} }
-//         }
-//         @include mediaQueryMxW{ flex-wrap: wrap; }
-//     }
-// }
-
-// .trainer{
-//     *{ color: $clr-light; }
-//     &__label{
-//         p{ max-width: 60rem; margin: 0 auto; }
-//     }
-//     &__card{
-//         position: relative;
-//         border-radius: 3rem;
-//         overflow: hidden;
-//         img{ @include imgCover(100%, 30rem); }
-//         p{
-//             position: absolute;
-//             bottom: -3rem; left: 0;
-//             width: 100%;
-//             height: 7rem;
-//             // background-color: rgba(107, 106, 94, 0.8);
-//             backdrop-filter: blur(10px);
-//             font-size: clamp(1.5rem, 5vw, 2.2rem);
-//             color: #fff;
-//         }
-//     }
-// }
-
-// .testimonies{
-//     *{ color: $clr-light; }
-//     border-radius: 3.5rem;
-//     &__wrapper{ @include mediaQueryMxW($md){ flex-direction: column; } }
-//     &__left{
-//         max-width: 50rem;
-//         p{ @include mediaQueryMxW{ font-size: 1.2rem; } }
-//         &__buttons{
-//             button{ border-radius: 10rem; font-size: 2rem; }
-//             @include mediaQueryMxW($md){ justify-content: center; }
-//         }
-//         @include mediaQueryMxW($md){  width: 100%; max-width: unset; }
-//     }
-//     &__right{
-//         max-width: 85rem;
-//         position: relative;
-//         i:first-of-type{
-//             font-size: clamp(2.5rem, 4vw, 4rem);
-//             position: absolute;
-//             top: -4rem; left: -4rem;
-//             opacity: 0.5;
-//             @include mediaQueryMxW($md){
-//                 position: relative;
-//                 top: 0; left: 0;
-//             }
-//         }
-//         p{ font-size: clamp(1.5rem, 6vw, 2rem); letter-spacing: 0.05rem; }
-//         &__client{
-//             img{
-//                 @include imgCover(10rem, 10rem);
-//                 border-radius: 10rem;
-//             }
-//             @include mediaQueryMxW{ justify-content: center; flex-wrap: wrap;}
-//         }
-//         @include mediaQueryMxW($md){ width: 100%;  max-width: unset; }
-//     }
-// }
-
-// .cta{
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(https://via.placeholder.com/800x300);
-//     // backdrop-filter: blur(100px);    //not working here due to background-image
-//     background-position: center center;
-//     color: #000;
-//     &__wrapper{
-//         button{
-//             max-width: 16rem;
-//             padding-top: 1.5rem;
-//             padding-bottom: 1.5rem;
-//         }
-//     }
-// }
-
-// // 
-
-// .slider {
-//     background-color: hsl(0, 0%, 15%);
-//     padding: 10rem 4rem;
-//     color: $clr-light;
-//     border-radius: 5rem;
-//     margin: 10rem 0;
-//     position: relative;
-//     &__wrapper {
-//         @include unevenGrid(40% 60%)
-//     }
-
-//     h3 {
-//         font-size: clamp(3rem, 10vw, 7rem);
-//         line-height: 1.2;
-//     }
-
-//     &__box {
-//         display: flex;
-//         gap: 2rem;
-//         i {
-//             font-size: 5rem;
-//         }
-//         p {
-//             margin-top: 2rem;
-//             font-size: 2.2rem;
-//         }
-
-//         .profile {
-//             display: flex;
-//             gap: 2rem;
-//             align-items: center;
-//             ul {
-//                 line-height: 1;
-//             }
-//             li, h4 {
-//                 margin-bottom: 0;
-//             }
-
-//             img {
-//                 border-radius: 50%;
-//             }
-            
-//         }
-//     }
-// }
 .arrow{
     -webkit-transform: rotate(0deg) rotateX(0) rotateY(0);
     -moz-transform: rotate(0deg) rotateX(0) rotateY(0);
@@ -265,7 +48,7 @@
 
     }
     &__header{
-        h3{ font-weight: 900; }
+        h3{ font-weight: 900;}
         p{ font-weight: bold; }
     }
     &__images{ 

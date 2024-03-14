@@ -20,30 +20,30 @@
     <!-- section.banner>.container>(header.header>.header__wrapper>img[src="../images/logo/logo.png"]+(nav>ul>li*4>a{MENU})+button.btn{ORDER ONLINE})+(.banner__wrapper>h1{MICHI RAMEN}+p{NORTH: TUE - SUN 11AM - MIDNIGHT | SOUTH: TUE - SUN 5PM - MIDNIGHT}) -->
     <section class="banner bg-text">
         <div class="container">
-            <header class="header">
+            <header class="header py-2">
                 <div class="header__wrapper flex justify-between items-center">
                     <img src="../images/logo/logo.png" alt="">
-                    <nav>
-                        <ul class="flex justify-center items-center gap-2">
-                            <li><a href="#">MENU</a></li>
-                            <li><a href="#">LOCATIONS</a></li>
-                            <li><a href="#">ABOUT</a></li>
-                            <li><a href="#">BLOG</a></li>
-                        </ul>
-                    </nav>
+                    <ul class="flex justify-center items-center gap-2" id="menu">
+                        <li><a href="#" class="active">MENU</a></li>
+                        <li><a href="#">LOCATIONS</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">BLOG</a></li>
+                    </ul>
                     <button class="btn">ORDER ONLINE</button>
+                    <button id="toggleMenu" class="fas fa-bars text-white"></button>
                 </div>
             </header>
             <div class="banner__wrapper m-a">
-                <h1 class="text-center text-white">MICHI RAMEN</h1>
-                <p class="text-center text-white">NORTH: TUE - SUN 11AM - MIDNIGHT | SOUTH: TUE - SUN 5PM - MIDNIGHT</p>
+                <h1 class="text-center text-white m-0">MICHI RAMEN</h1>
+                <p class="text-center text-white m-0">NORTH: TUE - SUN 11AM - MIDNIGHT | SOUTH: TUE - SUN 5PM - MIDNIGHT</p>
             </div>
+            <img src="../images/1_banner/hero-image-2.png" alt="" class="bannerRamen">
         </div>
     </section>
 
     <!-- section.orderIns>.container>h2{HOW TO ORDER AT MICHI}+.orderIns__wrapper>.orderIns__instruction>(.orderIns__instruction__step>img[src="../images/2_how to order/pick-ramen.png"]+h4.text-dark{PICK YOUR RAMEN})+i.fas.fa-angle-right.text-red+(.orderIns__instruction__step>img[src="../images/2_how to order/pick-broth.png"]+h4{PICK YOUR BROTH})+i.fas.fa-angle-right.text-red+(.orderIns__instruction__step>img[src="../images/2_how to order/add-toppings.png"]+h4{ADD TOPPINGS}) -->
     <section class="orderIns">
-        <div class="container">
+        <div class="container py-8">
             <h2 class="text-red text-center">HOW TO ORDER AT MICHI</h2>
             <div class="orderIns__wrapper">
                 <div class="orderIns__instruction flex justify-around items-center">
@@ -234,17 +234,17 @@
 
 
     <!-- footer.footer>.container>.footer_wrapper>(.footer_socials>i.fab.fa-yelp+i.fab.fa-twitter+i.fab.fa-facebook-f+i.fab.fa-instagram)+(p.footer__locations{North: (512) 386-1908 • 6519 N. Lamar 78752<br>South: (512) 394-6350 • 3005 S. Lamar D-114B 78704})+button.btn{ORDER ONLINE} -->
-    <footer class="footer bg-text">
+    <footer class="footer bg-dark">
         <div class="container">
-            <div class="footer_wrapper flex justify-between item-center">
-                <div class="footer_socials flex justify-center gap-2">
+            <div class="footer__wrapper flex f-wrap justify-between item-center py-4 gap-3">
+                <div class="footer__socials flex justify-center items-center gap-3">
                     <i class="fab fa-yelp text-primary"></i>
                     <i class="fab fa-twitter text-primary"></i>
                     <i class="fab fa-facebook-f text-primary"></i>
                     <i class="fab fa-instagram text-primary"></i>
                 </div>
-                <p class="footer__locations">North: (512) 386-1908 • 6519 N. Lamar 78752<br>South: (512) 394-6350 • 3005 S. Lamar D-114B 78704</p>
-                <button class="btn">ORDER ONLINE</button>
+                <p class="text-white text-center m-0">North: (512) 386-1908 • 6519 N. Lamar 78752<br>South: (512) 394-6350 • 3005 S. Lamar D-114B 78704</p>
+                <div class="flex f-col items-center justify-center"><button class="btn">ORDER ONLINE</button></div>
             </div>
         </div>
     </footer>
