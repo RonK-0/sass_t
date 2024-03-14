@@ -28,7 +28,7 @@
     background: url("../../images/3_ramens/bg/character_pattern_2X.jpg") repeat center / 8rem;
     h2{ letter-spacing: 0.3rem; }
     &__wrapper{
-        @include grid(2,3rem);
+        @include grid(2,2rem);
         @include mediaQueryMxW(480px){ @include grid(1,3rem); }
     }
     &__item{
