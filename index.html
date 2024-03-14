@@ -68,16 +68,16 @@
 
 
 
-    <!-- section.menu>.container>h2{RAMEN MENU}+(.menu__wrapper>.menu__item*7>((.menu__item__details>h3.menu__item__name{MICHI}+h4.menu__item__price{$9.75}+(.menu__item__ingredients>ul>li{chashu slices}+li{roasted nori}+li{mayu oil}+li{woodear mushrooms}+li{green onions}+li{contains shellfish}+li.text-red{TEXT})+span.menu__item__broth>{SHOYU TONKOTSU}))+(.menu__item__image>img[src="../images/3_ramens/michi.png"]))+button.btn{VIEW OUR FULL MENU} -->
+    <!-- section.menu>.container>h2{RAMEN MENU}+(.menu__wrapper>.menu__item*7>((.menu__item__details>h3.menu__item__details__name{MICHI}+h4.menu__item__details__price{$9.75}+(.menu__item__details__ingredients>ul>li{chashu slices}+li{roasted nori}+li{mayu oil}+li{woodear mushrooms}+li{green onions}+li{contains shellfish}+li.text-red{TEXT})+span.menu__item__details__broth>{SHOYU TONKOTSU}))+(.menu__item__image>img[src="../images/3_ramens/michi.png"]))+button.btn{VIEW OUR FULL MENU} -->
     <section class="menu bg-primary">
-        <div class="container">
+        <div class="container py-4">
             <h2 class="text-white text-center">RAMEN MENU</h2>
-            <div class="menu__wrapper flex f-wrap py-4">
-                <div class="menu__item flex">
+            <div class="menu__wrapper py-4">
+                <div class="menu__item flex justify-between">
                     <div class="menu__item__details">
-                        <h3 class="menu__item__name text-gray">MICHI</h3>
-                        <h4 class="menu__item__price text-red">$9.75</h4>
-                        <div class="menu__item__ingredients text-white">
+                        <h3 class="menu__item__details__name text-dark">MICHI</h3>
+                        <h4 class="menu__item__details__price text-red">$9.75</h4>
+                        <div class="menu__item__details__ingredients mb-2">
                             <ul>
                                 <li>chashu slices</li>
                                 <li>roasted nori</li>
@@ -87,16 +87,16 @@
                                 <li>*contains shellfish</li>
                             </ul>
                         </div>
-                        <span class="menu__item__broth text-gray">SHOYU TONKOTSU</span>
+                        <span class="menu__item__details__broth text-dark">SHOYU TONKOTSU</span>
                     </div>
-                    <div class="menu__item__image"><img src="../images/3_ramens/michi.png" alt=""></div>
+                    <img src="../images/3_ramens/michi.png" alt="">
                 </div>
 
-                <div class="menu__item flex">
+                <div class="menu__item flex justify-between">
                     <div class="menu__item__details">
-                        <h3 class="menu__item__name text-gray">SAPPORO</h3>
-                        <h4 class="menu__item__price text-red">$10.75</h4>
-                        <div class="menu__item__ingredients text-white">
+                        <h3 class="menu__item__details__name text-dark">SAPPORO</h3>
+                        <h4 class="menu__item__details__price text-red">$10.75</h4>
+                        <div class="menu__item__details__ingredients mb-2">
                             <ul>
                                 <li>chashu slices</li>
                                 <li>bean sprouts</li>
@@ -105,16 +105,16 @@
                                 <li>green onions</li>
                             </ul>
                         </div>
-                        <span class="menu__item__broth text-gray">MISO TONKOTSU</span>
+                        <span class="menu__item__details__broth text-dark">MISO TONKOTSU</span>
                     </div>
-                    <div class="menu__item__image"><img src="../images/3_ramens/sapporo.png" alt=""></div>
+                    <img src="../images/3_ramens/sapporo.png" alt="">
                 </div>
 
-                <div class="menu__item flex">
+                <div class="menu__item flex justify-between">
                     <div class="menu__item__details">
-                        <h3 class="menu__item__name text-gray">VEGGIE</h3>
-                        <h4 class="menu__item__price text-red">$8.75</h4>
-                        <div class="menu__item__ingredients text-white">
+                        <h3 class="menu__item__details__name text-dark">VEGGIE</h3>
+                        <h4 class="menu__item__details__price text-red">$8.75</h4>
+                        <div class="menu__item__details__ingredients mb-2">
                             <ul>
                                 <li>mix of garlic chives, </li>
                                 <li>sprouts and cabbage</li>
@@ -123,16 +123,16 @@
                                 <li class="text-red">+ egg-free noodles $1.00</li>
                             </ul>
                         </div>
-                        <span class="menu__item__broth text-gray">SHOYU SHIITAKE</span>
+                        <span class="menu__item__details__broth text-dark">SHOYU SHIITAKE</span>
                     </div>
-                    <div class="menu__item__image"><img src="../images/3_ramens/veggie.png" alt=""></div>
+                    <img src="../images/3_ramens/veggie.png" alt="">
                 </div>
 
-                <div class="menu__item flex">
+                <div class="menu__item flex justify-between">
                     <div class="menu__item__details">
-                        <h3 class="menu__item__name text-gray">MEAT LOVERS</h3>
-                        <h4 class="menu__item__price text-red">$11.75</h4>
-                        <div class="menu__item__ingredients text-white">
+                        <h3 class="menu__item__details__name text-dark">MEAT LOVERS</h3>
+                        <h4 class="menu__item__details__price text-red">$11.75</h4>
+                        <div class="menu__item__details__ingredients mb-2">
                             <ul>
                                 <li>chashu slices</li>
                                 <li>ground chashu</li>
@@ -142,16 +142,16 @@
                                 <li class="text-red">*contains shellfish</li>
                             </ul>
                         </div>
-                        <span class="menu__item__broth text-gray">SHOYU TONKOTSU</span>
+                        <span class="menu__item__details__broth text-dark">SHOYU TONKOTSU</span>
                     </div>
-                    <div class="menu__item__image"><img src="../images/3_ramens/meat.png" alt=""></div>
+                    <img src="../images/3_ramens/meat.png" alt="">
                 </div>
                 
-                <div class="menu__item flex">
+                <div class="menu__item flex justify-between">
                     <div class="menu__item__details">
-                        <h3 class="menu__item__name text-gray">DIPPING</h3>
-                        <h4 class="menu__item__price text-red">$11.755</h4>
-                        <div class="menu__item__ingredients text-white">
+                        <h3 class="menu__item__details__name text-dark">DIPPING</h3>
+                        <h4 class="menu__item__details__price text-red">$11.755</h4>
+                        <div class="menu__item__details__ingredients mb-2">
                             <ul>
                                 <li>chashu slices</li>
                                 <li>shredded nori</li>
@@ -164,16 +164,16 @@
                                 <li class="text-red">*broth served on the side</li>
                             </ul>
                         </div>
-                        <span class="menu__item__broth text-gray">FISH TONKOTSU</span>
+                        <span class="menu__item__details__broth text-dark">FISH TONKOTSU</span>
                     </div>
-                    <div class="menu__item__image"><img src="../images/3_ramens/dipping.png" alt=""></div>
+                    <img src="../images/3_ramens/dipping.png" alt="">
                 </div>
 
-                <div class="menu__item flex">
+                <div class="menu__item flex justify-between">
                     <div class="menu__item__details">
-                        <h3 class="menu__item__name text-gray">TEXAS</h3>
-                        <h4 class="menu__item__price text-red">$13.75</h4>
-                        <div class="menu__item__ingredients text-white">
+                        <h3 class="menu__item__details__name text-dark">TEXAS</h3>
+                        <h4 class="menu__item__details__price text-red">$13.75</h4>
+                        <div class="menu__item__details__ingredients mb-2">
                             <ul>
                                 <li>smoked BBQ pork ribs</li>
                                 <li>vinegar slaw</li>
@@ -185,16 +185,16 @@
                                 <li>spicy BBQ sauce</li>
                             </ul>
                         </div>
-                        <span class="menu__item__broth text-gray">TOMATO TONKOTSU</span>
+                        <span class="menu__item__details__broth text-dark">TOMATO TONKOTSU</span>
                     </div>
-                    <div class="menu__item__image"><img src="../images/3_ramens/texas.png" alt=""></div>
+                    <img src="../images/3_ramens/texas.png" alt="">
                 </div>
 
-                <div class="menu__item flex">
+                <div class="menu__item flex justify-between">
                     <div class="menu__item__details">
-                        <h3 class="menu__item__name text-gray">JUNGLE</h3>
-                        <h4 class="menu__item__price text-red">$9.75</h4>
-                        <div class="menu__item__ingredients text-white">
+                        <h3 class="menu__item__details__name text-dark">JUNGLE</h3>
+                        <h4 class="menu__item__details__price text-red">$9.75</h4>
+                        <div class="menu__item__details__ingredients mb-2">
                             <ul>
                                 <li>chashu slices</li>
                                 <li>bean sprouts</li>
@@ -207,12 +207,12 @@
                                 <li class="text-red">*contains shellfish</li>
                             </ul>
                         </div>
-                        <span class="menu__item__broth text-gray">LEMONGRASS TONKOTSU</span>
+                        <span class="menu__item__details__broth text-dark">LEMONGRASS TONKOTSU</span>
                     </div>
-                    <div class="menu__item__image"><img src="../images/3_ramens/jungle.png" alt=""></div>
+                    <img src="../images/3_ramens/jungle.png" alt="">
                 </div>
             </div>
-            <button class="btn">VIEW OUR FULL MENU</button>
+            <button class="btn m-a">VIEW OUR FULL MENU</button>
         </div>
     </section>
 

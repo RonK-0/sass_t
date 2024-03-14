@@ -29,13 +29,8 @@
 .orderIns{
     background-image: url("../../images/2_how to order/texture_pattern_2X.jpg");
     background-repeat: repeat;
-    &__wrapper{
-
-    }
     &__instruction{
-        @include mediaQueryMxW{
-            flex-direction: column;
-        }
+        @include mediaQueryMxW{ flex-direction: column; }
         &__step{
             img{ @include imgCover_contain(12.1rem, 100%); }
             h4{
@@ -55,15 +50,50 @@
     }
 }
 
-.arrow{
-    
-    &:hover{
-        -moz-transform: rotate(90deg) rotateX(0) rotateY(0);
-        -ms-transform: rotate(90deg) rotateX(0) rotateY(0);
-        -o-transform: rotate(90deg) rotateX(0) rotateY(0);
-        transform: rotate(90deg) rotateX(0) rotateY(0);
+.menu{
+    background-image: url("../../images/3_ramens/bg/character_pattern_2X.jpg");
+    background-repeat: repeat;
+    background-size: 8rem;
+    h2{
+        font-weight: 900;
+        letter-spacing: 0.3rem;
+    }
+    &__wrapper{
+        @include grid(2,3rem);
+        @include mediaQueryMxW(790px){
+            @include grid(1,3rem);
+        }
+    }
+    &__item{
+        &__details{
+            &__name{
+
+            }
+            &__price{
+                
+            }
+            &__ingredients{
+                ul>li{
+                    color: $clr-white;
+                    line-height: 1.4;
+                }
+            }
+            &__broth{
+                font-family: $ft-walter;
+                font-size: clamp(1.6rem, 3vw, 2.5rem);
+            }
+        }
+        img{ @include imgCover(21rem, 21rem);}
+        @include mediaQueryMxW(790px){
+            max-width: 40rem;
+            margin: 0 auto;
+        }
+    }
+    button{
+        background-color: $clr-dark;
     }
 }
+
 
 .hours{
     background-image: url("../../images/4_above footer/texture_pattern_2X.jpg");

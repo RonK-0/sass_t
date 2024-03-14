@@ -51,7 +51,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(2.7rem, 6vw, 4.5rem);
+  font-size: clamp(2.7rem, 6vw, 6.2rem);
   margin-bottom: 2rem;
 }
 
@@ -858,7 +858,7 @@ body {
      object-fit: contain;
 }
 .orderIns__instruction__step h4 {
-  font-family: "Walter Turncoat";
+  font-family: "Walter Turncoat", cursive;
   font-size: clamp(2rem, 6vw, 2.25rem);
 }
 .orderIns__instruction i.arrow {
@@ -870,8 +870,49 @@ body {
   }
 }
 
-.arrow:hover {
-  transform: rotate(90deg) rotateX(0) rotateY(0);
+.menu {
+  background-image: url("../../images/3_ramens/bg/character_pattern_2X.jpg");
+  background-repeat: repeat;
+  background-size: 8rem;
+}
+.menu h2 {
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+}
+.menu__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
+@media (max-width: 790px) {
+  .menu__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 3rem;
+  }
+}
+.menu__item__details__ingredients ul > li {
+  color: var(--white);
+  line-height: 1.4;
+}
+.menu__item__details__broth {
+  font-family: "Walter Turncoat", cursive;
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+}
+.menu__item img {
+  height: 21rem;
+  width: 21rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 790px) {
+  .menu__item {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+}
+.menu button {
+  background-color: var(--dark);
 }
 
 .hours {

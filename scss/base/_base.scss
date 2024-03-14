@@ -5,7 +5,7 @@ $ft-fspmlico: "FS Pimlico";
 
 $ft-economica: "Economica", sans-serif;
 $ft-montserrat: "Montserrat", sans-serif;
-$ft-walter: "Walter Turncoat";
+$ft-walter: "Walter Turncoat", cursive;
 
 
 // body, h1, h2, h3, h4, h5, p, ul li, a, small {
@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{ font-size:clamp(4.5rem, 8vw, 9.1rem); margin-bottom: 2rem; }
-h2{ font-size:clamp(2.7rem, 6vw, 4.5rem); margin-bottom: 2rem; }
+h2{ font-size:clamp(2.7rem, 6vw, 6.2rem); margin-bottom: 2rem; }
 h3{ font-size:clamp(2.75rem, 6vw, 4rem); margin-bottom: 1.6rem; }
 h4{ font-size:clamp(1.6rem, 6vw, 1.8rem); margin-bottom: 1.6rem; }
 h5{ font-size:clamp(1.4rem, 6vw, 1.6rem); margin-bottom: 1.6rem; }
