@@ -36,10 +36,7 @@
     &__item{
         &__details{
             &__price{ font-size: clamp(1.8rem, 4vw, 2.5rem); }
-            &__ingredients>ul>li{
-                color: $clr-white;
-                line-height: 1.4;
-            }
+            &__ingredients>ul>li{ line-height: 1.4; }
             &__broth{ font-size: clamp(1.6rem, 3vw, 2.5rem); }
         }
         img{
