@@ -26,5 +26,6 @@
             }
             ul.open{ visibility: visible; opacity: 1; }
         }
+        button.btn{ @include mediaQueryMxW(290px){ display: none; } }
     }
 }

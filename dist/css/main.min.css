@@ -848,6 +848,11 @@ body {
     opacity: 1;
   }
 }
+@media (max-width: 290px) {
+  .header__wrapper button.btn {
+    display: none;
+  }
+}
 
 @media (max-width: 755px) {
   .footer__wrapper {
