@@ -18,7 +18,7 @@ html {
 
 body {
     font-family: $ft-montserrat;
-    color: $clr-text;
+    color: $clr-dark;
     background-color: $clr-white;
     line-height: 1.6;
     font-size: 1.6rem;
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6{
 
 h1{ font-size:clamp(5.5rem, 8vw, 7rem); margin-bottom: 2rem; }
 h2{ font-size:clamp(2.7rem, 6vw, 4.5rem); margin-bottom: 2rem; }
-h3{ font-size:clamp(2rem, 6vw, 2.75rem); margin-bottom: 1.6rem; }
+h3{ font-size:clamp(3rem, 40px, 3.25rem); margin-bottom: 1.6rem; }
 h4{ font-size:clamp(1.6rem, 6vw, 1.8rem); margin-bottom: 1.6rem; }
 h5{ font-size:clamp(1.4rem, 6vw, 1.6rem); margin-bottom: 1.6rem; }
 p{ font-size:clamp(1.4rem, 6vw, 1.6rem); margin-bottom: 1.3rem; }

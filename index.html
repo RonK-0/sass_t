@@ -18,62 +18,62 @@
 
 <body>
     <!-- section.banner>.container>(header.header>.header__wrapper>img[src="../images/logo/logo.png"]+(nav>ul>li*4>a{MENU})+button.btn{ORDER ONLINE})+(.banner__wrapper>h1{MICHI RAMEN}+p{NORTH: TUE - SUN 11AM - MIDNIGHT | SOUTH: TUE - SUN 5PM - MIDNIGHT}) -->
-    <section class="banner">
+    <section class="banner bg-text">
         <div class="container">
             <header class="header">
-                <div class="header__wrapper">
+                <div class="header__wrapper flex justify-between items-center">
                     <img src="../images/logo/logo.png" alt="">
                     <nav>
-                        <ul>
-                            <li><a href="">MENU</a></li>
-                            <li><a href="">MENU</a></li>
-                            <li><a href="">MENU</a></li>
-                            <li><a href="">MENU</a></li>
+                        <ul class="flex justify-center items-center gap-2">
+                            <li><a href="#">MENU</a></li>
+                            <li><a href="#">LOCATIONS</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">BLOG</a></li>
                         </ul>
                     </nav>
                     <button class="btn">ORDER ONLINE</button>
                 </div>
             </header>
             <div class="banner__wrapper m-a">
-                <h1 class="text-center">MICHI RAMEN</h1>
-                <p class="text-center">NORTH: TUE - SUN 11AM - MIDNIGHT | SOUTH: TUE - SUN 5PM - MIDNIGHT</p>
+                <h1 class="text-center text-white">MICHI RAMEN</h1>
+                <p class="text-center text-white">NORTH: TUE - SUN 11AM - MIDNIGHT | SOUTH: TUE - SUN 5PM - MIDNIGHT</p>
             </div>
         </div>
     </section>
 
-    <!-- section.orderIns>.container>.orderIns__wrapper>h2{HOW TO ORDER AT MICHI}+.orderIns__instruction>.(orderIns__instruction__step>img[src="../images/2_how to order/pick-ramen.png"]+h4{PICK YOUR RAMEN})+i.fas.fa-arrow-right+(orderIns__instruction__step>img[src="../images/2_how to order/pick-broth.png"]+h4{PICK YOUR BROTH})+i.fas.fa-arrow-right+(orderIns__instruction__step>img[src="../images/2_how to order/add-toppings.png"]+h4{ADD TOPPINGS}) -->
-    <section class="orderIns bg-white">
+    <!-- section.orderIns>.container>h2{HOW TO ORDER AT MICHI}+.orderIns__wrapper>.orderIns__instruction>(.orderIns__instruction__step>img[src="../images/2_how to order/pick-ramen.png"]+h4.text-dark{PICK YOUR RAMEN})+i.fas.fa-angle-right.text-red+(.orderIns__instruction__step>img[src="../images/2_how to order/pick-broth.png"]+h4{PICK YOUR BROTH})+i.fas.fa-angle-right.text-red+(.orderIns__instruction__step>img[src="../images/2_how to order/add-toppings.png"]+h4{ADD TOPPINGS}) -->
+    <section class="orderIns">
         <div class="container">
-            <div class="orderIns__wrapper py-4">
-                <h2 class="text-red text-center">HOW TO ORDER AT MICHI</h2>
-                <div class="orderIns__instruction">
-                    <div class=""></div>
-                    <orderIns__instruction__step>
+            <h2 class="text-red text-center">HOW TO ORDER AT MICHI</h2>
+            <div class="orderIns__wrapper">
+                <div class="orderIns__instruction flex justify-around items-center">
+                    <div class="orderIns__instruction__step">
                         <img src="../images/2_how to order/pick-ramen.png" alt="">
-                        <h4>PICK YOUR RAMEN</h4>
-                    </orderIns__instruction__step>
-                    <i class="fas fa-arrow-right"></i>
-                    <orderIns__instruction__step>
+                        <h4 class="text-dark text-center">PICK YOUR RAMEN</h4>
+                    </div>
+                    <i class="fas fa-angle-right text-red"></i>
+                    <div class="orderIns__instruction__step">
                         <img src="../images/2_how to order/pick-broth.png" alt="">
-                        <h4>PICK YOUR BROTH</h4>
-                    </orderIns__instruction__step>
-                    <i class="fas fa-arrow-right"></i>
-                    <orderIns__instruction__step>
+                        <h4 class="text-dark text-center">PICK YOUR BROTH</h4>
+                    </div>
+                    <i class="fas fa-angle-right text-red"></i>
+                    <div class="orderIns__instruction__step">
                         <img src="../images/2_how to order/add-toppings.png" alt="">
-                        <h4>ADD TOPPINGS</h4>
-                    </orderIns__instruction__step>
+                        <h4 class="text-dark text-center">ADD TOPPINGS</h4>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
 
+
     <!-- section.menu>.container>h2{RAMEN MENU}+(.menu__wrapper>.menu__item*7>((.menu__item__details>h3.menu__item__name{MICHI}+h4.menu__item__price{$9.75}+(.menu__item__ingredients>ul>li{chashu slices}+li{roasted nori}+li{mayu oil}+li{woodear mushrooms}+li{green onions}+li{contains shellfish}+li.text-red{TEXT})+span.menu__item__broth>{SHOYU TONKOTSU}))+(.menu__item__image>img[src="../images/3_ramens/michi.png"]))+button.btn{VIEW OUR FULL MENU} -->
     <section class="menu bg-primary">
         <div class="container">
             <h2 class="text-white text-center">RAMEN MENU</h2>
-            <div class="menu__wrapper flex py-4">
-                <div class="menu__item">
+            <div class="menu__wrapper flex f-wrap py-4">
+                <div class="menu__item flex">
                     <div class="menu__item__details">
                         <h3 class="menu__item__name text-gray">MICHI</h3>
                         <h4 class="menu__item__price text-red">$9.75</h4>
@@ -92,7 +92,7 @@
                     <div class="menu__item__image"><img src="../images/3_ramens/michi.png" alt=""></div>
                 </div>
 
-                <div class="menu__item">
+                <div class="menu__item flex">
                     <div class="menu__item__details">
                         <h3 class="menu__item__name text-gray">SAPPORO</h3>
                         <h4 class="menu__item__price text-red">$10.75</h4>
@@ -110,7 +110,7 @@
                     <div class="menu__item__image"><img src="../images/3_ramens/sapporo.png" alt=""></div>
                 </div>
 
-                <div class="menu__item">
+                <div class="menu__item flex">
                     <div class="menu__item__details">
                         <h3 class="menu__item__name text-gray">VEGGIE</h3>
                         <h4 class="menu__item__price text-red">$8.75</h4>
@@ -128,7 +128,7 @@
                     <div class="menu__item__image"><img src="../images/3_ramens/veggie.png" alt=""></div>
                 </div>
 
-                <div class="menu__item">
+                <div class="menu__item flex">
                     <div class="menu__item__details">
                         <h3 class="menu__item__name text-gray">MEAT LOVERS</h3>
                         <h4 class="menu__item__price text-red">$11.75</h4>
@@ -147,7 +147,7 @@
                     <div class="menu__item__image"><img src="../images/3_ramens/meat.png" alt=""></div>
                 </div>
                 
-                <div class="menu__item">
+                <div class="menu__item flex">
                     <div class="menu__item__details">
                         <h3 class="menu__item__name text-gray">DIPPING</h3>
                         <h4 class="menu__item__price text-red">$11.755</h4>
@@ -169,7 +169,7 @@
                     <div class="menu__item__image"><img src="../images/3_ramens/dipping.png" alt=""></div>
                 </div>
 
-                <div class="menu__item">
+                <div class="menu__item flex">
                     <div class="menu__item__details">
                         <h3 class="menu__item__name text-gray">TEXAS</h3>
                         <h4 class="menu__item__price text-red">$13.75</h4>
@@ -190,7 +190,7 @@
                     <div class="menu__item__image"><img src="../images/3_ramens/texas.png" alt=""></div>
                 </div>
 
-                <div class="menu__item">
+                <div class="menu__item flex">
                     <div class="menu__item__details">
                         <h3 class="menu__item__name text-gray">JUNGLE</h3>
                         <h4 class="menu__item__price text-red">$9.75</h4>
@@ -212,23 +212,21 @@
                     <div class="menu__item__image"><img src="../images/3_ramens/jungle.png" alt=""></div>
                 </div>
             </div>
-            <button class="btn bg-gray">VIEW OUR FULL MENU</button>
+            <button class="btn">VIEW OUR FULL MENU</button>
         </div>
     </section>
 
-    <!-- section.hours>.container>.hours__wrapper>(.hours__header>h3{JOIN US FOR HAPPY HOUR}+p{3-6PM / 9-11PM • $1 OFF ALL BEER | WEDNESDAYS 5-11PM • $2 SAKE CARAFFES})+(.hours__images>img[src="../images/4_above footer/Spices.jpg"]+img[src="../images/4_above footer/Broth.jpg"]+img[src="../images/4_above footer/Mochi.jpg"]) -->
+    <!-- section.hours>.hours__wrapper>(.hours__header>h3{JOIN US FOR HAPPY HOUR}+p{3-6PM / 9-11PM • $1 OFF ALL BEER | WEDNESDAYS 5-11PM • $2 SAKE CARAFFES})+(.hours__images>img[src="../images/4_above footer/Spices.jpg"]+img[src="../images/4_above footer/Broth.jpg"]+img[src="../images/4_above footer/Mochi.jpg"]) -->
     <section class="hours bg-white">
-        <div class="container">
-            <div class="hours__wrapper flex f-col">
-                <div class="hours__header flex f-col gap-1 py-4 m-a">
-                    <h3 class="text-center text-red">JOIN US FOR HAPPY HOUR</h3>
-                    <p class="text-center text-primary">3-6PM / 9-11PM • 11 OFF ALL BEER | WEDNESDAYS 5-11PM • 12 SAKE CARAFFES</p>
-                </div>
-                <div class="hours__images flex">
-                    <img src="../images/4_above footer/Spices.jpg" alt="">
-                    <img src="../images/4_above footer/Broth.jpg" alt="">
-                    <img src="../images/4_above footer/Mochi.jpg" alt="">
-                </div>
+        <div class="hours__wrapper flex f-col justify-center items-center">
+            <div class="hours__header flex f-col gap-1 py-4 m-a">
+                <h3 class="text-center text-red">JOIN US FOR HAPPY HOUR</h3>
+                <p class="text-center text-primary">3-6PM / 9-11PM • $1 OFF ALL BEER | WEDNESDAYS 5-11PM • $2 SAKE CARAFFES</p>
+            </div>
+            <div class="hours__images flex justify-center">
+                <img src="../images/4_above footer/Spices.jpg" alt="">
+                <img src="../images/4_above footer/Broth.jpg" alt="">
+                <img src="../images/4_above footer/Mochi.jpg" alt="">
             </div>
         </div>
     </section>
@@ -240,10 +238,10 @@
         <div class="container">
             <div class="footer_wrapper flex justify-between item-center">
                 <div class="footer_socials flex justify-center gap-2">
-                    <i class="fab fa-yelp"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-yelp text-primary"></i>
+                    <i class="fab fa-twitter text-primary"></i>
+                    <i class="fab fa-facebook-f text-primary"></i>
+                    <i class="fab fa-instagram text-primary"></i>
                 </div>
                 <p class="footer__locations">North: (512) 386-1908 • 6519 N. Lamar 78752<br>South: (512) 394-6350 • 3005 S. Lamar D-114B 78704</p>
                 <button class="btn">ORDER ONLINE</button>

@@ -5,7 +5,7 @@
   --white: #fff;
   --red: #e60033;
   --gray: #808080;
-  --text: #433d3c;
+  --dark: #433d3c;
   --primary: #f6ad49 ;
 }
 
@@ -15,7 +15,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  color: var(--text);
+  color: var(--dark);
   background-color: var(--white);
   line-height: 1.6;
   font-size: 1.6rem;
@@ -56,7 +56,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(2rem, 6vw, 2.75rem);
+  font-size: clamp(3rem, 40px, 3.25rem);
   margin-bottom: 1.6rem;
 }
 
@@ -129,6 +129,14 @@ body {
 
 .text-red {
   color: var(--red);
+}
+
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.text-dark {
+  color: var(--dark);
 }
 
 .flex {
@@ -716,17 +724,20 @@ body {
 }
 
 .btn {
+  display: block;
   padding: 1rem;
   font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  display: inline-block;
+  line-height: 1;
   color: var(--white);
   background-color: var(--primary);
+  flex-grow: 0;
+  text-align: center;
 }
 .btn:hover {
-  background-color: var(--primary);
+  background-color: var(--red);
 }
 
 .arrow {
@@ -734,4 +745,18 @@ body {
 }
 .arrow:hover {
   transform: rotate(90deg) rotateX(0) rotateY(0);
+}
+
+.hours {
+  background-image: url("../../images/4_above footer/texture_pattern_2X.jpg");
+  background-repeat: repeat;
+}
+.hours__header h3 {
+  font-weight: 900;
+}
+.hours__header p {
+  font-weight: bold;
+}
+.hours__images img {
+  width: 33.33%;
 }/*# sourceMappingURL=main.min.css.map */

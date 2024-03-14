@@ -257,3 +257,18 @@
         transform: rotate(90deg) rotateX(0) rotateY(0);
     }
 }
+
+.hours{
+    background-image: url("../../images/4_above footer/texture_pattern_2X.jpg");
+    background-repeat: repeat;
+    &__wrapper{
+
+    }
+    &__header{
+        h3{ font-weight: 900; }
+        p{ font-weight: bold; }
+    }
+    &__images{ 
+        img{ width: 33.33%; }
+    }
+}

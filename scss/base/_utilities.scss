@@ -5,6 +5,7 @@ $colors: (
     "primary" : $clr-primary,
     "gray": $clr-gray,
     "red": $clr-red,
+    "dark": $clr-dark,
 );
 
 @each $key, $val in $colors{

@@ -2,18 +2,20 @@
 @use "../base" as *;
 
 .btn{
+    display: block;
     padding: 1rem;
     // border-radius: 5rem;
     font-family: $ft-montserrat;
     @include flex(center, center);
-    // line-height: 1;
+    line-height: 1;
     // transition: 0.5s ease;
-    display: inline-block;
     color: $clr-white;
     background-color: $clr-primary;
     &:hover{
-        background-color: $clr-primary;
+        background-color: $clr-red;
     }
+    flex-grow: 0;
+    text-align: center;
 
     // $colors: (
     //     "light" : $clr-light,
