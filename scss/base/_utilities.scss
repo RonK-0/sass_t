@@ -1,4 +1,5 @@
 @use "../abstract" as *;
+@use "base" as *;
 
 $colors: (
     "white": $clr-white,
@@ -143,4 +144,15 @@ $case: (
 
 .m-a{
     margin: 0 auto;
+}
+
+$fonts: (
+    "economica": $ft-economica,
+    "montserrat": $ft-montserrat,
+    "walter": $ft-walter,
+);
+@each $key, $val in $fonts{
+    .ft-#{$key}{
+        font-family: #{$val};
+    }
 }

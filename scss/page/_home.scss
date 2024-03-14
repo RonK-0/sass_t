@@ -16,10 +16,7 @@
         @include mediaQueryMxW{ flex-direction: column; }
         &__step{
             img{ @include imgCover_contain(12.1rem, 100%); }
-            h4{
-                font-family: $ft-walter;
-                font-size: clamp(2rem, 6vw, 2.25rem);
-            }
+            h4{ font-size: clamp(2rem, 6vw, 2.25rem); }
         }
         i.arrow{
             font-size: 3rem;
@@ -38,16 +35,12 @@
     }
     &__item{
         &__details{
-            &__name{ font-family: $ft-economica; }
             &__price{ font-size: clamp(1.8rem, 4vw, 2.5rem); }
             &__ingredients>ul>li{
                 color: $clr-white;
                 line-height: 1.4;
             }
-            &__broth{
-                font-family: $ft-walter;
-                font-size: clamp(1.6rem, 3vw, 2.5rem);
-            }
+            &__broth{ font-size: clamp(1.6rem, 3vw, 2.5rem); }
         }
         img{
             @include imgCover(21rem, 21rem);
@@ -64,5 +57,5 @@
 
 .hours{
     background: url("../../images/4_above footer/texture_pattern_2X.jpg") repeat;
-    &__images{  img{ width: 33.33%; } }
+    &__images{ img{ width: 33.33%; } }
 }

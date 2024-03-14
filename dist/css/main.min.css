@@ -766,6 +766,18 @@ body {
   margin: 0 auto;
 }
 
+.ft-economica {
+  font-family: Economica, sans-serif;
+}
+
+.ft-montserrat {
+  font-family: Montserrat, sans-serif;
+}
+
+.ft-walter {
+  font-family: Walter Turncoat, cursive;
+}
+
 .btn {
   display: block;
   padding: 1rem 2rem;
@@ -883,7 +895,6 @@ body {
      object-fit: contain;
 }
 .orderIns__instruction__step h4 {
-  font-family: "Walter Turncoat", cursive;
   font-size: clamp(2rem, 6vw, 2.25rem);
 }
 .orderIns__instruction i.arrow {
@@ -914,9 +925,6 @@ body {
     grid-gap: 3rem;
   }
 }
-.menu__item__details__name {
-  font-family: "Economica", sans-serif;
-}
 .menu__item__details__price {
   font-size: clamp(1.8rem, 4vw, 2.5rem);
 }
@@ -925,7 +933,6 @@ body {
   line-height: 1.4;
 }
 .menu__item__details__broth {
-  font-family: "Walter Turncoat", cursive;
   font-size: clamp(1.6rem, 3vw, 2.5rem);
 }
 .menu__item img {
