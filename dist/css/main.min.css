@@ -1244,6 +1244,9 @@ body {
   right: 0;
   transform: translate(-25%, 40%);
 }
+.banner .tns-controls {
+  display: none;
+}
 .banner .tns-outer {
   position: relative;
 }
@@ -1305,27 +1308,29 @@ body {
   visibility: hidden;
 }
 
-.servicesSlider__wrapper {
+.servicesSlider .tns-outer {
   position: relative;
 }
 .servicesSlider .tns-controls {
   position: absolute;
-  right: 15rem;
+  top: 0;
+  right: 0;
+  transform: translateY(-220%);
   display: flex;
   gap: 2rem;
 }
-.servicesSlider .tns-controls button {
-  width: 5rem;
-  height: 5rem;
+.servicesSlider .tns-controls button > i {
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
-  background-color: var(--white);
   color: var(--accent);
+  background-color: var(--white);
 }
-.servicesSlider .tns-controls button:hover {
+.servicesSlider .tns-controls button > i:hover {
   background-color: var(--dark);
   color: var(--accent);
 }
@@ -1334,13 +1339,17 @@ body {
 }
 .servicesSlider__slide {
   position: relative;
-  margin-right: 5rem;
 }
 .servicesSlider__slide img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 42rem) {
+  .servicesSlider .container {
+    padding: 7rem 5rem;
+  }
 }
 
 .why__wrapper {

@@ -40,7 +40,7 @@
     </header>
     <section class="banner">
         <div class="container">
-            <div class="banner__slider">
+            <div class="banner__slider tns-fadeIn">
                 <!-- .banner__slider__slide*3>img[src="../images/slider1.jpg"]+h2{COMPLETE AUTO SERVICE} -->
                 <div class="banner__slider__slide">
                     <img src="../images/slide1.jpg" alt="">
@@ -206,26 +206,24 @@
             autoplay: true,
             autoplayButtonOutput: false,
             controlsPosition: "bottom",
-            controls: false,
+            axis: 'vertical',
         });
 
         const slider2 = tns({
             container: ".servicesSlider__wrapper",
-            items: 3,
+            items: 1,
+            gutter: 25,
             loop: true,
             autoplay: true,
             autoplayButtonOutput: false,
             nav: false,
-            controlsContainer: 0,
             controlsText: [
-                '<i class="fas fa-angle-left-long"></i>',
-                '<i class="fas fa-angle-right-long"></i>',
+                '<i class="fas fa-arrow-left-long text-accent"></i>',
+                '<i class="fas fa-arrow-right-long text-accent"></i>',
             ],
-
             responsive: {
-                1800: {
-                    items: 1,
-                    gutter: 20,
+                520: {
+                    items: 3,
                 },
             },
         });

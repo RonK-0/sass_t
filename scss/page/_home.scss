@@ -19,6 +19,7 @@
             }
         }
     }
+    .tns-controls{display: none;}
     .tns-outer{
         position: relative;
         .tns-nav{
@@ -48,9 +49,7 @@
 .services{
     &__cards{
         width: 95%;
-        @include mediaQueryMxW{
-            flex-direction: column;
-        }
+        @include mediaQueryMxW{ flex-direction: column; }
     }
     &__card{
         position: relative;
@@ -83,20 +82,25 @@
 }
 
 .servicesSlider{
-    &__wrapper{ position: relative; }
+    .tns-outer{
+        position: relative;
+    }
+    
     .tns-controls{
         position: absolute;
-        right: 15rem;
+        top: 0;
+        right: 0;
+        transform: translateY(-220%);
         display: flex;
         gap: 2rem;
-        button{
-            width: 5rem;
-            height: 5rem;
+        button>i{
+            width: 3.5rem;
+            height: 3.5rem;
             border-radius: 50%;
             @include flex(center, center);
             border: none;
-            background-color: $clr-white;
             color: $clr-accent;
+            background-color: $clr-white;
             &:hover{
                 background-color: $clr-dark;
                 color: $clr-accent;
@@ -107,10 +111,9 @@
     &__slide{
         // max-width: 32rem;
         position: relative;
-        margin-right: 5rem;
         img{@include imgCover(100%, 100%);}
     }
-    
+    .container{@include mediaQueryMxW{padding: 7rem 5rem;}}
 }
 
 .why{
