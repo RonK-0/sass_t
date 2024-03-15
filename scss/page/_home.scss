@@ -3,59 +3,19 @@
 @use "../component" as *;
 @use "../layout" as *;
 
-// .banner{
-//     background: url("../../images/1_banner/wood.jpg") repeat center / cover;
-//     img.bannerRamen{ @include imgCover(150%, 100%); }
-//     &__wrapper p{ font-size: clamp(1.4rem, 2vw, 2rem); }
-// }
 
-// .orderIns{
-//     background: url("../../images/2_how to order/texture_pattern_2X.jpg") repeat;
-//     &__instruction{
-//         @include mediaQueryMxW{ flex-direction: column; }
-//         &__step{
-//             img{ @include imgCover_contain(12.1rem, 100%); }
-//             h4{ font-size: clamp(2rem, 6vw, 2.25rem); }
-//         }
-//         i.arrow{
-//             font-size: 3rem;
-//             @include mediaQueryMxW{ transform: rotate(90deg) rotateX(0) rotateY(0); }
-//         }
-//     }
-// }
 
-// .menu{
-//     background: url("../../images/3_ramens/bg/character_pattern_2X.jpg") repeat center / 8rem;
-//     h2{ letter-spacing: 0.3rem; }
-//     &__wrapper{
-//         @include grid(2,2rem);
-//         @include mediaQueryMxW(480px){ @include grid(1,3rem); }
-//     }
-//     &__item{
-//         &__details{
-//             &__price{ font-size: clamp(1.8rem, 4vw, 2.5rem); }
-//             &__ingredients>ul>li{ line-height: 1.4; }
-//             &__broth{ font-size: clamp(1.6rem, 3vw, 2.5rem); }
-//         }
-//         img{
-//             @include imgCover(21rem, 21rem);
-//             @include mediaQueryMxW(790px){ order: -1; }
-//         }
-//         @include mediaQueryMxW(790px){
-//             margin: 0 auto;
-//             flex-wrap: wrap;
-//             justify-content: center;
-//         }
-//     }
-//     button{ background-color: $clr-dark; }
-// }
-
-// .hours{
-//     background: url("../../images/4_above footer/texture_pattern_2X.jpg") repeat;
-//     &__images{ img{ width: 33.33%; } }
-// }
+.why{
+    &__wrapper{
+        // @include grid(2, 3rem);
+        @include gridAuto(3rem);
+        p, h6{line-height: 1.5;}
+    }
+    .container{@include mediaQueryMxW{padding: 7rem 5rem;}}
+}
 
 .appointment{
     h1{ line-height: 0.9; letter-spacing: -0.25rem; }
     &__bottom>button{ padding:2.6rem 3.5rem; }
+    .container{@include mediaQueryMxW{padding: 7rem 5rem;}}
 }

@@ -26,6 +26,13 @@
     grid-gap: $gap;
 }
 
+@mixin gridAuto($gap: 1rem){
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: $gap;
+}
+
+
 @mixin unevenGrid($val, $gap: 1rem){
     display: grid;
     grid-template-columns: $val;

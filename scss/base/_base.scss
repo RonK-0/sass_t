@@ -53,9 +53,8 @@ h1, h2, h3, h4, h5, h6{
 
 h1{ 
     // font-size:clamp(4.5rem, 8vw, 9.1rem);
-    font-size:clamp(6rem, 8vw, 12.6rem);
+    font-size:clamp(4rem, 8vw, 12.6rem);
     line-height: 11rem;
-    // font: 126px / 110px ;
     margin-bottom: 2rem;
 }
 h2{
@@ -63,7 +62,8 @@ h2{
     margin-bottom: 2rem;
 }
 h3{
-    font-size:clamp(2.75rem, 6vw, 4rem);
+    font-size:clamp(3rem, 6vw, 4rem);
+    line-height: 4.4rem;
     margin-bottom: 1.6rem;
 }
 h4{
@@ -72,6 +72,10 @@ h4{
 }
 h5{
     font-size:clamp(1.4rem, 6vw, 1.6rem);
+    margin-bottom: 1.6rem;
+}
+h6{
+    font-size:clamp(1.2rem, 6vw, 1.3rem);
     margin-bottom: 1.6rem;
 }
 p{

@@ -4,6 +4,7 @@
   --gray: #343438;
   --gray2: #89888c;
   --white: #fff;
+  --off-white: #fcf9f1;
   --accent: #f8565d;
   --accent-alt: #fca8ac;
 }
@@ -51,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(6rem, 8vw, 12.6rem);
+  font-size: clamp(4rem, 8vw, 12.6rem);
   line-height: 11rem;
   margin-bottom: 2rem;
 }
@@ -62,7 +63,8 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(2.75rem, 6vw, 4rem);
+  font-size: clamp(3rem, 6vw, 4rem);
+  line-height: 4.4rem;
   margin-bottom: 1.6rem;
 }
 
@@ -73,6 +75,11 @@ h4 {
 
 h5 {
   font-size: clamp(1.4rem, 6vw, 1.6rem);
+  margin-bottom: 1.6rem;
+}
+
+h6 {
+  font-size: clamp(1.2rem, 6vw, 1.3rem);
   margin-bottom: 1.6rem;
 }
 
@@ -137,6 +144,14 @@ body {
 
 .text-white {
   color: var(--white);
+}
+
+.bg-off-white {
+  background-color: var(--off-white);
+}
+
+.text-off-white {
+  color: var(--off-white);
 }
 
 .bg-gray {
@@ -1039,6 +1054,10 @@ body {
   border-radius: 50%;
 }
 
+.bottom-line {
+  border-bottom: 1px solid #d9d9db;
+}
+
 .ubuntu-condensed-regular {
   font-family: "Ubuntu Condensed", sans-serif;
   font-weight: 400;
@@ -1203,10 +1222,29 @@ body {
   height: 100%;
 }
 
+.why__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: 3rem;
+}
+.why__wrapper p, .why__wrapper h6 {
+  line-height: 1.5;
+}
+@media (max-width: 42rem) {
+  .why .container {
+    padding: 7rem 5rem;
+  }
+}
+
 .appointment h1 {
   line-height: 0.9;
   letter-spacing: -0.25rem;
 }
 .appointment__bottom > button {
   padding: 2.6rem 3.5rem;
+}
+@media (max-width: 42rem) {
+  .appointment .container {
+    padding: 7rem 5rem;
+  }
 }/*# sourceMappingURL=main.min.css.map */

@@ -4,6 +4,7 @@
 $colors: (
     "dark": $clr-dark,    
     "white": $clr-white,
+    "off-white": $clr-off-white,
     "gray": $clr-gray,
     "gray2": $clr-gray2,
     "accent" : $clr-accent,
@@ -160,4 +161,8 @@ $fonts: (
 }
 .b-rounded{
     border-radius: 50%;
+}
+
+.bottom-line{
+    border-bottom: 1px solid #d9d9db;
 }
