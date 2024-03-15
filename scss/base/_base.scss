@@ -24,7 +24,8 @@ body {
         overflow: hidden;
         height: 100vh;
     }
-    // font: 300 15px/24px $ft-ubuntu;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 a {

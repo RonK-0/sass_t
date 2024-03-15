@@ -24,6 +24,8 @@ body {
   font-size: 1.5rem;
   font-weight: 300;
   font-family: "Ubuntu", Arial, sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 body.open {
   overflow: hidden;
