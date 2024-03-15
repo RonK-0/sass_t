@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"/>
 
     <!-- AOS Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link href=".\dist\vendor\aos.css" rel="stylesheet">
 
 </head>
 
@@ -61,10 +62,10 @@
     
     <section class="services">
         <!-- section.services>.container.bg-gray.p11.my-3>.services__wrapper>.services__card.flex.f-col.justify-center.items-center*4>h4.pb1.bottom-line{COMPLETE SERVICES}+i.fa.fa-cogs+p{Cubilipende sollicitudineed leo pharea aumennec in velit veaugun e diam lor innia est. Proin dictum elem velit Fterdpibus sceleue vitaepe.}+button.btn{MORE} -->
-        <div class="container bg-gray p11 my-3">
-            <div class="services__wrapper flex justify-center w-full">
+        <div class="container p11 my-3">
+            <div class="services__wrapper bg-gray flex justify-center w-full">
                 <div class="services__cards flex gap-2">
-                    <div class="services__card flex f-col justify-between items-center gap-3 py-10">
+                    <div class="services__card flex f-col justify-between items-center gap-3 py-10" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500" data-aos-offset="500">
                         <div class="services__card__label bottom-line-2 w-full text-center py-1">
                             <h4 class="pb1">COMPLETE SERVICES</h4>
                         </div>
@@ -72,7 +73,7 @@
                         <p class="text-center fw-500">Cubilipende sollicitudineed leo pharea aumennec in velit veaugun e diam lor innia est. Proin dictum elem velit Fterdpibus sceleue vitaepe.</p>
                         <button class="btn">MORE</button>
                     </div>
-                    <div class="services__card flex f-col justify-between items-center gap-3 py-10">
+                    <div class="services__card flex f-col justify-between items-center gap-3 py-10" data-aos="fade-right" data-aos-duration="500">
                         <div class="services__card__label bottom-line-2 w-full text-center py-1">
                             <h4 class="pb1">OIL CHANGE</h4>
                         </div>
@@ -80,7 +81,7 @@
                         <p class="text-center fw-500">Sollicitudineied leo pharetr in velit eaugun eratisque diam lor innia est. Proin dicm elemtum veitdpibu sceleue vita pedeecon era.</p>
                         <button class="btn">MORE</button>
                     </div>
-                    <div class="services__card flex f-col justify-between items-center gap-3 py-10">
+                    <div class="services__card flex f-col justify-between items-center gap-3 py-10" data-aos="fade-left" data-aos-duration="500">
                         <div class="services__card__label bottom-line-2 w-full text-center py-1">
                             <h4 class="pb1">ENGINE REPAIR</h4>
                         </div>
@@ -88,7 +89,7 @@
                         <p class="text-center fw-500">Cubilipende sollicitudineed leo pharea aumennec in velit veaugun e diam lor innia est. Proin dictum elem velit Fterdpibus sceleue vitaepe.</p>
                         <button class="btn">MORE</button>
                     </div>
-                    <div class="services__card flex f-col justify-between items-center gap-3 py-10">
+                    <div class="services__card flex f-col justify-between items-center gap-3 py-10" data-aos="fade-left"data-aos-duration="500" data-aos-offset="500">
                         <div class="services__card__label bottom-line-2 w-full text-center py-1">
                             <h4 class="pb1">SCHEDULED MAINTENANCE</h4>
                         </div>
@@ -102,36 +103,38 @@
     </section>
 
     <section class="servicesSlider">
-        <div class="container p-11 bg-accent">
-            <div class="servicesSlider__top mb-2">
-                <h3 class="text-white">SERVICES</h3>
-            </div>
-            <div class="servicesSlider__wrapper">
-                <!-- .servicesSlider__slide*3>img[src="./images/page1_pic$.jpg"]+p{Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum} -->
-                
-                <div class="servicesSlider__slide">
-                    <img src="./images/page1_pic1.jpg" alt="">
-                    <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
+        <div class="container">
+            <div class="servicesSlider__wrapper p-11 bg-accent">
+                <div class="servicesSlider__top mb-2">
+                    <h3 class="text-white">SERVICES</h3>
                 </div>
-                <div class="servicesSlider__slide">
-                    <img src="https://via.placeholder.com/400x160" alt="">
-                    <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
-                </div>
-                <div class="servicesSlider__slide">
-                    <img src="./images/page1_pic2.jpg" alt="">
-                    <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
-                </div>
-                <div class="servicesSlider__slide">
-                    <img src="https://via.placeholder.com/400x160" alt="">
-                    <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
-                </div>
-                <div class="servicesSlider__slide">
-                    <img src="./images/page1_pic3.jpg" alt="">
-                    <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
-                </div>
-                <div class="servicesSlider__slide">
-                    <img src="https://via.placeholder.com/400x160" alt="">
-                    <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
+                <div class="servicesSlider__slides"data-aos="fade-up" data-aos-duration="1000">
+                    <!-- .servicesSlider__slide*3>img[src="./images/page1_pic$.jpg"]+p{Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum} -->
+                    
+                    <div class="servicesSlider__slide">
+                        <img src="./images/page1_pic1.jpg" alt="">
+                        <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
+                    </div>
+                    <div class="servicesSlider__slide">
+                        <img src="https://via.placeholder.com/400x160" alt="">
+                        <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
+                    </div>
+                    <div class="servicesSlider__slide">
+                        <img src="./images/page1_pic2.jpg" alt="">
+                        <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
+                    </div>
+                    <div class="servicesSlider__slide">
+                        <img src="https://via.placeholder.com/400x160" alt="">
+                        <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
+                    </div>
+                    <div class="servicesSlider__slide">
+                        <img src="./images/page1_pic3.jpg" alt="">
+                        <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
+                    </div>
+                    <div class="servicesSlider__slide">
+                        <img src="https://via.placeholder.com/400x160" alt="">
+                        <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -140,14 +143,14 @@
     
     <section class="why">
         <!-- section.why>.container>.why__wrapper.bg-white.p-11>(.why__left>h3{WHAT WE DO}+p.text-dark{Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum auctorulvinaroin ullamcorper u et felisestiulis lacinia esroin dictum elemenelit. Fusce euismod consequat antrem ipsm door sit amet coectetuer adipiscing elit. Pellentesque sed dololiquam cong.}+p.text-dark{Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi aliquet sit amet euismod in auctor ut ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor lobortis quis lobortis dignissim pulvinar ac lorem. Vestibulum sed ante.})+(.why__right>h3{WHY US?}+p.text-dark{Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum auctorulvinaroin ullamcorper u et felisestiulis lacinia est.}+h6.text-accent{Proin dictum elemum veliterdpibus sceleue vitaepeecon eonec in vel ipsum auctorulv inaroin ullamcorper u et felisestiulis lacinia eroin dictum elemenelit.}+p.text-dark{Proin dictum elemenelit. Fusce euismod consequat antrem ipsm door sit amet con sectetuer adipiscing elit. Pellentesque sed dololiquam cong.}) -->
-        <div class="container bg-off-white p-11 my-3">
-            <div class="why__wrapper">
-                <div class="why__left">
+        <div class="container my-3">
+            <div class="why__wrapper bg-off-white p-11">
+                <div class="why__left" data-aos="fade-up" data-aos-duration="500">
                     <h3 class="text-dark pb-1 bottom-line mb-4">WHAT WE DO</h3>
                     <p class="text-dark fw-400 pb-1 bottom-line">Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum auctorulvinaroin ullamcorper u et felisestiulis lacinia esroin dictum elemenelit. Fusce euismod consequat antrem ipsm door sit amet coectetuer adipiscing elit. Pellentesque sed dololiquam cong.</p>
                     <p class="text-dark fw-400">Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi aliquet sit amet euismod in auctor ut ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor lobortis quis lobortis dignissim pulvinar ac lorem. Vestibulum sed ante.</p>
                 </div>
-                <div class="why__right">
+                <div class="why__right" data-aos="fade-down" data-aos-duration="500">
                     <h3 class="text-dark pb-1 bottom-line mb-4">WHY US?</h3>
                     <p class="text-dark fw-400 pb-1 bottom-line">Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum auctorulvinaroin ullamcorper u et felisestiulis lacinia est.</p>
                     <h6 class="text-accent ft-ubuntu fw-400 pb-1 bottom-line">Proin dictum elemum veliterdpibus sceleue vitaepeecon eonec in vel ipsum auctorulv inaroin ullamcorper u et felisestiulis lacinia eroin dictum elemenelit.</h6>
@@ -160,10 +163,10 @@
     
     <section class="appointment">
         <!-- section.appointment.bg-gray.py-10.flex.f-wrap.items-center.gap-2>.container>(h1{NO BETTER CAR SERVICE ANYWHERE})+(.appointment__bottom.flex.items-center.gap-2>button.btn{REQUEST AN APPOINTMENT}+i.fa.fa-calendar-alt) -->
-        <div class="container bg-gray p-11">
-            <div class="appointment__wrapperflex f-wrap items-center gap-2">
-                <h1>NO BETTER CAR SERVICE ANYWHERE</h1>
-                <div class="appointment__bottom flex items-center gap-2">
+        <div class="container">
+            <div class="appointment__wrapper bg-gray flex f-wrap items-center gap-2 p-11">
+                <h1  data-aos="fade-up" data-aos-duration="500">NO BETTER CAR SERVICE ANYWHERE</h1>
+                <div class="appointment__bottom flex items-center gap-2" data-aos="fade-up" data-aos-duration="800">
                     <button class="btn">REQUEST AN APPOINTMENT</button>
                     <i class="far fa-calendar-days"></i>
                 </div>
@@ -210,7 +213,7 @@
         });
 
         const slider2 = tns({
-            container: ".servicesSlider__wrapper",
+            container: ".servicesSlider__slides",
             items: 1,
             gutter: 25,
             loop: true,

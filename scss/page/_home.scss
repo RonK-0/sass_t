@@ -43,9 +43,6 @@
     }
 }
 
-
-
-
 .services{
     &__cards{
         width: 95%;
@@ -82,50 +79,48 @@
 }
 
 .servicesSlider{
-    .tns-outer{
-        position: relative;
-    }
-    
-    .tns-controls{
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translateY(-220%);
-        display: flex;
-        gap: 2rem;
-        button>i{
-            width: 3.5rem;
-            height: 3.5rem;
-            border-radius: 50%;
-            @include flex(center, center);
-            border: none;
-            color: $clr-accent;
-            background-color: $clr-white;
-            &:hover{
-                background-color: $clr-dark;
+    &__wrapper{
+        @include mediaQueryMxW{padding: 7rem 5rem;}
+        .tns-outer{ position: relative; }
+        .tns-controls{
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translateY(-220%);
+            display: flex;
+            gap: 2rem;
+            button{
+                width: 3.5rem;
+                height: 3.5rem;
+                border-radius: 50%;
+                @include flex(center, center);
+                border: none;
                 color: $clr-accent;
+                background-color: $clr-white;
+                &:hover{
+                    background-color: $clr-dark;
+                    color: $clr-accent;
+                }
             }
         }
     }
     &__top{ border-bottom: 3px solid #fa858a; }
     &__slide{
-        // max-width: 32rem;
         position: relative;
         img{@include imgCover(100%, 100%);}
     }
-    .container{@include mediaQueryMxW{padding: 7rem 5rem;}}
 }
 
 .why{
     &__wrapper{
         @include gridAuto(3rem);
         p, h6{line-height: 1.5;}
+        @include mediaQueryMxW{padding: 7rem 5rem;}
     }
-    .container{@include mediaQueryMxW{padding: 7rem 5rem;}}
 }
 
 .appointment{
     h1{ line-height: 0.9; letter-spacing: -0.25rem; }
     &__bottom>button{ padding:2.6rem 3.5rem; }
-    .container{@include mediaQueryMxW{padding: 7rem 5rem;}}
+    &__wrapper{@include mediaQueryMxW{padding: 7rem 5rem;}}
 }
