@@ -1,3 +1,5 @@
+// import { tns } from './tiny-slider.js';
+
 const toggleMenu = document.querySelector("#toggleMenu");
 const dropdown = document.querySelector("#menu");
 const body = document.querySelector("body");

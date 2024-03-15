@@ -5,11 +5,11 @@ $ft-ubuntu-condensed: 'Ubuntu Condensed', Arial, sans-serif;
 
 
 // * {
-//     transition: 0.25s ease;  //animation for changing between light and dark mode
+//     transition: 0.5s all ease;  //animation for changing between light and dark mode
 // }
-// body, h1, h2, h3, h4, h5, p, ul li, a, small {
-//     transition: 0.5s ease;  //animation for changing between light and dark mode
-// }
+body, h1, h2, h3, h4, h5, p, ul li, a, small, *::before {
+    transition: 0.35s all ease;  //animation for changing between light and dark mode
+}
 
 html { font-size: 10px; }
 
@@ -67,7 +67,8 @@ h3{
     margin-bottom: 1.6rem;
 }
 h4{
-    font-size:clamp(1.6rem, 6vw, 1.8rem);
+    font-size:clamp(1.6rem, 6vw, 2.2rem);
+    line-height: 3rem;
     margin-bottom: 1.6rem;
 }
 h5{
@@ -79,7 +80,7 @@ h6{
     margin-bottom: 1.6rem;
 }
 p{
-    // font-size:clamp(1.4rem, 6vw, 1.9rem);
+    font-size:clamp(1.3rem, 6vw, 1.5rem);
     margin-bottom: 1.3rem;
     line-height: 2.4;
     font-size: 1.5rem;
@@ -120,7 +121,7 @@ input, textarea{
 .fa-cogs, .fa-tint,  .fa-filter, .fa-wrench{
     font-size: clamp(2.5rem, 5vw, 5rem);
     line-height: clamp(3.0, 5.0, 7.0);
-    color: $clr-dark;
+    color: $clr-white;
 }
 .fa-calendar-days{
     font-size: clamp(2rem, 4vw, 3rem);

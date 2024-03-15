@@ -14,27 +14,21 @@
     <!-- FONT AWESOME ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <!-- TINY SLIDER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"/>
+
     <!-- AOS Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <!-- <i class="fa fa-cogs"></i>
-    <i class="fa fa-tint"></i>
-    <i class="fa fa-filter"></i>
-    <i class="fa fa-wrench"></i>
-
-    <i class="fa fa-calendar-alt"></i> -->
-
-    
-
     <header class="header py-2">
         <div class="container">
             <div class="header__wrapper flex justify-between items-center">
-                <img src="../images/logo.png" alt="">
+                <a href="./index.html"><img src="../images/logo.png" alt=""></a>
                 <ul class="flex justify-center items-center gap-3" id="menu">
-                    <li><a href="#" class="text-white py-3 ft-u-condensed active">HOME</a></li>
+                    <li><a href="./index.html" class="text-white py-3 ft-u-condensed active">HOME</a></li>
                     <li><a href="#" class="text-white py-3 ft-u-condensed ">ABOUT</a></li>
                     <li><a href="#" class="text-white py-3 ft-u-condensed ">SERVICES</a></li>
                     <li><a href="#" class="text-white py-3 ft-u-condensed ">BLOG</a></li>
@@ -50,9 +44,291 @@
         </div>
     </section>
 
+    <!-- section.services>.container.bg-gray.p11.my-3>.services__wrapper>.services__card.flex.f-col.justify-center.items-center*4>h4.pb1.bottom-line{COMPLETE SERVICES}+i.fa.fa-cogs+p{Cubilipende sollicitudineed leo pharea aumennec in velit veaugun e diam lor innia est. Proin dictum elem velit Fterdpibus sceleue vitaepe.}+button.btn{MORE} -->
+    <section class="services">
+        <div class="container bg-gray p11 my-3">
+            <div class="services__wrapper flex justify-center">
+                <div class="services__cards flex gap-2">
+                    <div class="services__card flex f-col justify-center items-center gap-3 py-10">
+                        <div class="services__card__label bottom-line-2 w-full text-center py-1">
+                            <h4 class="pb1">COMPLETE SERVICES</h4>
+                        </div>
+                        <i class="fa fa-cogs"></i>
+                        <p class="text-center fw-500">Cubilipende sollicitudineed leo pharea aumennec in velit veaugun e diam lor innia est. Proin dictum elem velit Fterdpibus sceleue vitaepe.</p>
+                        <button class="btn">MORE</button>
+                    </div>
+                    <div class="services__card flex f-col justify-center items-center gap-3 py-10">
+                        <div class="services__card__label bottom-line-2 w-full text-center py-1">
+                            <h4 class="pb1">COMPLETE SERVICES</h4>
+                        </div>
+                        <i class="fa fa-tint"></i>
+                        <p class="text-center fw-500">Sollicitudineied leo pharetr in velit eaugun eratisque diam lor innia est. Proin dicm elemtum veitdpibu sceleue vita pedeecon era.</p>
+                        <button class="btn">MORE</button>
+                    </div>
+                    <div class="services__card flex f-col justify-center items-center gap-3 py-10">
+                        <div class="services__card__label bottom-line-2 w-full text-center py-1">
+                            <h4 class="pb1">COMPLETE SERVICES</h4>
+                        </div>
+                        <i class="fa fa-filter"></i>
+                        <p class="text-center fw-500">Cubilipende sollicitudineed leo pharea aumennec in velit veaugun e diam lor innia est. Proin dictum elem velit Fterdpibus sceleue vitaepe.</p>
+                        <button class="btn">MORE</button>
+                    </div>
+                    <div class="services__card flex f-col justify-center items-center gap-3 py-10">
+                        <div class="services__card__label bottom-line-2 w-full text-center py-1">
+                            <h4 class="pb1">COMPLETE SERVICES</h4>
+                        </div>
+                        <i class="fa fa-wrench"></i>
+                        <p class="text-center fw-500">Sollicitudineied leo pharetr in velit eaugun eratisque diam lor innia est. Proin dicm elemtum veitdpibu sceleue vita pedeecon era.</p>
+                        <button class="btn">MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- section.why>.container>.why__wrapper.bg-white.p-11>(.why__left>h3{WHAT WE DO}+p.text-dark{Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum auctorulvinaroin ullamcorper u et felisestiulis lacinia esroin dictum elemenelit. Fusce euismod consequat antrem ipsm door sit amet coectetuer adipiscing elit. Pellentesque sed dololiquam cong.}+p.text-dark{Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi aliquet sit amet euismod in auctor ut ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor lobortis quis lobortis dignissim pulvinar ac lorem. Vestibulum sed ante.})+(.why__right>h3{WHY US?}+p.text-dark{Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum auctorulvinaroin ullamcorper u et felisestiulis lacinia est.}+h6.text-accent{Proin dictum elemum veliterdpibus sceleue vitaepeecon eonec in vel ipsum auctorulv inaroin ullamcorper u et felisestiulis lacinia eroin dictum elemenelit.}+p.text-dark{Proin dictum elemenelit. Fusce euismod consequat antrem ipsm door sit amet con sectetuer adipiscing elit. Pellentesque sed dololiquam cong.}) -->
+    <section class="servicesSlider">
+        <div class="servicesSlider__wrapper">
+            <h1 class="text-center text-white m-0">[SERVICES here]</h1>
+        </div>
+    </section>
+
+    <div class="slider">
+        <div class="container">
+          <div class="slider__wrapper">
+            <div class="slider__content">
+              <p>Dont Take Our Words</p>
+              <h3>
+                Listen From our <br />
+                Happy Clients
+              </h3>
+            </div>
+            <div class="slider__main">
+              <div class="slider__box">
+                <i class="fa-solid fa-quote-left"></i>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Rerum blanditiis dolor illum exercitationem dolore cumque
+                    error quia perferendis officiis, nesciunt soluta tempore?
+                    Recusandae aut alias aspernatur, voluptatibus at dolorum
+                    dicta? Maiores dolor molestiae commodi suscipit repudiandae
+                    rem placeat, quidem eius.
+                  </p>
+                  <div class="profile">
+                    <img src="https://via.placeholder.com/120x120" alt="" />
+                    <ul>
+                      <li><h4>Loverboy</h4></li>
+                      <li><p>Athletes</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__box">
+                <i class="fa-solid fa-quote-left"></i>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Rerum blanditiis dolor illum exercitationem dolore cumque
+                    error quia perferendis officiis, nesciunt soluta tempore?
+                    Recusandae aut alias aspernatur, voluptatibus at dolorum
+                    dicta? Maiores dolor molestiae commodi suscipit repudiandae
+                    rem placeat, quidem eius.
+                  </p>
+                  <div class="profile">
+                    <img src="https://via.placeholder.com/120x120" alt="" />
+                    <ul>
+                      <li><h4>Loverboy</h4></li>
+                      <li><p>Athletes</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__box">
+                <i class="fa-solid fa-quote-left"></i>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Rerum blanditiis dolor illum exercitationem dolore cumque
+                    error quia perferendis officiis, nesciunt soluta tempore?
+                    Recusandae aut alias aspernatur, voluptatibus at dolorum
+                    dicta? Maiores dolor molestiae commodi suscipit repudiandae
+                    rem placeat, quidem eius.
+                  </p>
+                  <div class="profile">
+                    <img src="https://via.placeholder.com/120x120" alt="" />
+                    <ul>
+                      <li><h4>Loverboy</h4></li>
+                      <li><p>Athletes</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__box">
+                <i class="fa-solid fa-quote-left"></i>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Rerum blanditiis dolor illum exercitationem dolore cumque
+                    error quia perferendis officiis, nesciunt soluta tempore?
+                    Recusandae aut alias aspernatur, voluptatibus at dolorum
+                    dicta? Maiores dolor molestiae commodi suscipit repudiandae
+                    rem placeat, quidem eius.
+                  </p>
+                  <div class="profile">
+                    <img src="https://via.placeholder.com/120x120" alt="" />
+                    <ul>
+                      <li><h4>Loverboy</h4></li>
+                      <li><p>Athletes</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__box">
+                <i class="fa-solid fa-quote-left"></i>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Rerum blanditiis dolor illum exercitationem dolore cumque
+                    error quia perferendis officiis, nesciunt soluta tempore?
+                    Recusandae aut alias aspernatur, voluptatibus at dolorum
+                    dicta? Maiores dolor molestiae commodi suscipit repudiandae
+                    rem placeat, quidem eius.
+                  </p>
+                  <div class="profile">
+                    <img src="https://via.placeholder.com/120x120" alt="" />
+                    <ul>
+                      <li><h4>Loverboy</h4></li>
+                      <li><p>Athletes</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider2">
+        <div class="container">
+          <div class="slider2__wrapper">
+            <div class="slider2__content">
+              <p>Dont Take Our Words</p>
+              <h3>
+                Listen From our <br />
+                Happy Clients
+              </h3>
+            </div>
+            <div class="slider2__main">
+              <div class="slider2__box">
+                <i class="fa-solid fa-quote-left"></i>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Rerum blanditiis dolor illum exercitationem dolore cumque
+                    error quia perferendis officiis, nesciunt soluta tempore?
+                    Recusandae aut alias aspernatur, voluptatibus at dolorum
+                    dicta? Maiores dolor molestiae commodi suscipit repudiandae
+                    rem placeat, quidem eius.
+                  </p>
+                  <div class="profile">
+                    <img src="https://via.placeholder.com/120x120" alt="" />
+                    <ul>
+                      <li><h4>Loverboy</h4></li>
+                      <li><p>Athletes</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider2__box">
+                <i class="fa-solid fa-quote-left"></i>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Rerum blanditiis dolor illum exercitationem dolore cumque
+                    error quia perferendis officiis, nesciunt soluta tempore?
+                    Recusandae aut alias aspernatur, voluptatibus at dolorum
+                    dicta? Maiores dolor molestiae commodi suscipit repudiandae
+                    rem placeat, quidem eius.
+                  </p>
+                  <div class="profile">
+                    <img src="https://via.placeholder.com/120x120" alt="" />
+                    <ul>
+                      <li><h4>Loverboy</h4></li>
+                      <li><p>Athletes</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider2__box">
+                <i class="fa-solid fa-quote-left"></i>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Rerum blanditiis dolor illum exercitationem dolore cumque
+                    error quia perferendis officiis, nesciunt soluta tempore?
+                    Recusandae aut alias aspernatur, voluptatibus at dolorum
+                    dicta? Maiores dolor molestiae commodi suscipit repudiandae
+                    rem placeat, quidem eius.
+                  </p>
+                  <div class="profile">
+                    <img src="https://via.placeholder.com/120x120" alt="" />
+                    <ul>
+                      <li><h4>Loverboy</h4></li>
+                      <li><p>Athletes</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider2__box">
+                <i class="fa-solid fa-quote-left"></i>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Rerum blanditiis dolor illum exercitationem dolore cumque
+                    error quia perferendis officiis, nesciunt soluta tempore?
+                    Recusandae aut alias aspernatur, voluptatibus at dolorum
+                    dicta? Maiores dolor molestiae commodi suscipit repudiandae
+                    rem placeat, quidem eius.
+                  </p>
+                  <div class="profile">
+                    <img src="https://via.placeholder.com/120x120" alt="" />
+                    <ul>
+                      <li><h4>Loverboy</h4></li>
+                      <li><p>Athletes</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider2__box">
+                <i class="fa-solid fa-quote-left"></i>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Rerum blanditiis dolor illum exercitationem dolore cumque
+                    error quia perferendis officiis, nesciunt soluta tempore?
+                    Recusandae aut alias aspernatur, voluptatibus at dolorum
+                    dicta? Maiores dolor molestiae commodi suscipit repudiandae
+                    rem placeat, quidem eius.
+                  </p>
+                  <div class="profile">
+                    <img src="https://via.placeholder.com/120x120" alt="" />
+                    <ul>
+                      <li><h4>Loverboy</h4></li>
+                      <li><p>Athletes</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
     <section class="why">
+        <!-- section.why>.container>.why__wrapper.bg-white.p-11>(.why__left>h3{WHAT WE DO}+p.text-dark{Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum auctorulvinaroin ullamcorper u et felisestiulis lacinia esroin dictum elemenelit. Fusce euismod consequat antrem ipsm door sit amet coectetuer adipiscing elit. Pellentesque sed dololiquam cong.}+p.text-dark{Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi aliquet sit amet euismod in auctor ut ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor lobortis quis lobortis dignissim pulvinar ac lorem. Vestibulum sed ante.})+(.why__right>h3{WHY US?}+p.text-dark{Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum auctorulvinaroin ullamcorper u et felisestiulis lacinia est.}+h6.text-accent{Proin dictum elemum veliterdpibus sceleue vitaepeecon eonec in vel ipsum auctorulv inaroin ullamcorper u et felisestiulis lacinia eroin dictum elemenelit.}+p.text-dark{Proin dictum elemenelit. Fusce euismod consequat antrem ipsm door sit amet con sectetuer adipiscing elit. Pellentesque sed dololiquam cong.}) -->
         <div class="container bg-off-white p-11 my-3">
             <div class="why__wrapper">
                 <div class="why__left">
@@ -70,8 +346,9 @@
         </div>
     </section>
 
-    <!-- section.appointment.bg-gray.py-10.flex.f-wrap.items-center.gap-2>.container>(h1{NO BETTER CAR SERVICE ANYWHERE})+(.appointment__bottom.flex.items-center.gap-2>button.btn{REQUEST AN APPOINTMENT}+i.fa.fa-calendar-alt) -->
+    
     <section class="appointment">
+        <!-- section.appointment.bg-gray.py-10.flex.f-wrap.items-center.gap-2>.container>(h1{NO BETTER CAR SERVICE ANYWHERE})+(.appointment__bottom.flex.items-center.gap-2>button.btn{REQUEST AN APPOINTMENT}+i.fa.fa-calendar-alt) -->
         <div class="container bg-gray p-11">
             <div class="appointment__wrapperflex f-wrap items-center gap-2">
                 <h1>NO BETTER CAR SERVICE ANYWHERE</h1>
@@ -108,6 +385,50 @@
     </footer>
     
     <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script>
+        const slider1 = tns({
+            container: ".banner__slider",
+            items: 1,
+            slideBy: "page",
+            loop: true,
+            autoplay: true,
+            autoplayButtonOutput: true,
+            nav: true,
+            // controlsText: [
+            //     '<i class="fas fa-arrow-left-long"></i>',
+            //     '<i class="fas fa-arrow-right-long"></i>',
+            // ],
+
+            responsive: {
+                420: {
+                    items: 1,
+                    gutter: 20,
+                },
+            },
+        });
+
+        const slider2 = tns({
+            container: ".servicesSlider__wrapper",
+            items: 3,
+            slideBy: "page",
+            loop: true,
+            autoplay: false,
+            autoplayButtonOutput: false,
+            nav: false,
+            controlsText: [
+                '<i class="fas fa-angle-left-long"></i>',
+                '<i class="fas fa-angle-right-long"></i>',
+            ],
+
+            responsive: {
+                420: {
+                    items: 1,
+                    gutter: 20,
+                },
+            },
+        });
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script> AOS.init(); </script>
 </body>

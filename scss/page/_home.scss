@@ -2,12 +2,38 @@
 @use "../base" as *;
 @use "../component" as *;
 @use "../layout" as *;
+@use "../vendor" as *;
 
-
+.services{
+    &__cards{
+        width: 95%;
+    }
+    &__card{
+        position: relative;
+        isolation: isolate;
+        p{
+            font-size:clamp(1.2rem, 6vw, 1.3rem); text-wrap: balance;
+        }
+        &:hover::before{
+            opacity: 1;
+            visibility: visible;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform: scale(1.05);
+            z-index: -1;
+            background-color: #303033;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+}
 
 .why{
     &__wrapper{
-        // @include grid(2, 3rem);
         @include gridAuto(3rem);
         p, h6{line-height: 1.5;}
     }
