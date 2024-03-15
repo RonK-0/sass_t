@@ -1344,15 +1344,6 @@ body {
 .servicesSlider__top {
   border-bottom: 3px solid #fa858a;
 }
-.servicesSlider__slide {
-  position: relative;
-}
-.servicesSlider__slide img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 
 .why__wrapper {
   display: grid;

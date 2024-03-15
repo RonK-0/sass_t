@@ -5,10 +5,7 @@
         @include mediaQueryMxW{ 
             flex-direction: column;
             gap: 3rem;
-            *{
-                align-items: center;
-                justify-content: center;
-            }
+            *{ align-items: center; justify-content: center; }
         }
     }
     &__left, &__address{ p{ font-size: clamp(1.15rem, 3vw, 1.25rem);} }
