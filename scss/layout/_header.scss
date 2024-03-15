@@ -3,7 +3,8 @@
 .header{
     &__wrapper{
         img{
-            @include imgCover(10rem, 10rem);
+            // @include imgCover(10rem, 10rem);
+            @include imgCover(100%, 100%);
             @include mediaQueryMxW{ @include imgCover(6rem, 6rem); }
         }
         #toggleMenu{
