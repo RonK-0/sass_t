@@ -2,6 +2,7 @@
 :root {
   --dark: #26252a;
   --gray: #343438;
+  --gray2: #89888c;
   --white: #fff;
   --accent: #f8565d;
   --accent-alt: #fca8ac;
@@ -30,7 +31,7 @@ a {
   transition: 0.4s all ease;
 }
 a:hover {
-  color: var(--dark);
+  color: var(--accent);
 }
 
 .container {
@@ -102,7 +103,7 @@ input, textarea {
   color: var(--white);
 }
 
-.fa:hover {
+.fa:hover, .fab:hover {
   color: var(--accent);
 }
 
@@ -143,6 +144,14 @@ body {
 
 .text-gray {
   color: var(--gray);
+}
+
+.bg-gray2 {
+  background-color: var(--gray2);
+}
+
+.text-gray2 {
+  color: var(--gray2);
 }
 
 .bg-accent {
@@ -769,7 +778,7 @@ body {
   text-transform: lowercase;
 }
 
-.m-a {
+.m-0a {
   margin: 0 auto;
 }
 
@@ -779,6 +788,14 @@ body {
 
 .ft-u-condensed {
   font-family: Ubuntu Condensed, Arial, sans-serif;
+}
+
+.outline-2 {
+  outline: 2px solid var(--white);
+}
+
+.b-rounded {
+  border-radius: 50%;
 }
 
 .ubuntu-condensed-regular {
@@ -912,6 +929,37 @@ body {
 }
 .header__wrapper ul li a.active {
   border-bottom: clamp(5px, 5vw, 10px) solid var(--accent);
+}
+
+@media (max-width: 800px) {
+  .footer__wrapper {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .footer__wrapper * {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.footer__left p, .footer__address p {
+  font-size: clamp(1.15rem, 3vw, 1.25rem);
+}
+.footer__socials > li {
+  height: clamp(3rem, 3vw, 4.7rem);
+  width: clamp(3rem, 3vw, 4.7rem);
+}
+.footer__socials > li:hover {
+  outline-color: var(--accent);
+}
+.footer__socials > li:hover i {
+  color: var(--accent);
+}
+.footer__map {
+  flex-grow: 1;
+}
+.footer__map iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .banner {

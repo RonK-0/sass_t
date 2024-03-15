@@ -32,9 +32,7 @@ a {
     color: $clr-accent;
     -webkit-transition: 0.4s all ease;
     transition: 0.4s all ease;
-    &:hover{
-        color: $clr-dark;
-    }
+    &:hover{ color: $clr-accent; }
 }
 
 .container {
@@ -122,6 +120,6 @@ input, textarea{
     line-height: clamp(2.0, 3.0, 4.0);
     color: $clr-white;
 }
-.fa:hover{
+.fa:hover, .fab:hover{
     color: $clr-accent;
 }

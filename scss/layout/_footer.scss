@@ -2,8 +2,26 @@
 
 .footer{
     &__wrapper{
-        // @include mediaQueryMxW(755px){ flex-direction: column;}
-        // p{ font-size: clamp(1.25rem, 4vw, 1.75rem); }
+        @include mediaQueryMxW(800px){ 
+            flex-direction: column;
+            gap: 3rem;
+            *{
+                align-items: center;
+                justify-content: center;
+            }
+        }
     }
-    // &__socials i{ font-size: clamp(1.75rem, 4vw, 2.5rem); }
+    &__left, &__address{ p{ font-size: clamp(1.15rem, 3vw, 1.25rem);} }
+    &__socials>li{
+        height: clamp(3rem, 3vw, 4.7rem);
+        width: clamp(3rem, 3vw, 4.7rem);
+        &:hover{
+            outline-color: $clr-accent;
+            i{color: $clr-accent;}
+        }
+    }
+    &__map{
+        flex-grow: 1;
+        iframe{ width: 100%; height: 100%; }
+    }
 }

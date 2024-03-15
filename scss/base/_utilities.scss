@@ -5,6 +5,7 @@ $colors: (
     "dark": $clr-dark,    
     "white": $clr-white,
     "gray": $clr-gray,
+    "gray2": $clr-gray2,
     "accent" : $clr-accent,
 );
 
@@ -141,7 +142,7 @@ $case: (
     }
 }
 
-.m-a{
+.m-0a{
     margin: 0 auto;
 }
 
@@ -153,4 +154,10 @@ $fonts: (
     .ft-#{$key}{
         font-family: #{$val};
     }
+}
+.outline-2{
+    outline: 2px solid $clr-white;
+}
+.b-rounded{
+    border-radius: 50%;
 }
