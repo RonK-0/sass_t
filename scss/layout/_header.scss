@@ -27,7 +27,7 @@
                 a{
                     font-size: clamp(1.5rem, 4vw, 1.9rem);
                     @include mediaQueryMxW{ font-size: clamp(1.75rem, 8vw, 2.75rem); padding: 1rem;}
-                    &:hover{ color: $clr-accent; }
+                    &:hover{ color: $clr-accent; border-bottom: clamp(5px, 5vw, 10px) solid $clr-accent; transition: 0.15s ease; }
                     &.active{ border-bottom: clamp(5px, 5vw, 10px) solid $clr-accent; }
                 }
             }

@@ -1198,6 +1198,8 @@ body {
 }
 .header__wrapper ul li a:hover {
   color: var(--accent);
+  border-bottom: clamp(5px, 5vw, 10px) solid var(--accent);
+  transition: 0.15s ease;
 }
 .header__wrapper ul li a.active {
   border-bottom: clamp(5px, 5vw, 10px) solid var(--accent);
