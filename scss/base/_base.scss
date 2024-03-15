@@ -45,14 +45,17 @@ a {
 ul{ list-style: none; }
 
 h1, h2, h3, h4, h5, h6{
-    font-weight: bold;
+    font-family: $ft-ubuntu-condensed;
+    // font-weight: bold;
     color: $clr-white;
+    font-weight: normal;
 }
 
 h1{ 
     // font-size:clamp(4.5rem, 8vw, 9.1rem);
     font-size:clamp(6rem, 8vw, 12.6rem);
-    font: 126px / 110px 'Ubuntu Condensed', Arial, sans-serif;
+    line-height: 11rem;
+    // font: 126px / 110px ;
     margin-bottom: 2rem;
 }
 h2{
@@ -115,7 +118,7 @@ input, textarea{
     line-height: clamp(3.0, 5.0, 7.0);
     color: $clr-dark;
 }
-.fa-calendar-alt{
+.fa-calendar-days{
     font-size: clamp(2rem, 4vw, 3rem);
     line-height: clamp(2.0, 3.0, 4.0);
     color: $clr-white;

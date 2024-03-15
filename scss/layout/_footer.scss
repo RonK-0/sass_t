@@ -2,7 +2,7 @@
 
 .footer{
     &__wrapper{
-        @include mediaQueryMxW(800px){ 
+        @include mediaQueryMxW{ 
             flex-direction: column;
             gap: 3rem;
             *{

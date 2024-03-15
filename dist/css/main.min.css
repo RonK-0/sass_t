@@ -45,13 +45,14 @@ ul {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
   color: var(--white);
+  font-weight: normal;
 }
 
 h1 {
   font-size: clamp(6rem, 8vw, 12.6rem);
-  font: 126px/110px "Ubuntu Condensed", Arial, sans-serif;
+  line-height: 11rem;
   margin-bottom: 2rem;
 }
 
@@ -97,7 +98,7 @@ input, textarea {
   color: var(--dark);
 }
 
-.fa-calendar-alt {
+.fa-calendar-days {
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 3;
   color: var(--white);
@@ -658,6 +659,246 @@ body {
   gap: 10rem;
 }
 
+.m-11 {
+  margin: 11rem;
+}
+
+.mt-11 {
+  margin-top: 11rem;
+}
+
+.mb-11 {
+  margin-bottom: 11rem;
+}
+
+.mx-11 {
+  margin-left: 11rem;
+  margin-right: 11rem;
+}
+
+.my-11 {
+  margin-top: 11rem;
+  margin-bottom: 11rem;
+}
+
+.p-11 {
+  padding: 11rem;
+}
+
+.px-11 {
+  padding-left: 11rem;
+  padding-right: 11rem;
+}
+
+.py-11 {
+  padding-top: 11rem;
+  padding-bottom: 11rem;
+}
+
+.pt-11 {
+  padding-top: 11rem;
+}
+
+.pb-11 {
+  padding-bottom: 11rem;
+}
+
+.gap-11 {
+  gap: 11rem;
+}
+
+.m-12 {
+  margin: 12rem;
+}
+
+.mt-12 {
+  margin-top: 12rem;
+}
+
+.mb-12 {
+  margin-bottom: 12rem;
+}
+
+.mx-12 {
+  margin-left: 12rem;
+  margin-right: 12rem;
+}
+
+.my-12 {
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+
+.p-12 {
+  padding: 12rem;
+}
+
+.px-12 {
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+
+.py-12 {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.pt-12 {
+  padding-top: 12rem;
+}
+
+.pb-12 {
+  padding-bottom: 12rem;
+}
+
+.gap-12 {
+  gap: 12rem;
+}
+
+.m-13 {
+  margin: 13rem;
+}
+
+.mt-13 {
+  margin-top: 13rem;
+}
+
+.mb-13 {
+  margin-bottom: 13rem;
+}
+
+.mx-13 {
+  margin-left: 13rem;
+  margin-right: 13rem;
+}
+
+.my-13 {
+  margin-top: 13rem;
+  margin-bottom: 13rem;
+}
+
+.p-13 {
+  padding: 13rem;
+}
+
+.px-13 {
+  padding-left: 13rem;
+  padding-right: 13rem;
+}
+
+.py-13 {
+  padding-top: 13rem;
+  padding-bottom: 13rem;
+}
+
+.pt-13 {
+  padding-top: 13rem;
+}
+
+.pb-13 {
+  padding-bottom: 13rem;
+}
+
+.gap-13 {
+  gap: 13rem;
+}
+
+.m-14 {
+  margin: 14rem;
+}
+
+.mt-14 {
+  margin-top: 14rem;
+}
+
+.mb-14 {
+  margin-bottom: 14rem;
+}
+
+.mx-14 {
+  margin-left: 14rem;
+  margin-right: 14rem;
+}
+
+.my-14 {
+  margin-top: 14rem;
+  margin-bottom: 14rem;
+}
+
+.p-14 {
+  padding: 14rem;
+}
+
+.px-14 {
+  padding-left: 14rem;
+  padding-right: 14rem;
+}
+
+.py-14 {
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+}
+
+.pt-14 {
+  padding-top: 14rem;
+}
+
+.pb-14 {
+  padding-bottom: 14rem;
+}
+
+.gap-14 {
+  gap: 14rem;
+}
+
+.m-15 {
+  margin: 15rem;
+}
+
+.mt-15 {
+  margin-top: 15rem;
+}
+
+.mb-15 {
+  margin-bottom: 15rem;
+}
+
+.mx-15 {
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
+.my-15 {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
+.p-15 {
+  padding: 15rem;
+}
+
+.px-15 {
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
+.py-15 {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+
+.pt-15 {
+  padding-top: 15rem;
+}
+
+.pb-15 {
+  padding-bottom: 15rem;
+}
+
+.gap-15 {
+  gap: 15rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -931,7 +1172,7 @@ body {
   border-bottom: clamp(5px, 5vw, 10px) solid var(--accent);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 42rem) {
   .footer__wrapper {
     flex-direction: column;
     gap: 3rem;
@@ -962,97 +1203,10 @@ body {
   height: 100%;
 }
 
-.banner {
-  background: url("../../images/1_banner/wood.jpg") repeat center/cover;
+.appointment h1 {
+  line-height: 0.9;
+  letter-spacing: -0.25rem;
 }
-.banner img.bannerRamen {
-  height: 150%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.banner__wrapper p {
-  font-size: clamp(1.4rem, 2vw, 2rem);
-}
-
-.orderIns {
-  background: url("../../images/2_how to order/texture_pattern_2X.jpg") repeat;
-}
-@media (max-width: 42rem) {
-  .orderIns__instruction {
-    flex-direction: column;
-  }
-}
-.orderIns__instruction__step img {
-  height: 12.1rem;
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.orderIns__instruction__step h4 {
-  font-size: clamp(2rem, 6vw, 2.25rem);
-}
-.orderIns__instruction i.arrow {
-  font-size: 3rem;
-}
-@media (max-width: 42rem) {
-  .orderIns__instruction i.arrow {
-    transform: rotate(90deg) rotateX(0) rotateY(0);
-  }
-}
-
-.menu {
-  background: url("../../images/3_ramens/bg/character_pattern_2X.jpg") repeat center/8rem;
-}
-.menu h2 {
-  letter-spacing: 0.3rem;
-}
-.menu__wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-}
-@media (max-width: 480px) {
-  .menu__wrapper {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 3rem;
-  }
-}
-.menu__item__details__price {
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
-}
-.menu__item__details__ingredients > ul > li {
-  line-height: 1.4;
-}
-.menu__item__details__broth {
-  font-size: clamp(1.6rem, 3vw, 2.5rem);
-}
-.menu__item img {
-  height: 21rem;
-  width: 21rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media (max-width: 790px) {
-  .menu__item img {
-    order: -1;
-  }
-}
-@media (max-width: 790px) {
-  .menu__item {
-    margin: 0 auto;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-.menu button {
-  background-color: var(--dark);
-}
-
-.hours {
-  background: url("../../images/4_above footer/texture_pattern_2X.jpg") repeat;
-}
-.hours__images img {
-  width: 33.33%;
+.appointment__bottom > button {
+  padding: 2.6rem 3.5rem;
 }/*# sourceMappingURL=main.min.css.map */

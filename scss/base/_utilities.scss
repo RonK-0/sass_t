@@ -28,7 +28,7 @@ $displays: (flex, grid, block, inline);
     }
 }
 
-@for $i from 1 through 10{
+@for $i from 1 through 15{
     .m-#{$i}{
         margin: #{$i}rem;
     }
