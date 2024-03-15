@@ -4,15 +4,64 @@
 @use "../layout" as *;
 @use "../vendor" as *;
 
+.banner{
+    &__slider{
+        &__slide{
+            position: relative;
+            height: 100%;
+            h2{
+                // max-width: 40rem;
+                height: inherit;
+                line-height: 1;
+                position: absolute;
+                top: 0; right: 0;
+                transform: translate(-25%, 40%);
+            }
+        }
+    }
+    .tns-outer{
+        position: relative;
+        .tns-nav{
+            position: absolute;
+            bottom: 0.5rem;
+            right: 14%;
+            // transform: translateX(-50%);
+            z-index: 10;
+            button{
+                margin: 0 0.35rem;
+                width: clamp(1rem, 4vw, 1.5rem);
+                height: clamp(1rem, 4vw, 1.5rem);
+                border-radius: 100%;
+                border: none;
+                background-color: $clr-dark;
+            }
+            &-active{
+                background-color: $clr-white !important;
+            }
+        }
+    }
+}
+
+
+
+
 .services{
     &__cards{
         width: 95%;
+        @include mediaQueryMxW{
+            flex-direction: column;
+        }
     }
     &__card{
         position: relative;
         isolation: isolate;
+        @include mediaQueryMxW{
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
         p{
-            font-size:clamp(1.2rem, 6vw, 1.3rem); text-wrap: balance;
+            font-size:clamp(1.2rem, 6vw, 1.3rem);
+            text-wrap: balance;
         }
         &:hover::before{
             opacity: 1;
@@ -21,6 +70,7 @@
         &::before{
             content: '';
             position: absolute;
+            top: 0; right: 0;
             width: 100%;
             height: 100%;
             transform: scale(1.05);
@@ -30,6 +80,37 @@
             visibility: hidden;
         }
     }
+}
+
+.servicesSlider{
+    &__wrapper{ position: relative; }
+    .tns-controls{
+        position: absolute;
+        right: 15rem;
+        display: flex;
+        gap: 2rem;
+        button{
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            @include flex(center, center);
+            border: none;
+            background-color: $clr-white;
+            color: $clr-accent;
+            &:hover{
+                background-color: $clr-dark;
+                color: $clr-accent;
+            }
+        }
+    }
+    &__top{ border-bottom: 3px solid #fa858a; }
+    &__slide{
+        // max-width: 32rem;
+        position: relative;
+        margin-right: 5rem;
+        img{@include imgCover(100%, 100%);}
+    }
+    
 }
 
 .why{
